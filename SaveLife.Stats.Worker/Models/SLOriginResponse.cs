@@ -20,19 +20,4 @@ namespace SaveLife.Stats.Worker.Models
         public string Source { get; set; }
         public DateTime Date { get; set; }
     }
-
-    public class SLOriginResponse2
-    {
-        [JsonPropertyName("total_count")]
-        public int TotalCount { get; set; }
-
-        [JsonPropertyName("rows")]
-        public IList<SLOriginTransaction2> Transactions { get; set; }
-    }
-
-    public class SLOriginTransaction2
-    {
-        [JsonPropertyName("id")]
-        public long Id { get; set; }
-    }
 }

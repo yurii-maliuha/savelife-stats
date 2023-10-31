@@ -10,23 +10,23 @@ namespace SaveLife.Stats.Worker.Providers
         private readonly string _currDirectory;
         private const string _projectBasePath = @"..\..\..";
         private readonly LoaderConfig _loaderConfig;
-        private IList<RunHistory>? _history;
+
         public HistoryManager(
             IOptions<LoaderConfig> loaderConfigOptions)
         {
             _currDirectory = AppDomain.CurrentDomain.BaseDirectory;
             _loaderConfig = loaderConfigOptions.Value;
-            _history = LoadRunHistory();
         }
 
-        public void SaveRunHistory(RunHistory runHistory)
+        public void SaveRunHistory(IList<RunHistory> nextHistory)
         {
+            var nextHistoryStr = nextHistory.Select(x => x.Serialize());
+
             var filePath = Path.Combine(_currDirectory, @$"{_projectBasePath}\history.json");
-            var runHistoryStr = runHistory.Serialize<RunHistory>();
-            File.WriteAllText(filePath, runHistoryStr);
+            File.WriteAllLinesAsync(filePath, nextHistoryStr);
         }
 
-        private IList<RunHistory>? LoadRunHistory()
+        public IList<RunHistory>? LoadRunHistory()
         {
             var filePath = Path.Combine(_currDirectory, @$"{_projectBasePath}\history.json");
             if (!File.Exists(filePath))
@@ -38,12 +38,12 @@ namespace SaveLife.Stats.Worker.Providers
             return historyContents.Select(line => line.Deserialize<RunHistory>()).ToList();
         }
 
-        public SLOriginDataRequest BuildDataRequest()
+        public SLOriginDataRequest BuildDataRequest(IList<RunHistory>? history)
         {
-            var dateTo = _history?.Last().LastTransactionDate;
+            var dateTo = history?.Last().LastTransactionDate;
             dateTo ??= _loaderConfig.LoadToDate;
-            int page = _history?.Count == 2 && _history[0].LastTransactionDate == _history[1].LastTransactionDate
-                ? _history[1].RequestPage + 1 : 1;
+            int page = history?.Count == 2 && history[0].LastTransactionDate == history[1].LastTransactionDate
+                ? history[1].RequestPage + 1 : 1;
 
             return new SLOriginDataRequest()
             {

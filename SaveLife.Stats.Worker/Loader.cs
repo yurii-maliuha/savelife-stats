@@ -35,54 +35,50 @@ namespace SaveLife.Stats.Worker
         {
             _logger.LogInformation($"Started loading at {DateTime.Now}");
             int iterattion = 1;
-            int failedTries = 0;
-            var edgeTransactionIds = new List<long>();
+            List<long> edgeTransactionIds = null;
 
             do
             {
-                try
+                _logger.LogInformation($"{Environment.NewLine}[{DateTime.Now}]: Itteration {iterattion}");
+
+                edgeTransactionIds ??= _fileManager.LoadTransactionsId(_loaderConfig.LoadFromDate);
+                var history = _historyManager.LoadRunHistory();
+                var dataRequest = _historyManager.BuildDataRequest(history);
+                var response = await _saveLifeDataProvider.LoadDataAsync(dataRequest, stoppingToken);
+                if (!response.Transactions.Any())
                 {
-                    _logger.LogInformation($"{Environment.NewLine}[{DateTime.Now}]: Itteration {iterattion}");
-
-                    var dataRequest = _historyManager.BuildDataRequest();
-                    var response = await _saveLifeDataProvider.LoadDataAsync(dataRequest, stoppingToken);
-                    if (!response.Transactions.Any())
-                    {
-                        _logger.LogWarning("Empty trnsaction list was returned. Stopping execution.");
-                        break;
-                    }
-
-                    var uniqueueTransactions = response.Transactions.Where(x => !edgeTransactionIds.Contains(x.Id)).ToList();
-                    await _fileManager.SaveRawData(response.Transactions);
-
-                    var lastItem = response.Transactions.Last();
-                    var runHistory = new RunHistory();
-                    runHistory.LastTransactionDate = lastItem.Date;
-                    runHistory.LastTransactionId = lastItem.Id;
-                    runHistory.RequestPage = dataRequest.Page;
-                    _historyManager.SaveRunHistory(runHistory);
-
-                    // TODO: this doesn't fix a problem when there are 100+ transactions at the same time. Moreover it misses the duplicated from previous transactions
-                    edgeTransactionIds = response.Transactions.Where(x => x.Date == lastItem.Date).Select(x => x.Id).ToList();
-
-                    ++iterattion;
-                    _logger.LogInformation($"[{DateTime.Now}]: Response total count: {response.TotalCount}");
-
-                    if (uniqueueTransactions.Count != _saveLifeDataProvider.BatchSize)
-                    {
-                        _logger.LogInformation($"[{DateTime.Now}]: {_saveLifeDataProvider.BatchSize - uniqueueTransactions.Count} duplicates were filtered out");
-                    }
-
-                    await Task.Delay(TimeSpan.FromSeconds(_loaderConfig.ThrottleSeconds));
+                    _logger.LogWarning("Empty trnsaction list was returned. Stopping execution.");
+                    break;
                 }
-                catch (Exception ex)
+
+                var uniqueueTransactions = response.Transactions.Where(x => !edgeTransactionIds.Contains(x.Id)).ToList();
+                await _fileManager.SaveTransactions(uniqueueTransactions);
+
+                var lastItem = response.Transactions.Last();
+                history ??= new List<RunHistory>();
+                history.Add(new RunHistory()
                 {
-                    _logger.LogError(ex, ex.Message);
-                    failedTries++;
-                    _logger.LogInformation($"Failure {failedTries}. The exception is ignored");
+                    LastTransactionDate = lastItem.Date,
+                    LastTransactionId = lastItem.Id,
+                    RequestPage = dataRequest.Page
+                });
+
+                history = history.Count > 2 ? history.Skip(1).ToList() : history;
+                _historyManager.SaveRunHistory(history);
+
+                edgeTransactionIds = response.Transactions.Where(x => x.Date == lastItem.Date).Select(x => x.Id).ToList();
+
+                ++iterattion;
+                _logger.LogInformation($"[{DateTime.Now}]: Response total count: {response.TotalCount}");
+
+                if (uniqueueTransactions.Count != _saveLifeDataProvider.BatchSize)
+                {
+                    _logger.LogInformation($"[{DateTime.Now}]: {_saveLifeDataProvider.BatchSize - uniqueueTransactions.Count} duplicates were filtered out");
                 }
+
+                await Task.Delay(TimeSpan.FromSeconds(_loaderConfig.ThrottleSeconds));
             }
-            while (!stoppingToken.IsCancellationRequested && iterattion <= _loaderConfig.MaxIterationsCount && failedTries < 3);
+            while (!stoppingToken.IsCancellationRequested && iterattion <= _loaderConfig.MaxIterationsCount);
 
             _logger.LogInformation($"Stopped at {DateTime.Now}");
             _applicationLifetime.StopApplication();
