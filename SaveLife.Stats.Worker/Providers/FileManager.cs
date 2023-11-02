@@ -30,7 +30,7 @@ namespace SaveLife.Stats.Worker.Providers
                 return new List<long>();
             }
 
-            var lines = File.ReadLines(filePath).Take(_dataSourceConfig.PerPage);
+            var lines = File.ReadLines(filePath).Take(_dataSourceConfig.BatchSize);
             return lines.Select(x => x.Deserialize<SLOriginTransaction>()).Select(x => x.Id).ToList();
         }
 

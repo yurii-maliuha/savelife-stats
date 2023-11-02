@@ -9,5 +9,6 @@
         public string LoadTo { get; set; }
         public DateTime LoadToDate => DateTime.Parse(LoadTo);
         public int ThrottleSeconds { get; set; }
+        public int MaxSeccondsPerOperation { get; set; }
     }
 }

@@ -5,6 +5,7 @@ using SaveLife.Stats.Worker;
 using SaveLife.Stats.Worker.Mappers;
 using SaveLife.Stats.Worker.Models;
 using SaveLife.Stats.Worker.Providers;
+using SaveLife.Stats.Worker.Stubs;
 using Serilog;
 using System.Reflection;
 
@@ -44,11 +45,22 @@ public static class Program
                services.Configure<DataSourceConfig>(hostContext.Configuration.GetSection(DataSourceConfig.DisplayName));
                services.Configure<LoaderConfig>(hostContext.Configuration.GetSection(LoaderConfig.DisplayName));
 
-               services.AddHttpClient<SaveLifeDataProvider>();
                services.AddSingleton<FileManager>();
                services.AddSingleton<HistoryManager>();
 
                services.AddAutoMapper(typeof(MapperProfile));
+
+               var env = Environment.GetEnvironmentVariable("ENV");
+               if (env == "Prod")
+               {
+                   services.AddHttpClient<SaveLifeDataProvider>();
+               }
+               else
+               {
+                   services.AddSingleton<ISaveLifeDataProvider, SaveLifeDataProviderStub>();
+               }
+
+               services.AddSingleton<SaveLifeDataThrottler>();
 
                services.AddHostedService<Loader>();
            });

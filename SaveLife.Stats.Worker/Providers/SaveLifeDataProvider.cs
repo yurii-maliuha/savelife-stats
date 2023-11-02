@@ -28,7 +28,7 @@ namespace SaveLife.Stats.Worker.Providers
                 .Replace("{DATE_FROM}", request.DateFromString)
                 .Replace("{DATE_TO}", request.DateToString)
                 .Replace("{PAGE}", request.Page.ToString())
-                .Replace("{PER_PAGE}", _dataSourceConfig.PerPage.ToString());
+                .Replace("{PER_PAGE}", _dataSourceConfig.BatchSize.ToString());
 
 
             var httpResponse = await _httpClient.GetAsync(requestUrl, cancellationToken);
@@ -42,7 +42,5 @@ namespace SaveLife.Stats.Worker.Providers
 
             return response!;
         }
-
-        public int BatchSize => _dataSourceConfig.PerPage;
     }
 }

@@ -9,15 +9,17 @@ namespace SaveLife.Stats.Worker
     public class Loader : BackgroundService
     {
         private readonly ILogger<Loader> _logger;
-        private readonly SaveLifeDataProvider _saveLifeDataProvider;
+        private readonly SaveLifeDataThrottler _saveLifeDataProvider;
         private readonly FileManager _fileManager;
         private readonly HistoryManager _historyManager;
         private readonly LoaderConfig _loaderConfig;
+        private readonly DataSourceConfig _dataSourceConfig;
         private readonly IHostApplicationLifetime _applicationLifetime;
 
         public Loader(
-            SaveLifeDataProvider saveLifeDataProvider,
+            SaveLifeDataThrottler saveLifeDataProvider,
             IOptions<LoaderConfig> loaderConfigOptions,
+            IOptions<DataSourceConfig> dataSourceConfigOptions,
             FileManager fileManager,
             HistoryManager historyManager,
             IHostApplicationLifetime applicationLifetime,
@@ -25,6 +27,7 @@ namespace SaveLife.Stats.Worker
         {
             _saveLifeDataProvider = saveLifeDataProvider;
             _loaderConfig = loaderConfigOptions.Value;
+            _dataSourceConfig = dataSourceConfigOptions.Value;
             _fileManager = fileManager;
             _historyManager = historyManager;
             _applicationLifetime = applicationLifetime;
@@ -43,11 +46,12 @@ namespace SaveLife.Stats.Worker
 
                 edgeTransactionIds ??= _fileManager.LoadTransactionsId(_loaderConfig.LoadFromDate);
                 var history = _historyManager.LoadRunHistory();
+
                 var dataRequest = _historyManager.BuildDataRequest(history);
                 var response = await _saveLifeDataProvider.LoadDataAsync(dataRequest, stoppingToken);
                 if (!response.Transactions.Any())
                 {
-                    _logger.LogWarning("Empty trnsaction list was returned. Stopping execution.");
+                    _logger.LogWarning($"[{DateTime.Now}]: Empty trnsaction list was returned. Stopping execution.");
                     break;
                 }
 
@@ -71,12 +75,10 @@ namespace SaveLife.Stats.Worker
                 ++iterattion;
                 _logger.LogInformation($"[{DateTime.Now}]: Response total count: {response.TotalCount}");
 
-                if (uniqueueTransactions.Count != _saveLifeDataProvider.BatchSize)
+                if (uniqueueTransactions.Count != _dataSourceConfig.BatchSize)
                 {
-                    _logger.LogInformation($"[{DateTime.Now}]: {_saveLifeDataProvider.BatchSize - uniqueueTransactions.Count} duplicates were filtered out");
+                    _logger.LogInformation($"[{DateTime.Now}]: {_dataSourceConfig.BatchSize - uniqueueTransactions.Count} duplicates were filtered out");
                 }
-
-                await Task.Delay(TimeSpan.FromSeconds(_loaderConfig.ThrottleSeconds));
             }
             while (!stoppingToken.IsCancellationRequested && iterattion <= _loaderConfig.MaxIterationsCount);
 
