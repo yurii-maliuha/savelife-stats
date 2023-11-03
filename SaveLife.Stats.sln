@@ -7,9 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SaveLife.Stats.Worker", "Sa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SaveLife.Stats.Data", "SaveLife.Stats.Data\SaveLife.Stats.Data.csproj", "{5A007C37-31A2-411D-BBB9-348B30F7355D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaveLife.Stats.DataParser", "SaveLife.Stats.DataParser\SaveLife.Stats.DataParser.csproj", "{E8C87EEA-DC20-4C96-9452-35F4939A7A73}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SaveLife.Stats.DataParser", "SaveLife.Stats.DataParser\SaveLife.Stats.DataParser.csproj", "{E8C87EEA-DC20-4C96-9452-35F4939A7A73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaveLife.Stats.Domain", "SaveLife.Stats.Domain\SaveLife.Stats.Domain.csproj", "{AB7D68FD-605F-49E3-AD1A-872750BA3CDE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SaveLife.Stats.Domain", "SaveLife.Stats.Domain\SaveLife.Stats.Domain.csproj", "{AB7D68FD-605F-49E3-AD1A-872750BA3CDE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{6298CCAF-CF63-40AB-B3A2-1763289D1F0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaveLife.Stats.Worker.Tests", "tests\SaveLife.Stats.Worker.Tests\SaveLife.Stats.Worker.Tests.csproj", "{AF3E735C-62AD-4E2C-8342-831D3D8BEB20}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +37,16 @@ Global
 		{AB7D68FD-605F-49E3-AD1A-872750BA3CDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB7D68FD-605F-49E3-AD1A-872750BA3CDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB7D68FD-605F-49E3-AD1A-872750BA3CDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF3E735C-62AD-4E2C-8342-831D3D8BEB20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF3E735C-62AD-4E2C-8342-831D3D8BEB20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF3E735C-62AD-4E2C-8342-831D3D8BEB20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF3E735C-62AD-4E2C-8342-831D3D8BEB20}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AF3E735C-62AD-4E2C-8342-831D3D8BEB20} = {6298CCAF-CF63-40AB-B3A2-1763289D1F0E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CD7C6FF4-4AB0-4A59-A3AE-641806DEC31D}

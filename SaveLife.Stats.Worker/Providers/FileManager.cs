@@ -9,22 +9,22 @@ namespace SaveLife.Stats.Worker.Providers
     public class FileManager
     {
         private readonly IMapper _mapper;
-        private readonly string _currDirectory;
-        private const string _projectBasePath = @"..\..\..";
+        private IPathResolver _pathResolver;
         private readonly DataSourceConfig _dataSourceConfig;
         public FileManager(
             IMapper mapper,
+            IPathResolver pathResolver,
             IOptions<DataSourceConfig> options)
         {
             _mapper = mapper;
-            _currDirectory = AppDomain.CurrentDomain.BaseDirectory;
+            _pathResolver = pathResolver;
             _dataSourceConfig = options.Value;
         }
 
 
         public List<long> LoadTransactionsId(DateTime dateFrom)
         {
-            string filePath = Path.Combine(_currDirectory, @$"{_projectBasePath}\..\SaveLife.Stats.Data\Raw\transactions_{dateFrom.Month}-{dateFrom.Year}.json");
+            string filePath = Path.Combine(_pathResolver.ResolveTransactionsPath(), $"transactions_{dateFrom.Month}-{dateFrom.Year}.json");
             if (!File.Exists(filePath))
             {
                 return new List<long>();
@@ -40,7 +40,7 @@ namespace SaveLife.Stats.Worker.Providers
             var transactionsStr = transactions.Select(transaction => transaction.Serialize());
 
             var lastItemDate = originTransactions.Last().Date;
-            string filePath = Path.Combine(_currDirectory, @$"{_projectBasePath}\..\SaveLife.Stats.Data\Raw\transactions_{lastItemDate.Month}-{lastItemDate.Year}.json");
+            string filePath = Path.Combine(_pathResolver.ResolveTransactionsPath(), $"transactions_{lastItemDate.Month}-{lastItemDate.Year}.json");
             await File.AppendAllLinesAsync(filePath, transactionsStr);
         }
     }

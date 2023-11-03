@@ -40,28 +40,31 @@ public static class Program
                builder
                    .SetBasePath(new FileInfo(Assembly.GetExecutingAssembly().Location).Directory?.FullName);
            })
-           .ConfigureServices((hostContext, services) =>
-           {
-               services.Configure<DataSourceConfig>(hostContext.Configuration.GetSection(DataSourceConfig.DisplayName));
-               services.Configure<LoaderConfig>(hostContext.Configuration.GetSection(LoaderConfig.DisplayName));
+           .ConfigureServices(ConfigureWorkerServices);
 
-               services.AddSingleton<FileManager>();
-               services.AddSingleton<HistoryManager>();
+    public static void ConfigureWorkerServices(HostBuilderContext hostContext, IServiceCollection services)
+    {
+        services.Configure<DataSourceConfig>(hostContext.Configuration.GetSection(DataSourceConfig.DisplayName));
+        services.Configure<LoaderConfig>(hostContext.Configuration.GetSection(LoaderConfig.DisplayName));
 
-               services.AddAutoMapper(typeof(MapperProfile));
+        services.AddSingleton<IPathResolver, PathResolver>();
+        services.AddSingleton<FileManager>();
+        services.AddSingleton<HistoryManager>();
 
-               var env = Environment.GetEnvironmentVariable("ENV");
-               if (env == "Prod")
-               {
-                   services.AddHttpClient<SaveLifeDataProvider>();
-               }
-               else
-               {
-                   services.AddSingleton<ISaveLifeDataProvider, SaveLifeDataProviderStub>();
-               }
+        services.AddAutoMapper(typeof(MapperProfile));
 
-               services.AddSingleton<SaveLifeDataThrottler>();
+        var env = Environment.GetEnvironmentVariable("ENV");
+        if (env == "Prod")
+        {
+            services.AddHttpClient<SaveLifeDataProvider>();
+        }
+        else
+        {
+            services.AddSingleton<ISaveLifeDataProvider, SaveLifeDataProviderStub>();
+        }
 
-               services.AddHostedService<Loader>();
-           });
+        services.AddSingleton<SaveLifeDataThrottler>();
+
+        services.AddHostedService<Loader>();
+    }
 }

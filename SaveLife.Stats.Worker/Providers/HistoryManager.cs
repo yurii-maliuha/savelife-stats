@@ -7,28 +7,28 @@ namespace SaveLife.Stats.Worker.Providers
 {
     public class HistoryManager
     {
-        private readonly string _currDirectory;
-        private const string _projectBasePath = @"..\..\..";
         private readonly LoaderConfig _loaderConfig;
+        private IPathResolver _pathResolver;
 
         public HistoryManager(
-            IOptions<LoaderConfig> loaderConfigOptions)
+            IOptions<LoaderConfig> loaderConfigOptions,
+            IPathResolver pathResolver)
         {
-            _currDirectory = AppDomain.CurrentDomain.BaseDirectory;
             _loaderConfig = loaderConfigOptions.Value;
+            _pathResolver = pathResolver;
         }
 
         public void SaveRunHistory(IList<RunHistory> nextHistory)
         {
             var nextHistoryStr = nextHistory.Select(x => x.Serialize());
 
-            var filePath = Path.Combine(_currDirectory, @$"{_projectBasePath}\history.json");
+            var filePath = Path.Combine(_pathResolver.ResolveHistoryPath(), "history.json");
             File.WriteAllLinesAsync(filePath, nextHistoryStr);
         }
 
         public IList<RunHistory>? LoadRunHistory()
         {
-            var filePath = Path.Combine(_currDirectory, @$"{_projectBasePath}\history.json");
+            var filePath = Path.Combine(_pathResolver.ResolveHistoryPath(), "history.json");
             if (!File.Exists(filePath))
             {
                 return null;
