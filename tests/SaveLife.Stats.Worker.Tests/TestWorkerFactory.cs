@@ -2,6 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using SaveLife.Stats.Worker.Providers;
+using SaveLife.Stats.Worker.Tests.Stubs;
 
 namespace SaveLife.Stats.Worker.Tests
 {
@@ -9,10 +10,14 @@ namespace SaveLife.Stats.Worker.Tests
     {
         private static Dictionary<string, string> _defaultConfiguration = new Dictionary<string, string>()
         {
+            { "DataSource:BatchSize", "5" },
             { "Loader:ThrottleSeconds", "1" },
-            { "Loader:MaxIterationsCount", "2" },
+            { "Loader:MaxIterationsCount", "10" },
+            { "Loader:LoadFrom", "2023-01-01T00:00:00" },
+            { "Loader:LoadTo", "2023-01-31T23:59:59" }
         };
-        public static Loader BuildWorker(Dictionary<string, string>? passedConfig = null)
+        public static Loader BuildWorker<T>(Func<IServiceProvider, T> dataStubFactory, Dictionary<string, string>? passedConfig = null)
+            where T : class, ISaveLifeDataProvider
         {
             var host = Host.CreateDefaultBuilder()
                 .ConfigureAppConfiguration((hostingContext, config) =>
@@ -22,7 +27,8 @@ namespace SaveLife.Stats.Worker.Tests
                 .ConfigureServices((HostBuilderContext hostContext, IServiceCollection services) =>
                 {
                     Program.ConfigureWorkerServices(hostContext, services);
-                    services.AddSingleton<IPathResolver, TestPathResolver>();
+                    services.AddSingleton<IPathResolver, PathResolverStub>();
+                    services.AddSingleton<ISaveLifeDataProvider, T>(dataStubFactory);
 
                     // move SaveLifeDataProviderStub here and define stub per test scenario
                 })

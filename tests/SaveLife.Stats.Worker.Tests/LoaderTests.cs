@@ -1,23 +1,77 @@
 ﻿using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using SaveLife.Stats.Worker.Tests.Stubs;
 
 namespace SaveLife.Stats.Worker.Tests
 {
     [TestClass]
     public class LoaderTests
     {
-        private readonly Loader? _loader;
+        private PathResolverStub _pathResolver;
+
         public LoaderTests()
         {
-            _loader = TestWorkerFactory.BuildWorker();
+            _pathResolver = new PathResolverStub();
+        }
+
+        [TestInitialize]
+        public void Setup()
+        {
+            string transactionsPath = Path.Combine(_pathResolver.ResolveTransactionsPath(), $"transactions_1-2023.json");
+            var historyPath = Path.Combine(_pathResolver.ResolveHistoryPath(), "history.json");
+            if (File.Exists(transactionsPath))
+            {
+                File.Delete(transactionsPath);
+            }
+
+            if (File.Exists(historyPath))
+            {
+                File.Delete(historyPath);
+            }
         }
 
         [TestMethod]
-        public async Task Loader_Should_Work()
+        public async Task Loader_Should_Load_All_Transactions()
         {
-            _loader.Should().NotBeNull();
-            await _loader!.StartAsync(CancellationToken.None);
-            await _loader.ExecuteTask;
+            var transactionsCount = 10;
+            var loaderWorker = TestWorkerFactory.BuildWorker((IServiceProvider sp) => new SaveLifeDataProviderStub(sp, transactionsCount));
+
+            loaderWorker.Should().NotBeNull();
+
+            await loaderWorker!.StartAsync(CancellationToken.None);
+            await loaderWorker.ExecuteTask;
+
+            string filePath = Path.Combine(_pathResolver.ResolveTransactionsPath(), $"transactions_1-2023.json");
+            File.Exists(filePath).Should().BeTrue();
+
+            var lines = File.ReadAllLines(filePath);
+            lines.Distinct().Count().Should().Be(transactionsCount);
+        }
+
+        [TestMethod]
+        public async Task Loader_Should_Load_WithPaging_Transactions_With_Identical_Date()
+        {
+            var transactionsCount = 1000;
+            var storedTransactionsCount = 11;
+            var configuration = new Dictionary<string, string>()
+            {
+                { "DataSource:BatchSize", "5" },
+                { "Loader:MaxIterationsCount", "3" },
+                { "Loader:LoadFrom", "2023-01-01T00:00:00" },
+                { "Loader:LoadTo", "2023-01-01T00:00:05" }
+            };
+            var loaderWorker = TestWorkerFactory.BuildWorker((IServiceProvider sp) => new SaveLifeDataProviderStub(sp, transactionsCount), configuration);
+
+            loaderWorker.Should().NotBeNull();
+
+            await loaderWorker!.StartAsync(CancellationToken.None);
+            await loaderWorker.ExecuteTask;
+
+            string filePath = Path.Combine(_pathResolver.ResolveTransactionsPath(), $"transactions_1-2023.json");
+            File.Exists(filePath).Should().BeTrue();
+
+            var lines = File.ReadAllLines(filePath);
+            lines.Distinct().Count().Should().Be(storedTransactionsCount);
         }
     }
 }

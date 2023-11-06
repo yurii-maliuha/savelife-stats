@@ -1,11 +1,11 @@
 ﻿using SaveLife.Stats.Worker.Providers;
 
-namespace SaveLife.Stats.Worker.Tests
+namespace SaveLife.Stats.Worker.Tests.Stubs
 {
-    public class TestPathResolver : IPathResolver
+    public class PathResolverStub : IPathResolver
     {
         public string ResolveHistoryPath()
-            => @$"{AppDomain.CurrentDomain.BaseDirectory}\..\..\..\";
+            => @$"{AppDomain.CurrentDomain.BaseDirectory}\..\..\..\Data";
 
         public string ResolveTransactionsPath()
             => @$"{AppDomain.CurrentDomain.BaseDirectory}\..\..\..\Data";

@@ -49,13 +49,14 @@ namespace SaveLife.Stats.Worker
 
                 var dataRequest = _historyManager.BuildDataRequest(history);
                 var response = await _saveLifeDataProvider.LoadDataAsync(dataRequest, stoppingToken);
-                if (!response.Transactions.Any())
+                var uniqueueTransactions = response.Transactions.Where(x => !edgeTransactionIds.Contains(x.Id)).ToList();
+                if (!uniqueueTransactions.Any())
                 {
+                    // is it possible that there will be too many duplicates and we will break processing here instead of use pagging?
                     _logger.LogWarning($"[{DateTime.Now}]: Empty trnsaction list was returned. Stopping execution.");
                     break;
                 }
 
-                var uniqueueTransactions = response.Transactions.Where(x => !edgeTransactionIds.Contains(x.Id)).ToList();
                 await _fileManager.SaveTransactions(uniqueueTransactions);
 
                 var lastItem = response.Transactions.Last();
