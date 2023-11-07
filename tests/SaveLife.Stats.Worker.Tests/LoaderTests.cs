@@ -49,18 +49,44 @@ namespace SaveLife.Stats.Worker.Tests
         }
 
         [TestMethod]
-        public async Task Loader_Should_Load_WithPaging_Transactions_With_Identical_Date()
+        public async Task Loader_Should_Load_WithPaging_Transactions_With_Tiny_TimeStep()
         {
             var transactionsCount = 1000;
             var storedTransactionsCount = 11;
             var configuration = new Dictionary<string, string>()
             {
                 { "DataSource:BatchSize", "5" },
-                { "Loader:MaxIterationsCount", "3" },
+                { "Loader:MaxIterationsCount", "4" },
                 { "Loader:LoadFrom", "2023-01-01T00:00:00" },
                 { "Loader:LoadTo", "2023-01-01T00:00:05" }
             };
             var loaderWorker = TestWorkerFactory.BuildWorker((IServiceProvider sp) => new SaveLifeDataProviderStub(sp, transactionsCount), configuration);
+
+            loaderWorker.Should().NotBeNull();
+
+            await loaderWorker!.StartAsync(CancellationToken.None);
+            await loaderWorker.ExecuteTask;
+
+            string filePath = Path.Combine(_pathResolver.ResolveTransactionsPath(), $"transactions_1-2023.json");
+            File.Exists(filePath).Should().BeTrue();
+
+            var lines = File.ReadAllLines(filePath);
+            lines.Distinct().Count().Should().Be(storedTransactionsCount);
+        }
+
+        [TestMethod]
+        public async Task Loader_Should_Load_WithPaging_Transactions_With_Identical_Date()
+        {
+            var transactionsCount = 40;
+            var storedTransactionsCount = 30;
+            var configuration = new Dictionary<string, string>()
+            {
+                { "DataSource:BatchSize", "5" },
+                { "Loader:MaxIterationsCount", "7" },
+                { "Loader:LoadFrom", "2023-01-01T00:00:00" },
+                { "Loader:LoadTo", "2023-01-01T10:10:00" }
+            };
+            var loaderWorker = TestWorkerFactory.BuildWorker((IServiceProvider sp) => new SaveLifeDataWithIdenticalDatesProviderStub(sp, transactionsCount), configuration);
 
             loaderWorker.Should().NotBeNull();
 

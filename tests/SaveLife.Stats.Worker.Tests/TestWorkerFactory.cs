@@ -14,7 +14,8 @@ namespace SaveLife.Stats.Worker.Tests
             { "Loader:ThrottleSeconds", "1" },
             { "Loader:MaxIterationsCount", "10" },
             { "Loader:LoadFrom", "2023-01-01T00:00:00" },
-            { "Loader:LoadTo", "2023-01-31T23:59:59" }
+            { "Loader:LoadTo", "2023-01-31T23:59:59" },
+            { "Loader:MaxSeccondsPerOperation", "100" }
         };
         public static Loader BuildWorker<T>(Func<IServiceProvider, T> dataStubFactory, Dictionary<string, string>? passedConfig = null)
             where T : class, ISaveLifeDataProvider

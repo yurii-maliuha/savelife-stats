@@ -52,7 +52,6 @@ namespace SaveLife.Stats.Worker
                 var uniqueueTransactions = response.Transactions.Where(x => !edgeTransactionIds.Contains(x.Id)).ToList();
                 if (!uniqueueTransactions.Any())
                 {
-                    // is it possible that there will be too many duplicates and we will break processing here instead of use pagging?
                     _logger.LogWarning($"[{DateTime.Now}]: Empty trnsaction list was returned. Stopping execution.");
                     break;
                 }

@@ -26,12 +26,19 @@ namespace SaveLife.Stats.Worker.Tests.Stubs
             var fixture = new Fixture();
             var timeDiffStep = (_loaderConfig.LoadToDate - _loaderConfig.LoadFromDate).TotalMilliseconds / transactionsCount;
             var transactions = fixture.CreateMany<SLOriginTransaction>(transactionsCount).ToList();
+            double? theSameTimeStep = null;
             for (var i = 0; i < transactions.Count; i++)
             {
                 var iteration = i / _dataSourceConfig.BatchSize;
-                var timeDiff = iteration * _dataSourceConfig.BatchSize + i * timeDiffStep;
+                if (iteration >= 3 && iteration <= 5)
+                {
+                    theSameTimeStep ??= iteration * _dataSourceConfig.BatchSize + i * timeDiffStep;
+                }
+                double timeDiff = iteration >= 3 && iteration <= 5
+                    ? theSameTimeStep!.Value
+                    : iteration * _dataSourceConfig.BatchSize + i * timeDiffStep;
                 var newDate = _loaderConfig.LoadToDate.AddMilliseconds(-timeDiff);
-                transactions[i].Date = new DateTime(newDate.Year, newDate.Hour, newDate.Second);
+                transactions[i].Date = new DateTime(newDate.Year, newDate.Month, newDate.Day, newDate.Hour, newDate.Minute, newDate.Second);
             }
 
             return transactions;
@@ -42,6 +49,7 @@ namespace SaveLife.Stats.Worker.Tests.Stubs
             var iterationTransactions = _transactions
                 .Where(x => x.Date >= request.DateFrom && x.Date <= request.DateTo)
                 .OrderByDescending(x => x.Date)
+                .Skip((request.Page - 1) * _dataSourceConfig.BatchSize)
                 .Take(_dataSourceConfig.BatchSize)
                 .ToList();
 
