@@ -6,7 +6,7 @@ using System.Text.Json;
 
 namespace SaveLife.Stats.Worker.Providers
 {
-    public class SaveLifeDataProvider
+    public class SaveLifeDataProvider : ISaveLifeDataProvider
     {
         private readonly HttpClient _httpClient;
         private readonly DataSourceConfig _dataSourceConfig;

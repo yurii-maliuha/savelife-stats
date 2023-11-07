@@ -52,7 +52,7 @@ public static class Program
 
         services.AddAutoMapper(typeof(MapperProfile));
 
-        services.AddHttpClient<SaveLifeDataProvider>();
+        services.AddHttpClient<ISaveLifeDataProvider, SaveLifeDataProvider>();
         services.AddSingleton<SaveLifeDataThrottler>();
 
         services.AddHostedService<Loader>();

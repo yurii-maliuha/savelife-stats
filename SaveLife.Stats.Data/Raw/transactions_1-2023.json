@@ -1,267 +1,769 @@
-{"id":50,"amt":"Amount9ca0da03-74ca-4ebc-8a52-2e4aa9151003","cmt":"Comment4281c3ec-a93f-4290-87f4-e62809391f1f","cur":"Currency67f4c2dc-65a3-4b18-ac9d-064f759b308e","src":"Source6e502bcd-eb7f-464a-bcc0-3345c6cbbb28","dt":"2023-01-31T23:59:59"}
-{"id":184,"amt":"Amount63b11313-d336-4a30-97a8-b65c870a5982","cmt":"Comment69143b3f-5120-4a7a-85b4-483308bf72ef","cur":"Currencya152c5b0-5f01-4a64-9a00-a7ff1df816a9","src":"Source657e9288-5419-4755-bd80-2f4aabaa29b6","dt":"2023-01-31T20:16:47.005"}
-{"id":83,"amt":"Amount20dd3635-1974-4e6c-8483-e81845ceeeb1","cmt":"Comment36186085-21b4-457a-8c53-c562272c2508","cur":"Currency72c10d55-2f67-464f-97d7-88f795f1fbad","src":"Source39734731-ed6e-4d40-8731-48822f1530e1","dt":"2023-01-31T16:33:35.01"}
-{"id":7,"amt":"Amount41233ffe-1766-4c0f-8cde-e7a0f11d8eee","cmt":"Commentc163358a-da09-4235-8e7f-52f6c7e59cf7","cur":"Currencyd336caa9-9d95-48f2-8969-d50ae4ae2eb1","src":"Source1ef04ac6-db8f-48df-a044-449cbde2b413","dt":"2023-01-31T12:50:23.015"}
-{"id":247,"amt":"Amountdde35063-f624-405e-a0ec-169fa3c7ad86","cmt":"Comment34216852-74a7-463c-9db5-0bf0f09bfdb8","cur":"Currency137938df-f71b-4230-a3b0-dab87aa8c6f2","src":"Sourceaeaba58b-fa9e-4fcc-a4dc-a3d94aee1259","dt":"2023-01-31T09:07:11.02"}
-{"id":239,"amt":"Amounta577d60f-7ebb-4d47-8aeb-8a5fd41b68dd","cmt":"Comment4550aa28-cbd1-416f-a942-91e2f3f3faf3","cur":"Currencyd7cc7a19-2ba0-4a6d-8aeb-c538ea721825","src":"Sourceafbc5d01-75f9-45d3-81f0-a285d8294b3c","dt":"2023-01-31T05:23:59.025"}
-{"id":44,"amt":"Amountb9114a8a-1571-404b-837f-bd775a5190ff","cmt":"Comment61fbbbce-adfe-4a9a-b3ef-0e9846330f35","cur":"Currencyad622590-d45e-4858-bdf7-4b8ae07cd3ac","src":"Source0cd910f5-9180-4f16-8e8c-ea034882b8d7","dt":"2023-01-31T01:40:47.03"}
-{"id":187,"amt":"Amount1cf9ab38-4807-431c-9994-95b43f64b730","cmt":"Comment3f00e102-a547-46f4-9291-64bad4bc5223","cur":"Currencycd274f57-aad6-41a0-8ee0-ea62854d6efc","src":"Sourceecd89e3b-eb39-4342-bf6f-cc73d4e27702","dt":"2023-01-30T21:57:35.035"}
-{"id":14,"amt":"Amounte106ec28-5f2e-497c-95ea-96519867b17f","cmt":"Comment44c9ef2c-30d9-4ff5-8b5f-6516aefaafaa","cur":"Currency0805599c-a520-4138-ae90-e8e58ce5461d","src":"Source61232fde-e110-47eb-8075-14234d91b08c","dt":"2023-01-30T18:14:23.04"}
-{"id":175,"amt":"Amountb35c445f-eb7a-45a9-a34f-1db41fe821d5","cmt":"Commentbea35c02-52d3-4210-a76e-30ac85d7a359","cur":"Currency6af8ea2c-744c-4515-9115-5403705e1441","src":"Source2159c607-b1c1-4e80-baaf-ed79cf493cc7","dt":"2023-01-30T14:31:11.045"}
-{"id":160,"amt":"Amount5901da98-df39-48a0-867c-731c42afd6cf","cmt":"Commentc8ea113f-0efd-4056-abf0-e204c477d93c","cur":"Currency8c202bb2-2ae3-4753-a071-e1164bd2e72e","src":"Source595115f4-cbe4-4429-9f53-c428956deb36","dt":"2023-01-30T10:47:59.05"}
-{"id":105,"amt":"Amount763bc92a-504c-481c-959f-2e0f5f303cbf","cmt":"Comment6f6dc850-64bc-4ed6-851e-8152e3434ab3","cur":"Currency4513b024-dc2c-4606-aec7-5c596ede294a","src":"Sourcec73b271d-216c-4da3-9aba-fe48dfb901e6","dt":"2023-01-30T07:04:47.055"}
-{"id":31,"amt":"Amountfdb4f94c-3eaf-494e-a454-b5404ed849c2","cmt":"Comment2e4ba2ed-6224-4f39-bb7b-3a86d20d1bdf","cur":"Currency2a458d8e-606e-42c4-83f9-c8bc71c8554f","src":"Sourcef324f289-c2e0-4dac-857f-aa97bc4902bb","dt":"2023-01-30T03:21:35.06"}
-{"id":161,"amt":"Amountac2affc8-c72e-42be-8455-7ed2b2356f06","cmt":"Commentab337367-e5b9-4162-846a-c628c43d1aa0","cur":"Currency08e998b9-9124-4fd2-91cf-7b3d6c41662c","src":"Source8b528980-3895-4ede-89e5-31403fd28e7a","dt":"2023-01-29T23:38:23.065"}
-{"id":6,"amt":"Amount1845fea5-be3d-46ab-a074-1974fa4b1d7a","cmt":"Comment5e42f0c0-309e-4d9f-9f26-a98650981bf0","cur":"Currency2e1d726d-d697-41d4-ab14-555a67e115e6","src":"Source919e1c4c-67d8-4291-8db3-77e95db67ad2","dt":"2023-01-29T19:55:11.07"}
-{"id":188,"amt":"Amount536b702d-d5f7-4da0-9fe3-b3b35f02f291","cmt":"Comment37b93688-bc32-44af-8884-19ca1cb68cff","cur":"Currencyefdfef81-140b-4113-8547-9b9c0fe4ab6a","src":"Source1f94ecd7-278a-4c4b-95da-7d045c0a5a0f","dt":"2023-01-29T16:11:59.075"}
-{"id":34,"amt":"Amountce41f691-50c3-4a1f-8860-1dbeed2220e3","cmt":"Commentda4d1fca-cdf1-4000-b64c-6fa01cbc7465","cur":"Currencyb61dde49-cc5e-49de-8427-711f849a2751","src":"Source340f120c-e920-436c-84ab-9391f181e7ef","dt":"2023-01-29T12:28:47.08"}
-{"id":62,"amt":"Amount74b20c32-9e2c-4384-bc4f-6af6ffe5c948","cmt":"Comment63db6e50-1253-4ad3-825e-c93539e64abb","cur":"Currency04f76a57-09d3-42bd-b5f6-f56e938a2eb4","src":"Source5b62ebef-b485-4d8e-bb07-059b641824a5","dt":"2023-01-29T08:45:35.085"}
-{"id":192,"amt":"Amount26314caa-5d8e-4ccc-83c0-86bb3b164e46","cmt":"Comment8da5d808-cdd3-45f4-bbfd-10159aabd993","cur":"Currency6213ced6-cc5d-48a3-92db-b86ddc3ae96c","src":"Source8fa1baa2-cb9e-421b-8539-49fe33e64a0d","dt":"2023-01-29T05:02:23.09"}
-{"id":190,"amt":"Amount8b16faa8-d82e-43d1-b62e-476cf6cecb36","cmt":"Comment1d03b6ae-7a0a-48ea-bcf3-065317240d00","cur":"Currency361ff2ef-5c65-46c6-afca-90b2d8b399e8","src":"Source30979809-730d-4fad-b9cc-0c6c3c9ef4b6","dt":"2023-01-29T01:19:11.095"}
-{"id":169,"amt":"Amount61344afc-a261-42e5-9a35-ff14e239c983","cmt":"Comment36e177d3-13aa-4724-841c-72309f91032d","cur":"Currency563aaa55-412e-4670-b91f-b9bbd18b7f06","src":"Source11ff7a5e-c1f2-48b3-a740-c9d53f3b59a5","dt":"2023-01-29T01:19:11.095"}
-{"id":87,"amt":"Amount5b9ed0d5-00e5-4a79-97b5-31098f1306b4","cmt":"Comment687c03d3-2e87-46f7-9038-eea2d0d6e165","cur":"Currencyb80274d6-deaa-49f6-ba3b-d9959860ba58","src":"Sourcea42428e1-dc72-4286-b431-0fe56feacdcc","dt":"2023-01-29T01:18:22.616"}
-{"id":156,"amt":"Amount112123f8-2385-4a38-8393-26863c1418ae","cmt":"Comment0e42060c-e921-4f3c-ab91-3e0dc4d1428e","cur":"Currency8c4bcda2-2fb4-41a3-ad30-d2311988a1d8","src":"Source6c88aa2e-00f9-471a-9e85-87977466eb3d","dt":"2023-01-29T01:17:34.137"}
-{"id":183,"amt":"Amount423c6460-a832-4a3e-86c3-24244240a424","cmt":"Commenteaaf9a77-4e1e-43af-b6a8-aea94255e56c","cur":"Currency4c2c297c-4dad-4f99-8bef-653e4489dfe4","src":"Source53d9fbb4-5b46-4908-84b8-c5147958e0d0","dt":"2023-01-29T01:15:57.179"}
-{"id":145,"amt":"Amount40b78c14-8417-401c-936f-182c28ad209b","cmt":"Commentf24878d5-87cf-4d54-8f67-7cc4b56912aa","cur":"Currency94dd2af7-669d-4b4a-874b-62499a37dc67","src":"Sourced8e567d2-0b06-43fa-b02b-5e7cefed4158","dt":"2023-01-29T01:15:08.7"}
-{"id":94,"amt":"Amount21b97a0e-d7e3-4ca5-937b-c2ca47d0c962","cmt":"Comment07ba1f28-6f41-48e3-84ea-2f936d19239f","cur":"Currency4157e5db-9145-45cb-afab-bf60c20f432f","src":"Source42c428b6-0612-4e05-ac7e-099813e88a4b","dt":"2023-01-29T01:14:20.221"}
-{"id":182,"amt":"Amounteff6c035-86e5-44c5-9016-cfb33e6eef6d","cmt":"Comment947d61e6-ba7f-44ba-8988-0ac1c3b34061","cur":"Currency5759295f-ea41-4b03-92e5-f4911f80b9b3","src":"Source59fc960b-d088-4042-a8bf-1894d0fc719f","dt":"2023-01-29T01:13:31.742"}
-{"id":146,"amt":"Amounta841808b-12a6-4969-b559-0f7a008950c5","cmt":"Commentd6ad83d6-0fc5-4338-8347-7882702a8108","cur":"Currencye43f5dc9-09a9-4c36-b0a3-5b6d73dbb7bd","src":"Source26630fad-f7b1-4573-913d-0500e684ea02","dt":"2023-01-29T01:11:54.784"}
-{"id":52,"amt":"Amountb6028507-3558-4955-8dc2-ff9f89bccd3a","cmt":"Commentccf6ba24-810a-446b-94ab-be783a24306b","cur":"Currency584d4723-2afc-4bf5-887c-8535ff718623","src":"Sourced2dcada0-e224-4f59-b0f5-94b615ac89e0","dt":"2023-01-29T01:11:06.305"}
-{"id":39,"amt":"Amount272e8a5c-d574-43e2-bcde-7d7f3b9ac87f","cmt":"Comment44b8f647-0248-4455-9424-ba45d0238a74","cur":"Currency150908c4-8f8a-44b3-bdd4-97c392ebf20b","src":"Source1361a1a8-a9af-4716-a83e-8b25d45647f7","dt":"2023-01-29T01:10:17.826"}
-{"id":35,"amt":"Amount3c851dd4-7f40-487f-bb85-72337bfde5c0","cmt":"Commenteac81eb1-8a8a-4644-a882-a644811c72e6","cur":"Currency30f41949-cfcb-44fa-b961-5cee789a311d","src":"Source47720bb4-1269-4569-942c-df0885057e03","dt":"2023-01-29T01:09:29.347"}
-{"id":253,"amt":"Amounta8126c03-242b-494c-bb21-20b4babae59c","cmt":"Commenta68239a7-884b-469c-bbc8-da77e5580173","cur":"Currency38752e34-8072-417f-8b40-f1cdf228cc49","src":"Sourcec54351e1-17f1-44f0-bfec-0f3fb8da94bf","dt":"2023-01-29T01:08:40.868"}
-{"id":97,"amt":"Amount3a804ea5-e3b4-44d8-abb1-105fd655aa2a","cmt":"Comment45d87940-f8b6-43d4-a6cf-0e93467d0742","cur":"Currencyd5e83cf2-0067-46e3-abc4-7212e4a0753e","src":"Source59cc69dc-390d-4007-9921-85f0cf045acf","dt":"2023-01-29T01:07:52.389"}
-{"id":148,"amt":"Amount42934a3c-40b4-4064-a93a-8eb6a4483e2d","cmt":"Commentd63b1feb-8f28-4923-bd9b-43acb70a8547","cur":"Currency58c8d9fc-fda6-4b30-bd9a-4abd4a5c5cad","src":"Sourcefa49871b-e895-4e4e-84a9-966888e876b8","dt":"2023-01-29T01:07:03.91"}
-{"id":224,"amt":"Amountdff416fd-1697-44d4-a9ca-22bb6d140156","cmt":"Comment9df38111-82ff-41aa-95e8-92eb49aab9aa","cur":"Currency44eb8ea7-3a4b-47e3-a518-498f49812f65","src":"Source1bb07548-9db7-471b-86b1-80ed324b59e0","dt":"2023-01-29T01:06:15.431"}
-{"id":159,"amt":"Amount595bc71b-686a-41fd-8c19-e2d53c460cc9","cmt":"Commentc7febf36-39ab-4221-944a-b4a1133f1df6","cur":"Currency637320f9-1d46-4853-9a88-44b8225730aa","src":"Sourcee9884806-906a-456e-aee9-1045c0381f3d","dt":"2023-01-29T01:05:26.952"}
-{"id":61,"amt":"Amount9af5c6a0-30ed-459f-9539-9289330cc626","cmt":"Comment81e2a297-5655-4a04-ad77-145303cefd1b","cur":"Currency31c7bca3-91a8-4e67-90c0-26e3851d064e","src":"Sourceb64db28b-de2c-4566-8a41-2951288e088a","dt":"2023-01-29T01:04:38.473"}
-{"id":95,"amt":"Amountad33d2d4-3bf5-4b9e-bd6c-555f9be65578","cmt":"Commenta1b18d5c-7951-47a8-b7f5-f3c379d54c83","cur":"Currencyc36273cc-d43c-474b-a205-760aa4ab7c1c","src":"Sourcef64ce5fa-bd98-4fa2-be9d-ea644563a22c","dt":"2023-01-29T01:03:49.994"}
-{"id":80,"amt":"Amount68118d63-297b-4eff-9279-e030475378d3","cmt":"Comment331ef745-b8a8-4075-b02f-c9a5b10c5b21","cur":"Currency84e54be7-59ae-4d2b-aa1c-4240fa25e563","src":"Sourceb5737658-582b-497e-af4e-e394924ea4d9","dt":"2023-01-29T01:03:01.515"}
-{"id":143,"amt":"Amount15cea835-d602-42c2-a5da-86e2dc0b7a4e","cmt":"Comment2116eabe-e9b1-4f18-b61d-24711131bfa7","cur":"Currencyebcab895-fc88-41bc-8b62-128aec6cf0e3","src":"Source33606d34-3a0f-420e-baa9-f17387b5f541","dt":"2023-01-29T01:02:13.036"}
-{"id":48,"amt":"Amount1155bf0c-40a5-48cd-a6c7-06805124f76e","cmt":"Commentea48559f-0967-4286-a030-b76621f065d8","cur":"Currency1a7c20df-9db8-4711-8c2c-93de0e34d830","src":"Sourcee386dcc1-16f2-4261-8842-87d12fb9baaa","dt":"2023-01-29T01:01:24.557"}
-{"id":199,"amt":"Amount73989166-f7c2-4a94-908b-441a4287fe6b","cmt":"Comment95eff076-67d0-4108-82d2-3539fb396c1f","cur":"Currency03e2d934-126b-4741-9395-c0428e36fc1b","src":"Source72b36c16-5564-4136-8623-f1d5cc797770","dt":"2023-01-29T01:00:36.077"}
-{"id":60,"amt":"Amounte5b4a3d7-dbb4-4892-899a-ebe3825e7256","cmt":"Comment4d0620ee-01ec-4aa9-9dae-528ab6b41873","cur":"Currency6c112b27-e32f-4f7f-b4ac-ae8517d3f91f","src":"Sourcedd9e0001-5888-4e37-80d6-d9a1fdec19b5","dt":"2023-01-29T00:59:47.598"}
-{"id":65,"amt":"Amount9f6328a1-0039-44e1-8bd4-59e449c5c336","cmt":"Comment8c61636a-bfab-48ba-aafb-2901982bb09e","cur":"Currency4f70a350-0fc9-4222-8a64-72915e65675b","src":"Source3c73efb2-b8d3-4d43-8e72-a6a9e0daf404","dt":"2023-01-29T00:58:59.119"}
-{"id":237,"amt":"Amountaa94dd34-5eec-48b3-9be0-f014c2ed7795","cmt":"Commentb8c9bbbc-b44f-456a-ba5b-94ff309d21bc","cur":"Currencyfbcfa4fb-deac-47e8-a0ce-30b1145b9d41","src":"Source6daaa554-0b35-4d21-acc1-7eb8ee29a9b0","dt":"2023-01-29T00:58:10.64"}
-{"id":19,"amt":"Amountae7627da-a697-4f17-8136-f312cf407be1","cmt":"Comment8b0e031a-bc2b-4d27-88e4-93c98834284d","cur":"Currency7d92c2fb-a67e-4fcb-a93f-dfdda0f2d467","src":"Source61e1e9d0-1909-4ef4-8cec-db142e822773","dt":"2023-01-29T00:57:22.161"}
-{"id":20,"amt":"Amount15fd0425-b76b-41e9-b537-2b8d04022964","cmt":"Comment7e779d44-e568-4653-b373-35a1a97486b7","cur":"Currencyed19478e-4859-49e8-b8e3-bbb98a5e92ff","src":"Source8bb3c243-b3da-4af7-8d75-92befa11d0de","dt":"2023-01-29T00:56:33.682"}
-{"id":82,"amt":"Amount6a5638c8-36e1-411c-9332-5297574a970c","cmt":"Comment6767c4bb-3507-4e17-b2c4-715bcb3b7cde","cur":"Currencycc203039-899b-48b0-8a8e-2bde2b375501","src":"Source93a7ff5b-aab7-4824-92dc-e89bf4762bbe","dt":"2023-01-29T00:55:45.203"}
-{"id":49,"amt":"Amount27c593d8-1d4c-4f70-8878-4b044ab0c305","cmt":"Commentfbee5ae8-2d49-42a3-8997-7c9c46af5498","cur":"Currency588002e3-f141-42ce-ab3d-6c112e01a5e2","src":"Sourcebc9f31f8-ca64-4f53-afab-2adb46a5ccb4","dt":"2023-01-29T00:54:56.724"}
-{"id":123,"amt":"Amount01fecbe6-eb8e-490b-85cd-37993142d139","cmt":"Comment856da02e-dd31-4c0f-8c11-42aa4a193d79","cur":"Currency74e693f9-9e1d-457e-a9a3-c93963f7b3a7","src":"Sourcef23f0fd2-a6cc-4c8f-b40e-1a6c6ee7de93","dt":"2023-01-29T00:54:08.245"}
-{"id":127,"amt":"Amounta4a49108-2a1e-482b-b556-dd8e97e71537","cmt":"Commentd421e379-e657-4a00-b06e-4aae7221f769","cur":"Currency92f6f7f8-bc1f-4df6-a461-d50cedfbbc2c","src":"Source02ba364a-aec1-41ea-93d7-22691fa2e923","dt":"2023-01-29T00:53:19.766"}
-{"id":8,"amt":"Amounte3d04025-5204-49d1-9b8a-9740b80b5056","cmt":"Comment07e5e47e-3433-4ace-9ff8-373bcb166ba3","cur":"Currencye6517222-82cc-41e4-abd3-12fd058e4cef","src":"Sourceb7276742-4fd8-4ff5-a44e-ca155481a4b5","dt":"2023-01-29T00:52:31.287"}
-{"id":248,"amt":"Amount78b86022-deb2-4012-90a7-dc9875d69282","cmt":"Commentd425403d-05e6-4049-94e4-576772c7b15c","cur":"Currencyb0198792-c3b3-49b3-9d12-3222f4c69b8a","src":"Source0a6c54cd-ff39-48a4-b24c-3edb6c975ec4","dt":"2023-01-29T00:51:42.808"}
-{"id":46,"amt":"Amount65d2e5cf-5f36-4815-bba8-524141cc78f3","cmt":"Comment038133e2-6e0d-4de9-bbf3-256e7d277096","cur":"Currency845ca9b5-d0b3-494e-b80b-6b54fcabe184","src":"Source1addf48e-3474-4416-8641-1fe27193db84","dt":"2023-01-29T00:50:54.329"}
-{"id":133,"amt":"Amountf1a7ab28-f6cb-4018-a112-90055f7ded92","cmt":"Commenteaf79f4f-daa8-4922-88df-dd55b4be333e","cur":"Currencyfedc0184-2c78-4d1d-9366-ffe74170c267","src":"Source51d43ac0-c2a0-4292-8988-c2df4ee39571","dt":"2023-01-29T00:50:05.85"}
-{"id":84,"amt":"Amountdb7c7055-0d7d-4c33-8118-dd10b2364e07","cmt":"Comment8ae222f6-2e2b-4c93-9e35-3dd797ff5d56","cur":"Currency5f36d2e7-8ca3-48ba-88d5-ab3fe9a53917","src":"Source8118932c-8310-4252-a2c7-d938e5616041","dt":"2023-01-29T00:49:17.371"}
-{"id":149,"amt":"Amount35966686-9d44-4c38-a15a-fd69d649e874","cmt":"Comment0663cc91-7b95-409e-a061-e3e541495ce2","cur":"Currencya0e4f772-b8ad-4467-817d-3d37ec22dfb2","src":"Source052e3307-cdc9-4078-a640-289f554f5230","dt":"2023-01-29T00:48:28.892"}
-{"id":185,"amt":"Amountf8c191e8-f083-441d-aecc-efd8776d170c","cmt":"Comment2f5fdcd8-2577-45fa-8542-fa9bc9e121cf","cur":"Currencye2d2a22b-fc10-4a5e-9762-577b27dc3c2f","src":"Sourcef9bc25e8-b5e9-4bdd-92c3-264ce79588cc","dt":"2023-01-29T00:47:40.413"}
-{"id":244,"amt":"Amounte1982ddf-c998-45cb-bbef-a5fdaada1e19","cmt":"Comment4b8c459a-14db-49a3-be5f-701b25919aa6","cur":"Currency6385c358-0ebb-4030-bb02-fb8490663419","src":"Sourcea8a812d2-691b-4f46-9c3f-72e48646d395","dt":"2023-01-29T00:46:51.934"}
-{"id":213,"amt":"Amounte0db67e4-0143-4c17-82f8-13388ed88422","cmt":"Comment4a3aca1e-2fad-4853-b73b-9c514e46857c","cur":"Currency4cb53322-d51a-4544-8e7e-458b92b1cd48","src":"Source6d30823b-6637-4ef0-988d-0925ec6833c5","dt":"2023-01-29T00:45:14.976"}
-{"id":242,"amt":"Amountce9e2e90-8351-470b-8ae0-7ec928f1ee1d","cmt":"Comment6f7b750f-6bd3-4078-a338-c873574097f1","cur":"Currency0a98e5b1-452e-46cd-b444-85decd5db86b","src":"Source4f0e3cfc-a3b0-4356-9059-6c204f160238","dt":"2023-01-29T00:44:26.497"}
-{"id":151,"amt":"Amount35a6fdc2-c007-41d0-8cc2-4a254105a93d","cmt":"Commentadb8054f-1fb3-424b-aaa3-2190b808b2f0","cur":"Currencye51a9ff1-f5fe-4d10-93d9-72ce5b2fe4ca","src":"Source28f13cee-b2d9-4e8f-a851-bf5120eddb47","dt":"2023-01-29T00:43:38.018"}
-{"id":140,"amt":"Amounte1aec123-a2e7-42d7-9434-5b435f2bfd57","cmt":"Commente9f74ba0-4ed2-4899-af99-8f45d217690c","cur":"Currencyc56a0015-671f-4258-ab92-1ed5dad2f649","src":"Source10157bd3-39fd-41d5-992d-6c1c4ac6f925","dt":"2023-01-29T00:42:49.539"}
-{"id":246,"amt":"Amount6b84a0bb-de03-4c20-bff6-af2d762ec990","cmt":"Comment675e4f30-c0e6-459c-9608-059b5cf3c530","cur":"Currencyaf36259f-4eda-4f51-b8bb-57f3c8e6d732","src":"Source13dfe527-a497-4400-b945-d5af766cc8b3","dt":"2023-01-29T00:42:01.06"}
-{"id":90,"amt":"Amount9aa25afd-33b3-432b-816d-bd8e9f3f6912","cmt":"Commentb63a3b2a-53d1-4120-8421-408da232f914","cur":"Currency89e51249-9965-4462-92ea-069450eb9dfc","src":"Source8a10d173-b75c-4997-90b2-d31d17f1c867","dt":"2023-01-29T00:41:12.581"}
-{"id":40,"amt":"Amount4ee47072-7e2f-4db3-8122-d6ee18822815","cmt":"Commentfeecb671-e10c-41ec-9ce6-483f5546fba4","cur":"Currencyd1ae8d54-a0c7-4a87-a2cf-66034fba088c","src":"Source832b7155-940f-4c0a-8272-af24fb6d309e","dt":"2023-01-29T00:40:24.102"}
-{"id":114,"amt":"Amount56d61e7f-1792-49a6-b548-05e5a1e82dec","cmt":"Commenta201f95d-6cf4-471d-b0c0-4f9e984bec53","cur":"Currency7f96d31c-98db-408b-b377-8e4421dd8397","src":"Source8d472fc8-73d5-4c4e-b761-7932cb51ab90","dt":"2023-01-29T00:39:35.623"}
-{"id":9,"amt":"Amount059e7971-6015-4d5e-b878-29d8bd25293c","cmt":"Comment2ddfd170-845d-4858-b9e3-66dadd14edbe","cur":"Currency4a02fc16-dc28-44e0-ac97-35ba7607afb6","src":"Source2e229fc7-d2ae-47d7-b838-2160bd50227a","dt":"2023-01-29T00:39:35.573"}
-{"id":63,"amt":"Amount6a62884c-b6fe-4fd5-b55f-95db1ec5d13b","cmt":"Commentf44a355f-5e40-44bc-ac87-261433a66d86","cur":"Currency0bd1f1c2-e85b-44a7-b5de-f3d0897ef299","src":"Sourcecca3cea5-959c-4df1-ac55-00548fbb5ce1","dt":"2023-01-29T00:38:47.141"}
-{"id":205,"amt":"Amount3be79cfe-2fe9-4b98-a6a4-641c07aa9082","cmt":"Comment70dd1690-808a-4243-aae1-0428dbcb303c","cur":"Currency199de611-383c-4d7a-b1af-13b50aeeb406","src":"Source5eacb3f8-aba6-47b4-911b-74e3950b48ee","dt":"2023-01-29T00:37:58.71"}
-{"id":88,"amt":"Amount224e654e-0ccf-4572-8432-ccbec369d9d4","cmt":"Comment397d373e-7994-48fd-89dd-bd931c7cdb74","cur":"Currency75f418b1-ec06-42c1-bde6-7b2cd292be75","src":"Source1aac6709-217e-4c62-8de4-75bfe2483ffd","dt":"2023-01-29T00:37:10.278"}
-{"id":77,"amt":"Amounta11e353d-8d18-4bf9-887a-f0686f81036e","cmt":"Commentbc550356-dd4e-4236-8bb2-194845dbe5e4","cur":"Currencyd09c4197-7870-4ad5-b1cc-b9ba7ba9b513","src":"Source1d8c4631-f42d-4a5f-92ae-6cf4a87b7e75","dt":"2023-01-29T00:36:21.847"}
-{"id":126,"amt":"Amountfeb685b4-1320-4339-ac5f-bf154e88eb68","cmt":"Comment9b189f39-00dc-410a-a407-d10b5a92ce93","cur":"Currency5ffd9ba0-c387-41db-b8ff-b53890dc84a4","src":"Sourcec98727cc-c8b4-4303-9496-2c38fa184c9b","dt":"2023-01-29T00:35:33.415"}
-{"id":203,"amt":"Amountcd300b9e-5e55-473e-b46f-03429249bfcd","cmt":"Comment31a1e911-62de-4307-ae16-55597521c82a","cur":"Currency03fe1fb1-508a-4f7c-bf06-b871c4f56e51","src":"Source001e1681-386b-4769-987f-693028e57aed","dt":"2023-01-29T00:34:44.984"}
-{"id":129,"amt":"Amountddf0dc05-0a24-4370-b76f-910d12e49722","cmt":"Comment1397cd9d-28ae-4b31-ab96-e3c3af326a11","cur":"Currency15018d31-584a-4400-b10e-4e466959a967","src":"Sourcec870661c-23d9-4174-98d9-4b9f280b1fc3","dt":"2023-01-29T00:33:56.552"}
-{"id":53,"amt":"Amount9974be0a-15df-4b9f-aaa0-4c9627c24a3b","cmt":"Comment25691d12-7774-4aa4-9c0c-bbe860dc5983","cur":"Currency60e28345-986b-43b4-a476-dfa75c5108fa","src":"Source2e6616c8-3fec-4094-9123-03eb54ddcb85","dt":"2023-01-29T00:33:08.121"}
-{"id":120,"amt":"Amountd343f247-1fad-4fa0-84e2-032a7e55e1f4","cmt":"Comment3b37d9a9-12ce-4ebe-b904-cd2f3c386965","cur":"Currency77969387-a154-4621-a7b7-740af15baa61","src":"Source9eff45bb-9062-4902-a408-61a6181999b1","dt":"2023-01-29T00:32:19.689"}
-{"id":154,"amt":"Amount61da07ef-4dd9-4f0e-ab85-5ad430bcaf85","cmt":"Commentc2ce7987-4235-4458-a24e-3f93ed3136dd","cur":"Currency57435e63-c61b-447e-af67-20c5d4a9498d","src":"Source610f4302-d7de-45e1-af42-663be5805d69","dt":"2023-01-29T00:31:31.258"}
-{"id":1,"amt":"Amountb144be81-9c81-46fd-b636-a743e94c18d2","cmt":"Comment09171b1d-0ab3-4d96-975f-d70ae701c6bf","cur":"Currency9f99ae17-d2df-447f-8125-0d61a9291294","src":"Source79224c88-6ac5-432a-a889-6bdca28a99c1","dt":"2023-01-29T00:30:42.826"}
-{"id":32,"amt":"Amount6e227c6b-a4c3-4275-9710-3c5c3d2a6d82","cmt":"Comment2271ebe0-6949-409d-83c6-907ac610483c","cur":"Currency193e4143-e1cd-4d85-97ae-73b4b7f90f4b","src":"Sourcea7adfdfd-8a77-4897-b578-9ffb275a729e","dt":"2023-01-29T00:29:54.395"}
-{"id":137,"amt":"Amount6da11a1f-b63c-4e39-9f43-5b833d6566e6","cmt":"Comment40b5e11c-0982-43c3-81bc-ec0255bf79ce","cur":"Currency7446c074-d8cd-4842-a8ce-7d51fcb1181a","src":"Source1d27ee42-a2bf-4dc8-a7e8-a41c5bef5991","dt":"2023-01-29T00:29:05.963"}
-{"id":91,"amt":"Amountb7cc90e7-a33f-449e-ae87-314368a0df20","cmt":"Commentaadbb8f6-b1ed-4890-9023-5748c04421d5","cur":"Currencya8ea2902-d1c8-4d04-bd45-0e7956e10777","src":"Source1734181e-883b-461c-979b-fe554c2af7cb","dt":"2023-01-29T00:28:17.532"}
-{"id":42,"amt":"Amount56a7c1f4-bee7-444d-9b37-cc1c23ecc74d","cmt":"Commentebb53bd0-af64-4f01-b94f-7f813817ce54","cur":"Currency3bc156da-a3bc-458b-8d67-46d9229cb5cb","src":"Sourcea806d12c-54e3-45c5-93ea-69d655c61710","dt":"2023-01-29T00:27:29.1"}
-{"id":57,"amt":"Amount1fac9a4c-c221-4933-afed-d8b09e2d30aa","cmt":"Comment730c3fa6-0422-44a1-a21c-8f36c584f9fe","cur":"Currency87f9b3dc-efc3-4665-8f72-5a691199b56e","src":"Source2b5c26bb-7285-433d-8e71-b9075d43910c","dt":"2023-01-29T00:26:40.669"}
-{"id":54,"amt":"Amountb54bf2df-0f52-4b0d-950c-012321e58dc3","cmt":"Comment2d540139-ba90-4681-a100-366b80bcc083","cur":"Currencyd0587809-2b75-4f58-abc7-f8af5d07676b","src":"Source988987e5-fd36-4509-ae71-c4032a6c7776","dt":"2023-01-29T00:25:52.237"}
-{"id":255,"amt":"Amount28ad0b4b-217a-4bbf-ab95-f7bee65de14a","cmt":"Comment13c18589-cea4-4258-99f2-32a24ccd0dd2","cur":"Currency8e388893-f2f4-4141-9b17-00a7da5fdbed","src":"Source2a507803-98d2-4f50-b1d7-c90644c73eef","dt":"2023-01-29T00:25:03.806"}
-{"id":44,"amt":"Amount1ece18f0-780c-4a7d-bdf6-ba8a15383e92","cmt":"Commenta143a78a-a5c5-4784-8f2c-e2c521a38ca8","cur":"Currency781691f1-f51e-4b70-bc24-602212e67028","src":"Sourcef3b702af-701f-4ca5-9743-b175c5462726","dt":"2023-01-29T00:24:15.374"}
-{"id":30,"amt":"Amount5d737dee-d3e7-4482-ae9e-50ca4de429aa","cmt":"Comment08237408-797b-40db-bb3f-167f1c3f4d8a","cur":"Currency7e3b9bf6-b6d6-46cb-9ac1-ba286d59a1ce","src":"Source013c4c01-4155-4acf-a2b7-9048eee72190","dt":"2023-01-29T00:23:26.943"}
-{"id":192,"amt":"Amountf5b88361-1a45-464c-bb20-32d787b4d10c","cmt":"Commentf0d5aa7d-5bfe-4963-ae5e-5b81584f6c34","cur":"Currency17cacfbf-4631-4dce-9f6e-91b1c2f1ee21","src":"Source0dfc90a0-6101-4047-ad2a-2d5ddf5c344b","dt":"2023-01-29T00:22:38.511"}
-{"id":230,"amt":"Amount1f18f399-2af1-4b20-9c34-eae7e7430669","cmt":"Comment2f4b4ff4-3b74-4a2c-9ba9-a92ed8ba8977","cur":"Currencyfc7fb37c-8d9b-4ec1-9a66-af41faf00e54","src":"Sourcea1878b4e-914c-4e82-a39e-ad6e7058c467","dt":"2023-01-29T00:21:50.08"}
-{"id":79,"amt":"Amount3be36a6c-aaaa-42fa-b530-32637deca7d3","cmt":"Comment3f961bf1-20dc-4458-891e-165f5bbf385d","cur":"Currencyc81b3a69-5a4e-4182-b05f-0b73baffbc3c","src":"Source79b96583-579f-45ce-ac73-40426d5d8f39","dt":"2023-01-29T00:21:01.648"}
-{"id":190,"amt":"Amount909e69b9-d5af-43f5-abbb-6c37f705095f","cmt":"Comment9b456a33-674a-4eff-8996-5140e7a261d1","cur":"Currency8c6274c6-c9dd-4a04-a084-62bad6a0ef35","src":"Source9a3b4d2c-3c3c-4527-897a-2d86ab5916e6","dt":"2023-01-29T00:20:13.217"}
-{"id":28,"amt":"Amount979b1e01-1622-41af-ad9b-22da61c7079e","cmt":"Commente39aec6b-7347-4b88-985c-343126e8dcee","cur":"Currency120dac34-7340-4028-9ac0-116cd7255d74","src":"Sourcef1f2b097-13dc-411a-8f2e-d8317f8d29ff","dt":"2023-01-29T00:19:24.785"}
-{"id":24,"amt":"Amount63d0bc40-6a74-45ed-9efb-d38a28787e55","cmt":"Comment1651b6f6-69fa-447d-ad6f-fe9ffb2535af","cur":"Currency0082d764-daf7-4b8f-a03b-25301d0cefa2","src":"Source1c41fdef-2033-43a0-baf0-32ac6a9e1124","dt":"2023-01-29T00:18:36.354"}
-{"id":119,"amt":"Amount1a3cfd8c-ea05-44c9-aa0c-f7f7bcf2921b","cmt":"Comment35f88c0c-b9a2-4fc9-bfaa-28d7b706b9cd","cur":"Currency628999c3-4874-4b14-bda2-954ce378bf62","src":"Sourcec949c23f-790e-4b1e-a20d-6e7dafe3efcd","dt":"2023-01-29T00:17:47.922"}
-{"id":173,"amt":"Amountb1e37eeb-b936-4e63-848d-25fd2f1d5cee","cmt":"Commentc6ae4cb7-34ad-432c-ad48-8b7b1632058b","cur":"Currencyfe7f551b-a81d-4701-84da-af5d7ad53864","src":"Source60ffe2e5-ade9-4bf7-8c55-b6579b98ebff","dt":"2023-01-29T00:16:59.491"}
-{"id":206,"amt":"Amounta6dfdf4d-ac4d-4eb0-9b03-176012b7808d","cmt":"Comment4ed794e5-c28f-4dab-a14b-926722f9284b","cur":"Currencyd5b6e6ca-d38e-433a-b2f3-e6e835feaad5","src":"Source7b0fa2d9-1c06-4f63-b7f0-9c114d79689c","dt":"2023-01-29T00:16:11.059"}
-{"id":38,"amt":"Amountbf9f01b5-3332-4b46-ac20-d47afc586a45","cmt":"Comment8941eaf5-9336-4fc4-bb90-c2a9a77cf597","cur":"Currencye7c4d444-64f1-470d-a89b-07e227e41e69","src":"Sourceaaecd4a2-ff0f-4e10-9924-4275fc545bc5","dt":"2023-01-29T00:15:22.628"}
-{"id":210,"amt":"Amountff36fcfb-db1f-4f36-acaf-a400618e5999","cmt":"Commente9bbc1f7-65ea-4911-b789-4d39d9e262c2","cur":"Currency6abde8b7-9597-440b-9e26-f58e72e747f6","src":"Sourcea3903912-c546-4a93-911f-ed27d2759551","dt":"2023-01-29T00:14:34.196"}
-{"id":51,"amt":"Amount02dd24b2-a6ce-4bc7-90cc-86e7aef2dadd","cmt":"Commentfb7e78bb-852a-4120-8d67-dd5525821330","cur":"Currency85d818fc-528e-4c2b-a7aa-2b1381c7fd28","src":"Source1a54246d-7f24-43b4-a52e-97895a511aae","dt":"2023-01-29T00:13:45.765"}
-{"id":223,"amt":"Amount08f57b43-333e-4f18-83a9-ee3d733b1c2f","cmt":"Comment5e9364b1-23a4-421b-a9a5-0b9119f05087","cur":"Currency5f05886a-6a6b-453b-9e4b-44d50831f85c","src":"Source83dede46-064d-404d-b0db-aeb4de792991","dt":"2023-01-29T00:12:57.333"}
-{"id":194,"amt":"Amounteace6a93-defc-4d8a-a365-366189b12dc3","cmt":"Commentd1e54bd3-2964-4fbd-ba9e-71a834a15a23","cur":"Currencya0a98f92-8e54-4bf7-a64b-856c0a480ccf","src":"Source93bed00a-904e-481f-88f0-acbd045d1af1","dt":"2023-01-29T00:12:08.902"}
-{"id":99,"amt":"Amount8490cc5d-3951-451f-ae6a-d9b7dbece7bf","cmt":"Comment14069031-8115-41ef-a478-a154d40013e5","cur":"Currencyde3f77e4-6c34-4599-9960-a3e741af3cfb","src":"Source9ef0274a-aea1-4870-b5fe-287ace25e7a6","dt":"2023-01-29T00:11:20.47"}
-{"id":219,"amt":"Amount857721d6-ec03-42fc-9d31-66e32eb9f096","cmt":"Comment9aa40a6d-27c9-4c55-9e50-e7d6caccd786","cur":"Currency938aa60d-8edf-4718-8b26-88fb04e57bfe","src":"Source977ddc8a-e155-40c9-90fa-121919127a78","dt":"2023-01-29T00:10:32.039"}
-{"id":58,"amt":"Amount6c26c58f-1fc8-49fa-9cd9-7f57852a6f86","cmt":"Commentf3f4d80d-bb25-4ffe-a181-6b25f5b5a2f9","cur":"Currencyb1df6f75-ca38-4c8f-95fe-34d9af0a116e","src":"Sourceb1441e23-14a1-49fc-91e8-e0924354844f","dt":"2023-01-29T00:09:43.607"}
-{"id":98,"amt":"Amount7e732c00-6894-455f-9a83-897c387f6c6c","cmt":"Comment7d2d5d74-df78-453e-b6dd-392d3ee44d8e","cur":"Currency5bfca58c-e53e-47e3-b520-54af7ca21f77","src":"Sourcefc6e3a38-9b26-4fd5-8b10-39e7ace1279d","dt":"2023-01-29T00:08:55.176"}
-{"id":221,"amt":"Amountd5ceb530-6b59-406f-8dfb-03b64d493b40","cmt":"Commente7aeb96e-e0cf-4afb-9709-f5a03688c4b9","cur":"Currencyc2588c31-ad1a-4b91-9827-ff930a34e4c4","src":"Source3e4a8cd5-385d-429f-bd87-c74a89bc3e56","dt":"2023-01-29T00:08:06.744"}
-{"id":17,"amt":"Amount1064f4e4-8aeb-4934-9b3d-a8da77f43c6f","cmt":"Comment262ea36c-df95-4e61-8876-118951effcc3","cur":"Currencye0ba1354-8a70-4b40-8661-7264c66a9e97","src":"Source95c13dff-81fe-4df2-819f-0755117dd1cc","dt":"2023-01-29T00:07:18.313"}
-{"id":121,"amt":"Amount0c0e7e6a-51be-416a-bfce-caf5167a06ac","cmt":"Comment521d20d0-7e85-4f42-8100-2aca900d57ac","cur":"Currency948a82d4-c7c9-425b-a321-1b4df98b67be","src":"Source221ccef0-4785-49bf-95aa-a37caef18fdb","dt":"2023-01-29T00:06:29.881"}
-{"id":139,"amt":"Amountacbcc17c-9519-4b93-b667-01ad078b4501","cmt":"Commentd831dc49-29dd-481e-b44d-87c8e2d89dfe","cur":"Currencya9218959-1c39-4b0a-b1eb-3e42f000cb9d","src":"Sourced06ef8e7-46ee-4bb0-944f-9c357f7088ba","dt":"2023-01-29T00:05:41.449"}
-{"id":134,"amt":"Amount83b8ec32-248d-4e53-b6fb-f376a978d4e3","cmt":"Commentfce1376e-5739-4b35-9b1d-bbb9638e0235","cur":"Currencybaf6b8ac-dbe3-4a4d-b2d7-a274ed743a43","src":"Source5859516b-d775-45a4-9b82-f164fdc001b2","dt":"2023-01-29T00:04:53.018"}
-{"id":172,"amt":"Amountcfcd4072-ab2f-4911-a7cb-d27698e5a43f","cmt":"Commentb638611f-d124-4849-b490-2f1fdc89ef6b","cur":"Currency3c80ae51-d097-46ac-979d-847a46bdc4c4","src":"Sourceacc0ca70-f738-4b7f-bec0-2748b0543665","dt":"2023-01-29T00:04:04.586"}
-{"id":181,"amt":"Amountb00d6989-64d9-4dc0-9be1-5cd4805d3c50","cmt":"Comment7b49d354-4835-4081-a795-859cdaef736c","cur":"Currency826556b4-8407-44db-ab3d-afa3bc000eb9","src":"Source0b82194b-070e-4a16-a567-79d2b5a1580f","dt":"2023-01-29T00:03:16.155"}
-{"id":135,"amt":"Amounta7057690-cb3c-4838-9987-274bebd5e522","cmt":"Commentcca095ad-ab64-4550-b2aa-68708946ca1c","cur":"Currencyf6d3208f-549e-45f9-bd4c-53c8ee228fe5","src":"Sourcee372b355-6923-438c-a1d3-f7a330dcc502","dt":"2023-01-29T00:02:27.723"}
-{"id":229,"amt":"Amount2658676c-2d73-477e-abb4-245dbfb3d3b0","cmt":"Comment3023684c-2c31-4595-af94-97089a7fa39f","cur":"Currency95600f6b-eb29-4b5e-87b1-1d15e2f2f20a","src":"Sourceeb37ab94-47ee-46e8-9a83-7138fd07d772","dt":"2023-01-29T00:01:39.292"}
-{"id":13,"amt":"Amount1b6c1b8e-dfb7-4f4c-8508-2b8e2094b637","cmt":"Comment9fa18b91-e1fe-4ca3-b14b-f55c02c189bc","cur":"Currency82e4d6b3-2107-4c60-ad22-78e3bc524268","src":"Sourcea6e015fb-b91d-48bc-bbe3-e2b66d4b61df","dt":"2023-01-29T00:00:50.86"}
-{"id":100,"amt":"Amountfcdaf890-4fe6-4c2d-81e3-9854773363ca","cmt":"Comment55a7dd8b-cd18-4902-842d-633d22a617c0","cur":"Currencyfad6b1af-7739-4437-8a9c-6a9cf753be75","src":"Source20c9b4c6-3289-4266-94f8-a33dbbb1cfa3","dt":"2023-01-29T00:00:02.429"}
-{"id":234,"amt":"Amount6cf320f9-6a96-430f-adca-ac9c99ed94cd","cmt":"Commentd41b46b8-29a5-4ba0-9c4c-c8391b73aee7","cur":"Currencyb56d8d6b-f830-47aa-b35b-e2b3fc1e8e51","src":"Source88b04276-c30f-4d8e-91e1-0b552351ef37","dt":"2023-01-29T00:00:02.329"}
-{"id":252,"amt":"Amount4d96e2e3-874a-4c1a-8f1b-03cd9fb14599","cmt":"Comment79c798ee-8801-47ba-a2db-c44b86f37bee","cur":"Currency8f7e379c-47d4-4877-949c-3481a7a4edc3","src":"Source91b3813f-399d-4605-b0ea-ff9b3b6a7ceb","dt":"2023-01-28T23:59:13.945"}
-{"id":71,"amt":"Amountb61e32a4-f184-4dac-a511-44a6b5996801","cmt":"Comment01c5614e-f7e3-48d3-9583-6d27b79f81a0","cur":"Currency27ca8399-a20d-427b-bb59-9c68161c144b","src":"Source06ee54d7-f061-400b-95d0-df5016cb0f22","dt":"2023-01-28T23:58:25.561"}
-{"id":240,"amt":"Amountef429801-c73a-4aff-9b5d-df256fd78f57","cmt":"Commente105fbe0-9a60-4187-9cb8-7e9c09c056b3","cur":"Currency8c3b9526-2032-45d1-bb4f-aea114022136","src":"Sourcec7985ce2-c53d-4459-99e8-78068c01e3f9","dt":"2023-01-28T23:57:37.177"}
-{"id":141,"amt":"Amount6c9cc51a-87f2-448b-8d44-12802cfe6de3","cmt":"Commente0cb33ff-9262-4390-8952-06a657bfd2d8","cur":"Currency922c6218-d962-4dbf-9cb2-0564850c7038","src":"Source71ec9400-f42d-4a22-9482-3e60aebd7ec1","dt":"2023-01-28T23:56:48.793"}
-{"id":125,"amt":"Amount9012f423-ae02-418f-a047-c3844c255ed3","cmt":"Commentcc13ae2f-adde-44ad-83ad-fa0236a2b060","cur":"Currency463658ad-c19b-40d2-b9a1-22fc36f04eb3","src":"Source54453344-f9a3-40e0-9df7-c248467aea82","dt":"2023-01-28T23:56:00.409"}
-{"id":164,"amt":"Amount8a2a869d-6ff4-4ed4-af62-8fc7bc2b59f7","cmt":"Comment65a98a81-81e8-46f5-9eb8-2c8da691117f","cur":"Currency2380bc7a-ed0f-4225-bba3-76b35a3c54e5","src":"Sourcedf6575e8-ae86-4e6e-bfd6-11ca53cb373a","dt":"2023-01-28T23:55:12.025"}
-{"id":37,"amt":"Amount7fc4172b-2e35-4af7-a4e9-2ff56ad70dc6","cmt":"Commentd3088a7e-e1a8-49fa-9ee7-48a9a998d812","cur":"Currencya8669936-c025-4cc2-8dd3-79080b34d084","src":"Source59de556c-c7a0-4065-a027-0069257d24b7","dt":"2023-01-28T23:54:23.641"}
-{"id":131,"amt":"Amount0653c2a4-cb0c-4f91-8da2-a209165d47de","cmt":"Comment2fd8094b-8b04-4a79-bf6c-2c3604692038","cur":"Currencyea1a828a-4764-463d-a705-1a4f2862816d","src":"Source84932ae9-8016-4aa0-bcc2-ac69862872ea","dt":"2023-01-28T23:53:35.257"}
-{"id":247,"amt":"Amount9afb9ded-6d81-4530-b3a0-ea95bfa5f466","cmt":"Comment8a26cd51-b578-42dd-965e-a1e89a150106","cur":"Currency5cf18905-a5ee-4267-9f9b-86107a74caf7","src":"Source56c0dee5-7c41-4755-80e7-efe34cd8e469","dt":"2023-01-28T23:52:46.873"}
-{"id":165,"amt":"Amount573344a8-2e3b-471d-9c17-d948b10ba94e","cmt":"Commentea5d8cd3-8228-463e-bcdc-bbeecadfd441","cur":"Currency2b8ea785-1e8b-4c49-b71b-2ea91e5ef071","src":"Source787b704d-e706-49a0-938a-5544b2bf377c","dt":"2023-01-28T23:51:58.489"}
-{"id":245,"amt":"Amountc1ce2f29-3e36-4806-a74e-526519c481ce","cmt":"Comment58bc9036-b2ae-46ba-9ec8-cd6dac28ca98","cur":"Currency95091c16-3430-4c2b-ae4c-199a28c2bb9a","src":"Source4712f4be-8000-486e-996b-61a51a742c39","dt":"2023-01-28T23:51:10.104"}
-{"id":225,"amt":"Amount2823d5a8-e8c4-4160-87c5-c3fe91fe802f","cmt":"Comment18e91075-b2f3-4258-b1a7-708ad1ef5fdc","cur":"Currency908e362a-9d82-486c-be7e-3c75c04bc96d","src":"Source6b0b076b-d1df-42a6-9031-e6a356db8173","dt":"2023-01-28T23:50:21.72"}
-{"id":214,"amt":"Amountaf09daaa-2ddd-4483-961e-8a3596202cd5","cmt":"Comment9701db6b-a942-4abf-baa2-dd5e5aa19810","cur":"Currency040c2cb9-4f79-40fd-88a9-3fdd6b6ec9f5","src":"Sourcec7139526-f50f-409d-94b5-44b2896d242a","dt":"2023-01-28T23:49:33.336"}
-{"id":68,"amt":"Amountb3c04de8-e9cd-4f1c-847c-b90537620799","cmt":"Comment86c477b6-48d0-4a5a-b70f-ecc3756ed79d","cur":"Currency6b65173d-bc5f-4cb1-8bd0-0b8157e572e6","src":"Source7bf90017-7e1c-4d45-82a7-4d7141965eb4","dt":"2023-01-28T23:48:44.952"}
-{"id":72,"amt":"Amountbcca7dd7-a61c-41dc-8fbd-7245ca16c54d","cmt":"Comment1db27bc3-fec8-49a5-a003-5a8c93c0ae3c","cur":"Currency5e80380f-4f81-44ae-93c3-e353cc2cba95","src":"Source6b79968c-e372-45ae-8007-2b76cdabd1ed","dt":"2023-01-28T23:47:56.568"}
-{"id":85,"amt":"Amountfb4946fa-0f8f-4ad2-a7fe-8952932cc614","cmt":"Commentef018004-4ddb-4e93-9a35-eeadb3161e83","cur":"Currency6dd4109a-ba4e-4c04-a5fb-27435f8c5d15","src":"Source31559cc6-cd94-4ce7-ab52-01478ff8756f","dt":"2023-01-28T23:47:08.184"}
-{"id":157,"amt":"Amount860627be-48ab-4ca8-bfe3-4a2d3678e0f1","cmt":"Commentf835c2fc-40c7-4e37-96c8-dcd01461f46e","cur":"Currency5640c8d5-ced0-4a00-bdb3-c15e34140fd5","src":"Source90a4a1f2-6418-4b52-86b4-51b5a2ea538c","dt":"2023-01-28T23:46:19.8"}
-{"id":55,"amt":"Amountc8e3668b-eaef-469c-ba2c-f6226a31f9c4","cmt":"Commenta23ce086-de5b-4015-9771-8a8dd5f04fc7","cur":"Currencyaabaf871-a7fa-44c1-a096-3e176afef767","src":"Source262a095c-ea5c-4bca-8d90-362fc84e2e63","dt":"2023-01-28T23:45:31.416"}
-{"id":78,"amt":"Amountbb5142a2-90bd-4215-8cbc-3920f960b0ce","cmt":"Commentc0c6f0fd-54c8-4c0b-a15d-13b2e33ec721","cur":"Currency9f7361f9-80fd-4a4e-9319-71c7b931ff2a","src":"Sourced7ee636f-b95c-4571-9f3b-241688ce9c9f","dt":"2023-01-28T23:44:43.032"}
-{"id":216,"amt":"Amountb9e21cd3-0b43-4dcb-bac2-367bc4f2157b","cmt":"Commentf90c67bf-73d2-42bb-a33b-2a985aa53df4","cur":"Currency257bb232-62ed-4ad3-81ce-a1adb25c80c7","src":"Source7e5cae71-24de-4e34-86f8-0237f9d704c5","dt":"2023-01-28T23:43:54.648"}
-{"id":113,"amt":"Amountf088dc43-6b97-49a7-adf0-768bde1fe141","cmt":"Comment944eb5fb-eb08-46f5-8e66-eecfc0aa6cf1","cur":"Currency132ea088-ca76-4576-8b92-ad44fce62c1c","src":"Sourcee28dfd75-22d0-4797-b083-c0e46df39b06","dt":"2023-01-28T23:43:06.264"}
-{"id":188,"amt":"Amount7cee3959-ac65-4391-97d5-7595fd12e17c","cmt":"Comment9ceeb13f-9e03-42e4-a219-ab5ca4b20583","cur":"Currency0d64d7c2-a46b-4689-8891-5f1f32d325ee","src":"Sourceec4f2ba3-fb8d-4c47-976e-0a0a5672d3dd","dt":"2023-01-28T23:42:17.88"}
-{"id":110,"amt":"Amount1004ed7c-2b47-4b9e-bff6-4f8f85b8d7cf","cmt":"Commente13f2800-276e-451b-8ecd-856ff3968dd0","cur":"Currency6f36841c-4438-4f4c-9b8b-e9da3db1aa3c","src":"Source88bbc61c-1c5f-41c0-afe5-d8463d0bc21a","dt":"2023-01-28T23:41:29.496"}
-{"id":254,"amt":"Amount83a9cffe-90b2-481f-89bb-0cd49c07b3b7","cmt":"Commenta6e4c828-0a77-4ac6-8520-531addb90a81","cur":"Currency2c65cf63-9890-410d-a905-1c21a3991f81","src":"Sourcebbf2cf16-502b-466a-9dcf-fc463f3a4c18","dt":"2023-01-28T23:40:41.112"}
-{"id":228,"amt":"Amount442a648d-337d-4f51-80c6-63ba44180539","cmt":"Comment74300d2f-d261-43c0-b8da-d4b997d63c86","cur":"Currency4d86f026-bfd8-4a4f-9b04-ea7fba920e52","src":"Sourced5733207-e8f9-4acc-8227-abe67117348e","dt":"2023-01-28T23:39:52.728"}
-{"id":112,"amt":"Amount75afb846-ab85-429b-bc03-9f1fcda482f2","cmt":"Comment9277a6ca-5172-4929-94ad-f240acefa6f7","cur":"Currency0c240383-cc75-4456-988d-c9e71f222a79","src":"Source2fe2a234-bb8d-4f11-a4b9-96339ebbf538","dt":"2023-01-28T23:39:04.344"}
-{"id":64,"amt":"Amount67076490-3e7e-4f5b-ba2b-5fb97658e404","cmt":"Comment2ee1a89e-dba9-4f34-a2b9-2c177044b263","cur":"Currencyba705abb-f7d1-4707-800c-31d510e6c41b","src":"Sourcecf77fb91-e864-4544-8ea8-2eabbcdddf05","dt":"2023-01-28T23:38:15.96"}
-{"id":176,"amt":"Amount4867b3ab-ab57-4884-b135-e992d4f1d13f","cmt":"Comment257cbe95-5ea1-4a34-b224-98c71bac5183","cur":"Currency2cffb35d-619c-4e44-b2c4-99a1a8ab4d18","src":"Source2935ed0c-6906-4501-8e7f-1a06c1d28f82","dt":"2023-01-28T23:37:27.576"}
-{"id":108,"amt":"Amount0a816a14-af71-49d0-b12c-ea7b00ad224a","cmt":"Comment88a7d03a-a57b-4ff5-ba39-1a7819dee38f","cur":"Currency19205858-e48a-4a16-b5c0-052ba5bf1e45","src":"Source7b3c4749-f28a-4f11-b969-2cbb159cae84","dt":"2023-01-28T23:36:39.192"}
-{"id":105,"amt":"Amount34b5fbb6-2e24-469a-9fc2-303077d7707f","cmt":"Commentdc89ffef-a838-4bc7-9461-efdb6419d4ad","cur":"Currency60c526ad-7369-452f-be06-1867ac3d8e8a","src":"Sourcee141daf5-06b8-4673-8cbb-dd79587d2ffb","dt":"2023-01-28T23:35:50.808"}
-{"id":106,"amt":"Amountd777441d-fd4a-4ce7-abca-0051c8b01405","cmt":"Comment778e63f1-1479-4bb4-bafe-808199e1113d","cur":"Currencya017d72c-cc83-46c1-8426-7030398bdcd3","src":"Source9e561a45-2250-4139-843e-e19488b3252f","dt":"2023-01-28T23:35:02.423"}
-{"id":232,"amt":"Amount3533e5d1-421b-4e5e-8414-e6287c5526ba","cmt":"Comment23e72798-dd23-4e8b-8b02-84fdb05099fd","cur":"Currency0d4bb73f-a896-472b-a9b4-692be83c5040","src":"Sourceeba3f50b-b919-4e3e-a1c1-e1cc5f55a351","dt":"2023-01-28T23:34:14.039"}
-{"id":36,"amt":"Amount89aa1533-5cb6-4060-885f-d352bdac4a8a","cmt":"Comment278f7ad4-21e8-4347-9074-2c972440c0db","cur":"Currency3bdae67e-2bc5-47ad-89d6-06bb6fda1979","src":"Source1e29af21-da6f-47d1-9bc1-9ff0fa1db337","dt":"2023-01-28T23:33:25.655"}
-{"id":136,"amt":"Amount06f59ff5-9f74-4933-9e3f-9b49278a240b","cmt":"Comment6db486fb-fd2a-48f3-ad4b-4b1b0305f2f0","cur":"Currencyee1a45f6-b9ae-49ee-a19b-d1a0997719e5","src":"Source04147236-210a-4957-ab45-66b1feb51e8d","dt":"2023-01-28T23:32:37.271"}
-{"id":218,"amt":"Amountcc9c07ff-070a-471d-a949-fa76f876d0b4","cmt":"Comment676e3133-4e19-42d4-a366-f78f0a7b2933","cur":"Currency10611bef-5743-4401-93f8-b9be19e7a3f7","src":"Source99fbda3b-47d1-4b46-9091-6965673f8790","dt":"2023-01-28T23:31:48.887"}
-{"id":241,"amt":"Amount03fd96bb-5c3d-4fc6-893d-0cae9f4bafba","cmt":"Commentdd2b9664-1d1d-4f51-98fd-298008fc07ef","cur":"Currencyb12d246e-e5a4-4d7b-baa9-65ba30ab5f32","src":"Source1f0ed841-1b50-4840-940d-30eecca18bb6","dt":"2023-01-28T23:31:00.503"}
-{"id":174,"amt":"Amounta562f616-7ef2-4c5b-b912-b5a307eca9d9","cmt":"Comment6df669c6-d928-476b-ae1f-8a9d4e79e4b3","cur":"Currencya6f4bfab-e04e-49ca-906e-a0f7b0cf09f8","src":"Sourcecd31b736-5ea1-4638-b104-c927773ad2a2","dt":"2023-01-28T23:30:12.119"}
-{"id":25,"amt":"Amountb43ec98d-1fb9-4e8e-84c9-a8d5365a43d0","cmt":"Commentec715de9-1d3d-4f73-a590-6c607edd4edf","cur":"Currency39a93a10-7d69-4906-8572-0142dd57ee14","src":"Source489dc6ba-0bff-4e58-a7a4-3720a241520b","dt":"2023-01-28T23:29:23.735"}
-{"id":180,"amt":"Amountaec6df2d-40ff-4cc1-9cbb-dc5f26a975cc","cmt":"Commentf13d9a7d-d670-4ccd-a836-2a626dde4588","cur":"Currency2b9c1926-e8e3-4c05-90fe-d7c2c312ac3b","src":"Source76d45337-88e9-47bd-8499-d7083e1af2db","dt":"2023-01-28T23:28:35.351"}
-{"id":81,"amt":"Amount33d818a1-8626-40aa-b5e5-f84b0378d54f","cmt":"Comment62e6f801-4b03-4f27-98f1-3c27f54858da","cur":"Currency63ee92b9-57dc-4c40-b1cd-a659a6503541","src":"Sourcee19a8a8f-c61d-4560-b14a-f8fb8ed4a477","dt":"2023-01-28T23:27:46.967"}
-{"id":7,"amt":"Amounte03010a7-53fc-4986-8618-0f38cd190c60","cmt":"Comment49518660-ca23-41cf-a9e7-ae2011e15072","cur":"Currency4322890c-26cd-48cf-9161-5699218ebf9c","src":"Source373aa876-cccb-458c-b972-378cdb64515a","dt":"2023-01-28T23:26:58.583"}
-{"id":162,"amt":"Amount875b7868-bc21-4d7c-9cc1-4a616c71f278","cmt":"Comment59c30a3a-ca78-48fc-8f6b-fdba941349b7","cur":"Currency6fb31971-8a3f-44f5-9bf7-7ee931cb263c","src":"Source7e499698-d4c3-4fff-b8cc-b54b51b4cd44","dt":"2023-01-28T23:26:10.199"}
-{"id":116,"amt":"Amount0fbb3e42-359d-436a-b009-448e8ceace76","cmt":"Comment5a7d0e32-6b02-4fdd-b65e-37710448eb26","cur":"Currencyc30ad5f8-cc75-4ca4-ae16-bf0c8af6c6cc","src":"Source9ae04ef3-d846-4640-a6d2-4eeb06396bf9","dt":"2023-01-28T23:25:21.815"}
-{"id":177,"amt":"Amount14a8c437-679d-4b21-b971-d7e570c0e2fc","cmt":"Commenta59a190d-5c26-4673-b499-8f9794b427a6","cur":"Currency2153fcd5-fd17-4ddc-9270-edc7274e547c","src":"Source443ca81c-5638-444c-8bc5-7ef005b7331d","dt":"2023-01-28T23:24:33.431"}
-{"id":179,"amt":"Amount60e568e8-afa5-4b95-9022-21600fc117a8","cmt":"Commentde0d5dbe-2bbb-4401-a49b-47306d68633b","cur":"Currency11cd4218-aa49-4501-be00-c1786369165e","src":"Source36413b78-16e5-48a4-9933-cf0680c76fad","dt":"2023-01-28T23:23:45.047"}
-{"id":70,"amt":"Amountd44c469d-cebf-4acf-ad01-6f394e2c0114","cmt":"Commentc864f216-f2aa-4153-97fb-abca5f54421d","cur":"Currency5fe7928f-355a-4069-9d6f-a5ad10e0500e","src":"Source501c43c1-5c71-47de-9989-9812b71bdd43","dt":"2023-01-28T23:22:56.663"}
-{"id":175,"amt":"Amountcec40de2-1e68-4e64-a497-e6625989c832","cmt":"Comment8a5525c6-6032-48ca-a684-10f4f42b14ef","cur":"Currencya300c79f-008d-400f-a279-fdeafbacb402","src":"Sourcee8839ba3-cc7c-47a8-8856-afcf9bd5623b","dt":"2023-01-28T23:22:08.279"}
-{"id":15,"amt":"Amount4e39cf5e-1051-493d-b2b8-5e267d528cfc","cmt":"Commentfef0254e-1671-4273-ad60-9a255760d241","cur":"Currency4d5a2ce1-82cf-4b91-8c02-84aa9a18cefa","src":"Sourcef157745c-0d5f-4d21-a2f8-6fe5e6e6614b","dt":"2023-01-28T23:21:19.895"}
-{"id":227,"amt":"Amountfe116d00-a2c5-4130-872a-776154575e61","cmt":"Comment94fd81be-9d9f-429f-bca3-f5dc3637ac03","cur":"Currency2c19bf40-d14a-4ca2-9e4f-945b96e19c7a","src":"Source46587cd1-1a0a-4ba6-9eab-4234acbd3cc3","dt":"2023-01-28T23:20:31.511"}
-{"id":235,"amt":"Amountb860dea6-0fe7-4754-b471-60b3cf34e8a7","cmt":"Commentc50d0a6b-2569-4616-bbf1-5882e23a072f","cur":"Currencydb1ce5d5-9667-48ea-b906-51b032ee2749","src":"Source648943bc-c896-46c8-8b47-05a79db14d9e","dt":"2023-01-28T23:20:31.361"}
-{"id":96,"amt":"Amountb814c50e-5b86-41b5-a0e7-71f262a1e69a","cmt":"Commentbe5833cf-904d-4c64-8185-6769330fe3e8","cur":"Currency51301b57-fa2a-4d83-a57b-39f6542a4a5c","src":"Source1fd953b1-4f6b-4727-a854-afe66045aa6d","dt":"2023-01-28T23:19:43.024"}
-{"id":204,"amt":"Amount935ad4f8-6f60-488c-bb74-ed0f0718d341","cmt":"Comment54029773-35f5-4e26-a59b-f5cc635f0703","cur":"Currency9d2033a5-ebf7-4dec-b9fe-7c3a21070e70","src":"Source0112d28b-f220-463b-b7a1-99399a7edfac","dt":"2023-01-28T23:18:54.688"}
-{"id":6,"amt":"Amountb15f40c5-c0be-44fb-ab5f-f9eb3ab0b1b0","cmt":"Commentb6d7f47e-abb5-4e64-9d5b-1e3efb2e5159","cur":"Currency168b3eca-d272-44db-ba38-15a324f81061","src":"Sourcedcbb2bcc-9e2b-48c3-82d0-1d75865d8c39","dt":"2023-01-28T23:18:06.351"}
-{"id":93,"amt":"Amountc72af976-26de-490d-8eb1-e976b4f0b47a","cmt":"Comment365c93bc-ff6d-40a4-aae5-79b3702f8642","cur":"Currency33c73ff6-c75b-4294-842e-f7a719a15163","src":"Source6db14694-b960-4c6f-b66c-4ccb83b674cd","dt":"2023-01-28T23:17:18.014"}
-{"id":73,"amt":"Amount8875d147-1380-4623-92a8-34c54358766e","cmt":"Comment9973d063-5542-49ad-8d35-bf966f3e5698","cur":"Currencyee1fe6aa-eb95-4124-b3ea-0288fe567810","src":"Source20fe5fa6-de68-4350-b91f-6c4e3d57ee2d","dt":"2023-01-28T23:16:29.678"}
-{"id":167,"amt":"Amount64e0c5e9-7428-4d90-ac89-d100b8bf8b50","cmt":"Commente5ccb341-c930-409b-ba93-e0cbfecf1564","cur":"Currency0499c59a-5c24-4c52-bf50-8247225218e6","src":"Sourceb075fcc8-d729-486a-b236-b3fe2851f52e","dt":"2023-01-28T23:15:41.341"}
-{"id":3,"amt":"Amount550e319c-e772-401f-b8b7-382a9a4f3b0d","cmt":"Comment17608f9e-07bf-43d9-ad1d-983b36ff707c","cur":"Currency7f1a93a0-1fbb-42a0-a7cb-3f5f92e9eb91","src":"Sourcec84003c7-80f4-40cc-a1ac-e9f665cecbbd","dt":"2023-01-28T23:14:53.005"}
-{"id":178,"amt":"Amount99083028-5817-4856-80f0-e2833c1f2a6c","cmt":"Comment79db482b-2987-464b-8c56-965e77e7d239","cur":"Currency8e26a7b9-7078-41a3-9b0b-02991528aa86","src":"Source878f8c32-cb5a-42ef-a139-0c8391041d56","dt":"2023-01-28T23:14:04.668"}
-{"id":250,"amt":"Amount8bcb6c1f-1af6-445f-878e-559f396f7e4c","cmt":"Comment9fd491d7-5089-496c-883e-ef5aaaca08a4","cur":"Currencyfed23411-f0ad-485d-be45-4d49a6cbbde4","src":"Source2ea6c436-ab4c-4e9a-a101-fcc807996755","dt":"2023-01-28T23:13:16.331"}
-{"id":209,"amt":"Amount1b770ab4-cb86-4f9c-8bac-8dd258e0cb41","cmt":"Commentfa975369-63b2-48f1-86b9-a34556b0c3f7","cur":"Currency12750ce5-7539-4b00-b1a6-47f357590c51","src":"Source27d7eb8d-d4af-40ad-b2a4-05ccd77658e4","dt":"2023-01-28T23:12:27.995"}
-{"id":200,"amt":"Amount5043adcf-82fc-42db-aade-3bda89bfc3f6","cmt":"Commentfcfe2420-5cd0-4522-ad0a-d398b15ab8e1","cur":"Currency470358b4-2fdd-4e51-94e0-4cc6604407d0","src":"Sourcef8051470-2657-4292-8167-b90d435d38af","dt":"2023-01-28T23:11:39.658"}
-{"id":104,"amt":"Amounte15cd53c-a03b-4951-a0de-ba536436236e","cmt":"Comment820ceca8-5f65-4286-a001-c6ae76573df2","cur":"Currencyd631c42d-bf49-4997-9314-7e1f17bf6b4b","src":"Source3560ba49-50e0-45fc-be82-9de1ed142665","dt":"2023-01-28T23:10:51.321"}
-{"id":107,"amt":"Amount6d546c3d-f26c-4478-b64c-6ff7bf76ba5b","cmt":"Comment2a7c51f3-b31d-429c-b1de-d23f1eac98b5","cur":"Currency9a1cf5ac-eea7-405c-822e-d56d33591c24","src":"Sourcea8b59966-4fc3-4a1a-b9f1-652fea531144","dt":"2023-01-28T23:10:02.985"}
-{"id":163,"amt":"Amount4558df58-cc4c-4d39-9a8e-c8619d7709a0","cmt":"Commentd42ecab6-e856-495c-b370-c56346b6a821","cur":"Currency53e1bbec-c145-45e9-bee8-c73f44ebfdae","src":"Source74023a37-bdc9-4dc4-bc9a-73fdb89594f5","dt":"2023-01-28T23:09:14.648"}
-{"id":69,"amt":"Amount5a04d43f-8bd8-4d7d-86c1-5f32a331b16f","cmt":"Comment1bb5c4f4-9f92-4d2e-a693-9751429cd0e3","cur":"Currency86ed9884-9808-4e57-a39a-534af7c749d5","src":"Source4483479b-7133-4865-8847-38632753dc03","dt":"2023-01-28T23:08:26.312"}
-{"id":207,"amt":"Amount2e91ab7c-5aaa-4a62-a1ac-076fbfcb2966","cmt":"Comment3bb0790b-ce28-45bf-9af0-da6a04f3e07f","cur":"Currencyc83621d7-8477-43b2-81dd-056c3b9fb570","src":"Source81570add-82fb-42df-8535-db9c3405c416","dt":"2023-01-28T23:07:37.975"}
-{"id":171,"amt":"Amountc4339bb5-e721-4776-8fd4-6f207b83aa31","cmt":"Commente19327d3-6927-4db4-a0da-842de98bb6b9","cur":"Currency68b27d1a-ad8d-4f1b-a724-941d251e9148","src":"Sourcedd6e6d0e-c01c-47e3-aa94-b19b0d1abeb0","dt":"2023-01-28T23:06:49.638"}
-{"id":208,"amt":"Amount6550a6b7-a0b6-4228-90e1-bbef75c5fcf2","cmt":"Comment25392cb4-ae2c-48b5-b6c6-4df5fbc92566","cur":"Currencyc2adc459-68fa-4d03-98e1-1b6b8cef1686","src":"Source853938a8-875b-45a9-88a4-f4b8f1680030","dt":"2023-01-28T23:06:01.302"}
-{"id":34,"amt":"Amount049c15dc-33df-449c-b5e2-1730dc4439f5","cmt":"Commentefaa9f81-e6c2-49c6-bf7e-46ba9bde5716","cur":"Currency748b356f-8ee1-4da9-b136-4e2a76179bef","src":"Source3d9aab85-6ad0-491c-8cd3-938ed8ae9d55","dt":"2023-01-28T23:05:12.965"}
-{"id":89,"amt":"Amount72f80fd1-3972-44e2-bf1d-25d8f21fdba2","cmt":"Commentac3fc9c6-edc5-4b56-bc25-abb3dcdfa3e9","cur":"Currency272e3c47-f05b-4543-913b-b88383a4ad66","src":"Sourcebcc57906-0f2e-441e-8e79-b741b78ddf4f","dt":"2023-01-28T23:04:24.628"}
-{"id":231,"amt":"Amounta2e5b000-141f-4bd0-9505-203824d14d81","cmt":"Commente1bb9522-a1f7-4996-9d2a-dedbf37b7886","cur":"Currency5a9c8050-eb28-40ff-8a2d-c3c74d929be9","src":"Source8d2d6f96-77f2-49d7-b517-0b9f05b0c80f","dt":"2023-01-28T23:03:36.292"}
-{"id":142,"amt":"Amount46b4e3ef-bdd3-4c8f-9b81-6d811bdf9d53","cmt":"Comment98f031fb-51f4-459f-a94e-e0c45b475d84","cur":"Currencydf48c5fb-2d4f-4399-aa29-89235d9e15fc","src":"Source5a534f18-0136-40da-a607-8ffb9b88c33d","dt":"2023-01-28T23:02:47.955"}
-{"id":196,"amt":"Amount937eff6b-a9e8-4ef2-937c-f37544be76d3","cmt":"Comment0039f4f2-e3e9-42cf-9167-3b77320ae6a9","cur":"Currency99a62e3c-ea8e-48a8-9cfa-2308a2b472fe","src":"Source0298426d-3215-4131-801d-28c1de8db3d8","dt":"2023-01-28T23:01:59.619"}
-{"id":103,"amt":"Amount34b154d1-ee75-471b-97bb-da26d61f5685","cmt":"Comment32691af0-e8b2-4e0d-af72-ab08647e1933","cur":"Currency0e1dc7ca-f2f8-4f91-b318-1f3fb68566f5","src":"Sourcecaa7bc12-e7bd-41d6-be35-2958a0e67e88","dt":"2023-01-28T23:01:11.282"}
-{"id":153,"amt":"Amount1663028b-d4a6-4f15-9683-1024abfcb585","cmt":"Commentb040953b-8818-4a9d-95a5-c714535288a5","cur":"Currencyfe02caed-88be-4cda-b4bc-376aa4382f9a","src":"Source74825656-a548-405f-a562-467edaec9059","dt":"2023-01-28T23:00:22.945"}
-{"id":66,"amt":"Amountecec1a32-304f-4283-8353-041e240dee0c","cmt":"Commentd8f5c0b2-49bc-43f4-89a0-e58e95934751","cur":"Currency9da7f59d-ae32-418c-93dd-81418474e246","src":"Source60156df9-909f-4617-b92b-2d5e119f236e","dt":"2023-01-28T22:07:00"}
-{"id":155,"amt":"Amount03bf7fed-81e6-4d07-809a-8a773179156d","cmt":"Comment149329bf-f274-4308-8f7d-36d8efabbb35","cur":"Currency48e17540-2eb2-4aa7-ba20-168ec52743e2","src":"Source937d25d0-413a-4998-8f83-0395122bdf92","dt":"2023-01-28T22:07:00"}
-{"id":249,"amt":"Amount223c8029-9be8-4640-8632-d924011330a4","cmt":"Comment17240226-c859-4245-9061-bc24fa9cf5af","cur":"Currencya8d798de-b413-4277-b96c-110a47d7464a","src":"Source80674fdf-4812-49c1-b62c-867280c287a5","dt":"2023-01-28T22:07:00"}
-{"id":222,"amt":"Amount8f1dff1e-ff79-4880-a2d3-debd508d5991","cmt":"Commentb7afc4ba-669a-4296-aaf4-3143a7f3fb86","cur":"Currency5e6b98ba-6ce6-4b87-8643-258e833c7118","src":"Source9299bf77-f32e-4eec-b161-c67231394306","dt":"2023-01-28T22:07:00"}
-{"id":243,"amt":"Amount39b00033-c33f-400c-b4fe-50f7710d32a3","cmt":"Commentb4a23887-ae0e-4320-bf41-2668c7f73c7c","cur":"Currency42c57f5d-fe2f-4f2e-9010-8317d3a71244","src":"Source6c196769-e7ca-4d4a-917f-4a9e7a2d1396","dt":"2023-01-28T22:07:00"}
-{"id":83,"amt":"Amount4ce6629a-1e43-4ec9-9c9b-01487d54aeab","cmt":"Commentff7edc87-7a1b-4893-b00e-045fba063f09","cur":"Currency9d028f15-f715-4b13-9ece-3734f861479b","src":"Sourceeb302b18-4a9c-433d-a08f-4ab0c229a536","dt":"2023-01-28T22:07:00"}
-{"id":138,"amt":"Amount6611c3a4-0caf-4b94-9ebc-a7d95939151d","cmt":"Commentd7b308d2-35d3-418b-8cc7-b4250f73c1a4","cur":"Currencycf8be89a-2baa-4e66-b619-ca266b11f7ca","src":"Sourcea20800a9-8b95-402d-8a6d-b6116f1c7e05","dt":"2023-01-28T22:07:00"}
-{"id":22,"amt":"Amount7a70267e-f051-403e-a0ea-02f3e7a31be0","cmt":"Comment9a731c3c-a6a0-4ba8-81f5-32fa8c9eeb8b","cur":"Currency57884983-c943-4f7f-99f8-47f83f3f1cac","src":"Source5d1540c4-89aa-4bdc-9682-3b0044728cc4","dt":"2023-01-28T22:07:00"}
-{"id":33,"amt":"Amount4630bbda-3e5f-4c08-8579-6644602ace07","cmt":"Comment028180df-d53f-45a4-9d82-645b2aba6171","cur":"Currency432a3500-ced2-4453-9736-42ecc18b5e21","src":"Sourcebef04b55-cc6a-4d7b-8f95-d42afccbd0da","dt":"2023-01-28T22:07:00"}
-{"id":56,"amt":"Amounta2c17c7f-6de7-4b47-a636-e5d377c9ff67","cmt":"Comment940d1d7c-be5a-4854-881e-857ff7195625","cur":"Currency779390d2-4b14-4de8-915e-4e819f449f9c","src":"Source9c689fb0-dbdf-4743-b254-9118d2a5a8e5","dt":"2023-01-28T22:07:00"}
-{"id":118,"amt":"Amount123bcc72-456e-4bd0-aef4-fb5215ebf833","cmt":"Commenta675a0f0-20fb-4f06-8b68-b9cf88039c0b","cur":"Currencya285ead4-b13c-4376-b0bf-142859300119","src":"Source7d8c9d28-07a8-46e2-9e54-4274729e7c6d","dt":"2023-01-28T22:07:00"}
-{"id":212,"amt":"Amount843f6b19-b753-46be-890b-b16a343867f1","cmt":"Comment241ef2eb-1ba2-4931-bac0-c5dca0aa51bd","cur":"Currencyb4380fdb-55a7-421e-a1ea-4bad1f68e8cf","src":"Source92f5e84c-9940-44f0-9d7b-f2130775193a","dt":"2023-01-28T22:07:00"}
-{"id":122,"amt":"Amount8500fe61-9b05-4f09-96ac-182c3928f5f7","cmt":"Comment87004d2b-d0c7-4bb6-882d-41d5faf85c32","cur":"Currencycf946f2b-8401-4456-846c-0ec317ef1c28","src":"Sourcefcc201bc-c416-4c61-9fe7-6a7601d29ef5","dt":"2023-01-28T22:07:00"}
-{"id":67,"amt":"Amount932f8c43-5b1f-48cb-bcdd-5231b8d0473b","cmt":"Comment6d938564-76cb-431e-81c0-0dfa7843d59a","cur":"Currency271ca5a5-7e39-4ebe-a526-acf0edf5234e","src":"Source45b76b20-e42d-48ca-b849-6c55e7604f62","dt":"2023-01-28T22:07:00"}
-{"id":86,"amt":"Amountd50523c8-2607-471a-aed1-eba2c7f6d24e","cmt":"Comment6f88f975-49b6-4c33-996d-0bc41cc66587","cur":"Currencyd892323d-de81-43b6-9cfb-2e030b5a5d01","src":"Source6fb04e28-7d19-48e5-9e13-70e5c8a7292c","dt":"2023-01-28T22:07:00"}
-{"id":193,"amt":"Amount83320444-1e98-4c83-a14e-e46aaa6b72df","cmt":"Comment4f2b092b-b4a4-4f40-8154-998f464f4e71","cur":"Currency74830c2d-3d27-4c40-90e4-79543147f047","src":"Source85d1e898-f1be-48d9-bcfb-0a1931587d76","dt":"2023-01-28T22:07:00"}
-{"id":14,"amt":"Amount4e0e6f32-ce3f-4181-a136-6eb7de1af3d8","cmt":"Comment11483eae-bbd9-4361-b11e-32cac8af0725","cur":"Currencybf6bcb5e-1f00-44ae-973f-891f8108ca56","src":"Sourcedaba587b-20ad-4c45-82c6-baba6b0b9156","dt":"2023-01-28T22:07:00"}
-{"id":59,"amt":"Amountbdf847a7-9a67-48df-9acf-0d96e6926aa6","cmt":"Comment14e84fc7-9a7f-479f-be54-f1b766754f1c","cur":"Currencya8d4c1fa-c662-4e0d-ad66-4bcebd000fc2","src":"Source493922b0-2549-4a91-a3a0-a6a0530af94e","dt":"2023-01-28T22:07:00"}
-{"id":124,"amt":"Amount5f887a0c-0e0c-40bb-b499-4c3c5b5dce2a","cmt":"Comment03d5ce9b-296f-4e14-91d6-6df147d3ff7c","cur":"Currencye2c701b0-2bc6-4545-871b-26f6a4bc53b7","src":"Sourceeb0c8b5f-78a1-4a36-8975-fed3865a7f90","dt":"2023-01-28T22:07:00"}
-{"id":211,"amt":"Amount66fe668a-2c32-490b-840a-9f1b65f9b3eb","cmt":"Commentbaa8a11e-b604-4fec-a4da-2ce4454f21f1","cur":"Currencya33e8aa9-a266-40f8-b343-b614fb208f40","src":"Sourcef8952ae1-2274-410a-a90d-014d66b4901d","dt":"2023-01-28T22:07:00"}
-{"id":170,"amt":"Amounte10a1b8f-4c23-4aec-84c6-6240ebd32608","cmt":"Comment13676b21-7423-4e7c-a919-cdae3f2bb73a","cur":"Currencyfcabafaf-d596-4dcc-9d53-cd84e7e50187","src":"Source28c6192d-c4a3-4096-9d0a-2507a8078daf","dt":"2023-01-28T22:07:00"}
-{"id":117,"amt":"Amount781e0ec9-e54c-410a-8baa-9f022e01cac0","cmt":"Commentf8d7b81f-dcd4-4deb-97d0-269cf6f09fa5","cur":"Currency8eb706f1-e25a-4839-920f-b7f4d0a7ea6a","src":"Sourceb6c236bf-5057-4bd7-8239-fa1d2202d7fc","dt":"2023-01-28T22:07:00"}
-{"id":128,"amt":"Amountda7f9f72-5123-42da-a980-e2befe79fcad","cmt":"Commentcdcdf2ff-631a-4f26-bcde-fd88058b2503","cur":"Currencyc389f207-f12f-49ac-bcd7-2788233483ff","src":"Sourced07ab699-1434-4599-bfca-79addcbf2c63","dt":"2023-01-28T22:07:00"}
-{"id":31,"amt":"Amount7a82d1c4-41d7-443c-941c-4d2e9d553022","cmt":"Comment350280ac-d736-4b08-8944-eebb52e43526","cur":"Currency44f96001-6a11-4c3a-b8b5-a95d679a4f3e","src":"Sourcef4078961-79e7-4f11-9a66-eeb404b686c0","dt":"2023-01-28T22:07:00"}
-{"id":184,"amt":"Amount724c3b6f-46fb-42be-9551-1e5a2fddcc98","cmt":"Comment7eaebe6d-f6ac-401b-a3ab-23285a578d16","cur":"Currencyd2659667-7b5a-4696-a79f-23fab7c7c165","src":"Sourced9498bb7-565f-4509-8658-622d91e9dc19","dt":"2023-01-28T22:07:00"}
-{"id":16,"amt":"Amountc841fa73-8049-40cc-8cc7-067e076539f2","cmt":"Commente15cdce5-4244-4003-850d-63c64e33a977","cur":"Currencyf5af6eb7-1caa-420b-a13f-97c34903aded","src":"Source5c68ba02-6cd3-484a-a42d-9f2c656ae23c","dt":"2023-01-28T22:07:00"}
-{"id":74,"amt":"Amountb8336e3a-c93f-40bc-9022-fb85b229a93b","cmt":"Comment4d44282d-e498-4aae-894c-483fae8814b2","cur":"Currency4498ccdb-b86f-4c02-8e5c-c8bac276a475","src":"Source601dc67e-98ee-4015-a4db-d4ebf8470cc6","dt":"2023-01-28T22:07:00"}
-{"id":147,"amt":"Amount311a19ef-da48-40d3-ad83-fc07201c4819","cmt":"Comment0f828fa9-3b9b-4a5e-85ad-dfb9c3db8031","cur":"Currency79fc0cc7-c366-476a-9db7-bbdb50026f23","src":"Source47c188fc-598e-426d-8932-5e9308d6f328","dt":"2023-01-28T22:07:00"}
-{"id":92,"amt":"Amount0cce372f-9236-4f65-a734-e0cc4d2a0278","cmt":"Comment32dc8d04-ce7b-4cba-bd53-8eabb7522851","cur":"Currencye190cbcb-b205-4704-ab3e-933476942085","src":"Sourcedc8d53aa-7d22-4772-b90a-137bc96d62ca","dt":"2023-01-28T22:07:00"}
-{"id":198,"amt":"Amount78a4be5b-7bff-49a5-b35e-06d936c6890d","cmt":"Comment314677c4-e531-4a0a-8332-a149a0f61325","cur":"Currency838b7017-1be7-4142-9354-0a8f2dab659b","src":"Source31f107bf-03b8-41c6-8e7f-1f6121f2ae73","dt":"2023-01-28T22:07:00"}
-{"id":10,"amt":"Amount4a0fc800-7063-448b-8448-83c02ac0beb8","cmt":"Comment371b189b-0f42-4a58-80fa-f228ae047724","cur":"Currencyd2ef23dc-e98a-43ca-8454-500ae72f4f6a","src":"Sourceb0bf0932-168c-47a2-9f2a-8797785fd483","dt":"2023-01-28T22:07:00"}
-{"id":115,"amt":"Amountd04f0f3c-d96b-4724-9188-be194c3b3d31","cmt":"Comment0e11727c-6f3f-486a-8a19-a06acfd7b10f","cur":"Currencycac8c921-86d8-41ed-becc-19f462151e24","src":"Sourcee48482ce-52f5-4db6-9dab-cf6fe06b6ca0","dt":"2023-01-28T22:07:00"}
-{"id":186,"amt":"Amount44583752-c57d-46e4-b3f5-61a58234d8a7","cmt":"Commentb379f4b0-86f0-4f23-ab68-96c34ec6421c","cur":"Currency954d3d58-4ca1-43a0-b888-63f688592942","src":"Source205961fb-9779-4f9d-b071-5be197e83988","dt":"2023-01-28T22:07:00"}
-{"id":160,"amt":"Amount1e3b0bb2-c826-437a-b6e4-b6092578eb0f","cmt":"Comment723e894d-81fc-49d1-8486-d706c82b2026","cur":"Currencyf7cf1976-c345-44e3-bdd2-d4354b8d31fe","src":"Source7ad32b25-9392-4b4e-adda-a3743e999eb7","dt":"2023-01-28T21:59:45.564"}
-{"id":217,"amt":"Amount044bfbe5-289e-422d-b7da-d78971a9d758","cmt":"Comment33905e76-3cb7-4d15-9923-c0abc74c72e6","cur":"Currencya807873d-d22f-429d-91c5-2edd54e9481a","src":"Source59fea50c-73b7-4677-8408-f409297726dc","dt":"2023-01-28T21:58:57.316"}
-{"id":201,"amt":"Amount3810e2b8-54d3-486d-a2ea-2ddb262e28cd","cmt":"Comment265d0a7f-29c0-4586-b814-8064402857d6","cur":"Currency6020583a-8633-4ef3-8533-bc895571cd76","src":"Source6ba1446f-24de-4096-bdf6-221f3c1627d5","dt":"2023-01-28T21:58:09.068"}
-{"id":101,"amt":"Amountf958daa8-3002-43d1-8e4b-c8b43579d9ec","cmt":"Commentea399ae7-0878-48c0-b731-8a78f7d97888","cur":"Currency9b5aa70d-37ba-4c0f-befe-0b44d1236351","src":"Sourcebd98cd30-140b-47ef-af95-917db3ed2913","dt":"2023-01-28T21:57:20.819"}
-{"id":226,"amt":"Amount444b1ea3-5cc9-4e08-bdde-5ad29fc96db5","cmt":"Commenta8605198-7583-4f60-b8e8-af0c50e1a58b","cur":"Currencya3004847-c5b9-4a2b-bf8b-ff19f6518ced","src":"Sourcebd7cb535-e510-489c-8544-dde85eca615d","dt":"2023-01-28T21:56:32.571"}
-{"id":4,"amt":"Amountbeb5dcce-6a14-4b63-8a13-a8eca3eba356","cmt":"Comment894f2982-5787-4917-badb-7b181b6efdad","cur":"Currency722b6de8-4247-4974-86ec-a87c771737be","src":"Source6810fdb9-fcad-4b22-bda0-afc5c0df66f6","dt":"2023-01-28T21:55:44.322"}
-{"id":202,"amt":"Amounta33ab0a1-0777-4489-a9f0-87d2a15cc356","cmt":"Commentb13c827d-0868-4604-98f7-7feb4b1b660c","cur":"Currencya0363d27-1181-4327-9b81-7f99dc75952f","src":"Source48d741f1-7b59-4011-8844-71a7d29ad981","dt":"2023-01-28T21:54:56.074"}
-{"id":47,"amt":"Amount21e0e469-299c-4596-b147-66f8301a6386","cmt":"Comment5a2aa28c-7998-4d51-a2ce-abb463f7039e","cur":"Currency1c37fe27-2bcc-4018-836c-20243556e97a","src":"Source7aaf8666-a191-466f-b89c-d4240256222b","dt":"2023-01-28T21:54:07.826"}
-{"id":21,"amt":"Amount20c7b492-dddc-45c6-902c-cc70ded9585c","cmt":"Comment59630542-83c7-44dd-993c-187d3c88cbca","cur":"Currencya47bc4fe-c87c-4ea6-b702-e5dc9ae18dc9","src":"Source58db9580-ba37-4cec-83d6-386408713d84","dt":"2023-01-28T21:53:19.577"}
-{"id":215,"amt":"Amount988d3521-53d0-45fb-8b71-3a4d46eb44f5","cmt":"Commentb68eaea5-b1b8-4e3c-88a9-7bead786f491","cur":"Currency6fadf48b-d675-4cfb-9ad3-4460868c7400","src":"Source117b9da5-ead3-423f-a83a-d2e27521ae96","dt":"2023-01-28T21:52:31.329"}
-{"id":26,"amt":"Amountee765b33-a3b8-4ed8-a2ed-40621d454b6f","cmt":"Commentfc420a45-4398-4d73-9227-41e4b6802b60","cur":"Currencyed75b995-c524-46f8-8005-d871d7cfd3d4","src":"Sourced55beae1-2340-416f-b7b9-2fced1a27ea8","dt":"2023-01-28T21:51:43.08"}
-{"id":5,"amt":"Amount47f10795-5d1f-4787-8615-43cb597e50af","cmt":"Comment5aaf524e-7e6f-4d2e-8c41-519e389321a9","cur":"Currencyfe2e0d6b-5f75-4e1b-9756-d72261279962","src":"Source6493d02e-ef42-43e0-8dfd-25ddf73319b8","dt":"2023-01-28T21:50:54.832"}
-{"id":109,"amt":"Amounte65a4a18-49a6-4218-ac79-87eefd11630e","cmt":"Commentb67ef188-b36d-4d90-8c92-d43e7ad702d3","cur":"Currency1443d215-23b4-4a8b-9367-3e95f6762d4a","src":"Source050a4f51-27a9-4f67-99af-2dc89f18eb3b","dt":"2023-01-28T21:50:06.584"}
-{"id":197,"amt":"Amounte4e946d5-cec9-41b2-99d7-5168a64755c6","cmt":"Comment9b0a7a95-0e24-4c2c-95e3-45413b9d85a4","cur":"Currency13f7f354-9e38-414b-b64d-7eb7d098be4a","src":"Sourcee3cd4637-27cc-43ac-a7e9-7d87e64c3d37","dt":"2023-01-28T21:49:18.335"}
-{"id":11,"amt":"Amount91fdb70e-adb0-43e6-b0d9-edd613d3bbbb","cmt":"Commentce182e85-5d51-4114-8202-8c26f21b78a3","cur":"Currency4d1a6647-4ae4-4540-8ec0-2ce8bb754ed3","src":"Sourced6c6718c-5eca-4f3e-ac00-470c5ce8d2b4","dt":"2023-01-28T21:48:30.087"}
-{"id":191,"amt":"Amount1750665e-aaa1-4fb4-940b-e804dd945755","cmt":"Commentae8b7535-edbc-4ffe-adff-4e1cc5f61d1e","cur":"Currency5fd55dc1-c66c-40c0-81b9-d7a71782df3a","src":"Source65f29b0e-c9ce-43fe-95b9-5d675f7dfec4","dt":"2023-01-28T21:47:41.838"}
-{"id":18,"amt":"Amount695b5257-7351-4616-888f-8832336681d2","cmt":"Comment96c40a3b-5e70-43bf-893f-d4b8dabaf142","cur":"Currency4e0ce593-dd86-42a8-bc9b-a7e984d826c7","src":"Sourceced43b18-e31e-4d0f-bbdd-ebf6040091e2","dt":"2023-01-28T21:46:53.59"}
-{"id":23,"amt":"Amount81865485-b267-4268-a648-070cdb61db93","cmt":"Comment7a0481e1-4aa9-4664-814b-7cebc77d907c","cur":"Currency4ff21813-71c5-4d94-8402-ecd57f201fa6","src":"Source945eaafc-cc57-450b-a047-315b7d835110","dt":"2023-01-28T21:46:05.342"}
-{"id":166,"amt":"Amount0cd0ec2f-01ba-439b-af0b-97d267e4be84","cmt":"Comment156551ab-2d42-4eca-904d-6ce3ca357216","cur":"Currencya580af86-ea8e-4788-a031-493b42dfb3d7","src":"Source18f84780-8f27-49c0-b65e-197bb8d1b340","dt":"2023-01-28T21:45:17.093"}
-{"id":45,"amt":"Amounta423cf87-2481-4ebd-a70c-4bd33b7b77a9","cmt":"Commenta6403d76-cef7-4572-a62c-24ca7f7e2339","cur":"Currencyaa7612eb-4580-43cd-91c0-14f59e6439e8","src":"Source721cfe4f-2fc3-423a-80f3-9704569edb03","dt":"2023-01-28T21:44:28.845"}
-{"id":144,"amt":"Amountd383107d-d67d-4648-b645-9bad47b8436b","cmt":"Commentdec2fd6f-03af-4902-820a-38c4a00a6bc4","cur":"Currencya9d15080-3430-4655-9ae0-c7fc117027ee","src":"Sourced1a57141-8802-454f-b720-c287bdbb71c3","dt":"2023-01-28T21:43:40.596"}
-{"id":76,"amt":"Amount0d7d2092-4038-494f-b864-1f3ff3d4d35a","cmt":"Comment1456b7dd-16e9-41c3-a5a6-8447628111ed","cur":"Currency6d160001-2a52-4c97-96fa-4b6a0cb60ae1","src":"Sourcedf39bf40-3a7b-4ed8-b031-5cce3e398e7e","dt":"2023-01-28T21:42:52.348"}
-{"id":29,"amt":"Amount11610611-6adf-4a4e-8c1b-92340058a8a5","cmt":"Comment8299fd50-f634-4aea-9dfd-5b0a13521822","cur":"Currency53542ebc-a7d5-46f9-badc-672614d07ec6","src":"Source978b2506-6380-4f34-9fdd-9be7ccb2308a","dt":"2023-01-28T21:42:04.1"}
-{"id":152,"amt":"Amount99df3896-78b2-4e16-b5a4-1601f4fd7421","cmt":"Commenta1749524-771b-4373-94ae-3c17061db0e8","cur":"Currency54c7a42a-9fa8-484b-986e-c7b7ee8fc13a","src":"Source5880718c-b7cf-451c-bf2b-4e6020b0fbb6","dt":"2023-01-28T21:41:15.851"}
-{"id":75,"amt":"Amounta31d0ff4-2edf-4d79-8735-dea97147c116","cmt":"Comment8ed0c02a-d425-42a5-b60c-46d51d40f3fa","cur":"Currencyfca01600-2d55-430e-bc82-6347dd8462de","src":"Source9ba85020-d4d5-4772-962f-6955b47f316a","dt":"2023-01-28T21:40:27.603"}
-{"id":238,"amt":"Amount555dcfdf-ed41-4dbe-9dbc-3de565f5ed2f","cmt":"Comment6b644662-8730-4d4f-a1e6-11e82c133346","cur":"Currencydb47c183-e77e-43f2-9109-31e49bd07410","src":"Source2b920899-c269-4f34-af22-f4310c0b1dbd","dt":"2023-01-28T21:39:39.354"}
-{"id":189,"amt":"Amounte19e925d-ffcd-4c8e-90e7-b4ae3f413211","cmt":"Commentff79bfe1-ea57-40fd-a825-3b3a8fc6e1d4","cur":"Currencyd8fc63f1-10d0-4514-a2e6-0015e36149e1","src":"Sourcede7f24ed-e5bd-4034-9c5d-b3374c961d56","dt":"2023-01-28T21:38:51.106"}
-{"id":195,"amt":"Amounta1b8e13e-b1b9-4a00-a5b5-8d7ed01ffaf7","cmt":"Comment23036205-aae9-4c26-99f8-044575163478","cur":"Currency4ae36e90-5509-4773-a413-962948da06aa","src":"Sourceb61c153b-bb86-4fdc-9924-6c1c55c0f20d","dt":"2023-01-28T21:38:02.858"}
-{"id":251,"amt":"Amount46c21049-694a-4257-8eb4-a2a1f9840b4d","cmt":"Comment769bafc9-f364-4b4b-b95b-2f6d9ed177a4","cur":"Currencyea3a8ef3-2465-4b16-90a5-8eaf5e4fbfb3","src":"Source9730dcff-dc51-4e73-9ff9-30ab195c4968","dt":"2023-01-28T21:37:14.609"}
-{"id":220,"amt":"Amount40534aef-f9c7-47c7-bc46-eb5434670997","cmt":"Comment2403085a-2d20-4d9b-a321-f5aa2956c6a2","cur":"Currencyd9fbdcd3-f26c-4662-8771-a8844fcecb34","src":"Sourced1ffe6b6-6b53-4c21-8353-8256d5173931","dt":"2023-01-28T21:36:26.361"}
-{"id":130,"amt":"Amount8c0b2f50-67c6-4238-87de-6a7f439b8381","cmt":"Commente4649563-7b89-4633-8fe1-cf637576cfb2","cur":"Currency185b4e53-1e6c-452d-b0dc-b8d998169494","src":"Sourced026e1d3-ce5f-4581-9818-3d0d771ed0c9","dt":"2023-01-28T21:35:38.112"}
-{"id":158,"amt":"Amount41eb0df4-2a59-4a72-a3f8-1b4c0ab26020","cmt":"Commente1719446-9cec-42a6-be49-09bbb43fe3b2","cur":"Currency7a42263c-5967-41c3-be56-b1ed2991182d","src":"Source6c9042e9-2966-422f-8137-966206a564d3","dt":"2023-01-28T21:34:49.864"}
-{"id":50,"amt":"Amount0eac47ca-34d6-4520-8458-bad798ac499e","cmt":"Commentad169355-ba5a-4137-a4d8-d8f3e336c74f","cur":"Currency20f36fc2-e860-47c4-a806-6d4d46e588a0","src":"Source24182b29-d5dc-47da-9387-5c53e6097499","dt":"2023-01-28T21:34:01.616"}
-{"id":43,"amt":"Amount300eed60-4597-4c27-a728-ad14f06be644","cmt":"Comment94204803-4769-478d-83a5-8fe80ce0f005","cur":"Currency9826167c-0e63-4be7-93a6-efd962ee22bd","src":"Source1d04f3bc-3ccd-4b44-ab69-de730df1411a","dt":"2023-01-28T21:33:13.367"}
-{"id":150,"amt":"Amount2ffd6e0d-b1ec-4781-bb14-6fb26a5571b3","cmt":"Comment04581383-9005-4c21-adbb-140ad63b400e","cur":"Currency890df632-a9a3-4311-89df-bc1fce755ac9","src":"Sourcef36f9242-d58a-403d-bffb-4d318ceb8247","dt":"2023-01-28T21:32:25.119"}
-{"id":27,"amt":"Amount03cbf0de-7f96-45bb-80d6-78b4b531fde7","cmt":"Comment60a0cbdd-900a-4bbf-ac8f-030be9d3fa43","cur":"Currency1def02fc-fccb-460d-8e73-c80c0a750ca3","src":"Sourceb3cbb0e9-e097-409f-8c02-031f31c2b138","dt":"2023-01-28T21:31:36.87"}
-{"id":168,"amt":"Amountf5cd7549-67ca-4d32-a67b-353e51004e92","cmt":"Commenta82da2d0-8e3e-490c-ac9a-b790452503b9","cur":"Currency10d5c113-47ed-4f9a-9b94-a57cb5d4cdd6","src":"Source7a5dbeef-316b-427b-a131-d2ee9dbc0da5","dt":"2023-01-28T21:30:48.622"}
-{"id":41,"amt":"Amounta1acacfb-9e3a-4d51-b6cd-7403cad00425","cmt":"Comment19cc8738-10a7-4435-b22a-d2434862a3c0","cur":"Currencye19255ed-ea5d-47e1-b3c5-99d01dacdde2","src":"Source3ebf3b0e-3e78-44f4-b64b-9b32bacbf56a","dt":"2023-01-28T21:30:00.374"}
-{"id":233,"amt":"Amount06cb030b-7126-48ab-b89f-d7250cf3864f","cmt":"Commentef9a77fd-1f3d-4880-a413-b6d3f165fac6","cur":"Currency565e036d-cc45-413c-91c7-c6a42a7f6e62","src":"Sourcedeeccb7e-33b3-408f-9a29-22b58f3b4244","dt":"2023-01-28T21:29:12.125"}
-{"id":102,"amt":"Amountd3b8df1e-71a0-48e9-81b5-215092f7528b","cmt":"Comment05b1bc49-e255-4926-a0da-575ad87d85e9","cur":"Currencyfa118374-6d8c-4522-9bf4-3bb7830d0a64","src":"Source8700d3c7-a377-408b-8da2-3326ce726611","dt":"2023-01-28T21:28:23.877"}
-{"id":132,"amt":"Amount5357c490-c069-4eb4-95aa-989ac2166a33","cmt":"Comment20c1f101-2288-43ae-b6c3-cc44f8e4bb83","cur":"Currencyaa1c6fee-9f7f-4384-bb45-aa40127b4d67","src":"Source8ef4dd64-71cd-46ba-90cf-88f206f757dd","dt":"2023-01-28T21:27:35.628"}
+{"id":164954454,"amt":"400.00","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 808402 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T23:57:00Z"}
+{"id":164954455,"amt":"50.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:54:00Z"}
+{"id":164954456,"amt":"500.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:53:00Z"}
+{"id":164954457,"amt":"300.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:53:00Z"}
+{"id":163769886,"amt":"300.00","cmt":"UKR ***3110 (300 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T23:51:58Z"}
+{"id":164954458,"amt":"50.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:51:00Z"}
+{"id":163766525,"amt":"1000.00","cmt":"UKR ***8074 (1000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T23:49:02Z"}
+{"id":164954459,"amt":"25.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:48:00Z"}
+{"id":163761327,"amt":"1000.00","cmt":"UKR ***4092 (1000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T23:45:41Z"}
+{"id":163761353,"amt":"1500.00","cmt":"FRA ***4310 (1500 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T23:45:23Z"}
+{"id":164954460,"amt":"150.00","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 577124 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T23:45:00Z"}
+{"id":163779864,"amt":"979.00","cmt":"Благодійний внесок ***7418 (1000.00 UAH)","cur":"UAH","src":"Fondy","dt":"2023-01-31T23:42:51Z"}
+{"id":163746556,"amt":"150.00","cmt":"UKR ***2547 (150 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T23:33:50Z"}
+{"id":163744873,"amt":"1000.00","cmt":"UKR ***7681 (1000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T23:32:31Z"}
+{"id":164954461,"amt":"150.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:32:00Z"}
+{"id":164954462,"amt":"50.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:32:00Z"}
+{"id":164954463,"amt":"33.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:30:00Z"}
+{"id":164954464,"amt":"100.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:29:00Z"}
+{"id":163738264,"amt":"10000.00","cmt":"UKR ***7423 (10000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T23:28:02Z"}
+{"id":164954466,"amt":"2023.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:28:00Z"}
+{"id":164954465,"amt":"300.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:28:00Z"}
+{"id":164954468,"amt":"3.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:28:00Z"}
+{"id":164954467,"amt":"20.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:28:00Z"}
+{"id":164954471,"amt":"25.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:27:00Z"}
+{"id":164954469,"amt":"200.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:27:00Z"}
+{"id":164954470,"amt":"2.90","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:27:00Z"}
+{"id":164954472,"amt":"200.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:26:00Z"}
+{"id":164954474,"amt":"1000.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:26:00Z"}
+{"id":164954476,"amt":"1.50","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:26:00Z"}
+{"id":164954473,"amt":"4.29","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:26:00Z"}
+{"id":164954475,"amt":"1000.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:26:00Z"}
+{"id":164954478,"amt":"200.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:25:00Z"}
+{"id":164954477,"amt":"50.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:25:00Z"}
+{"id":164954479,"amt":"1350.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:25:00Z"}
+{"id":164954480,"amt":"100.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:24:00Z"}
+{"id":164954483,"amt":"1000.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:24:00Z"}
+{"id":164954482,"amt":"1000.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:24:00Z"}
+{"id":164954481,"amt":"10.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:24:00Z"}
+{"id":163732904,"amt":"5000.00","cmt":"UKR ***9689 (5000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T23:23:40Z"}
+{"id":164954486,"amt":"130.13","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:23:00Z"}
+{"id":164954485,"amt":"3000.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:23:00Z"}
+{"id":164954488,"amt":"100.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:23:00Z"}
+{"id":164954484,"amt":"50.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:23:00Z"}
+{"id":164954487,"amt":"200.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:23:00Z"}
+{"id":163731234,"amt":"5000.00","cmt":"UKR ***2247 (5000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T23:22:46Z"}
+{"id":163731222,"amt":"5000.00","cmt":"UKR ***9689 (5000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T23:22:41Z"}
+{"id":164954489,"amt":"38.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:22:00Z"}
+{"id":164954490,"amt":"1000.00","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 808198 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T23:21:00Z"}
+{"id":164954491,"amt":"50.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:20:00Z"}
+{"id":164954492,"amt":"10.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:18:00Z"}
+{"id":163724342,"amt":"150.00","cmt":"UKR ***1976 (150 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T23:17:06Z"}
+{"id":164954494,"amt":"50.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:17:00Z"}
+{"id":164954493,"amt":"100.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:17:00Z"}
+{"id":164954497,"amt":"50.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:17:00Z"}
+{"id":164954498,"amt":"200.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:17:00Z"}
+{"id":164954496,"amt":"22.68","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:17:00Z"}
+{"id":164954495,"amt":"10000.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:17:00Z"}
+{"id":164954499,"amt":"50.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:16:00Z"}
+{"id":163720857,"amt":"500.00","cmt":"UKR ***7333 (500 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T23:14:36Z"}
+{"id":164954500,"amt":"50.00","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 580941 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T23:12:00Z"}
+{"id":164954501,"amt":"100.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:12:00Z"}
+{"id":163715695,"amt":"100.00","cmt":"UKR ***9500 (100 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T23:11:19Z"}
+{"id":164954502,"amt":"300.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:11:00Z"}
+{"id":164954505,"amt":"186.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:11:00Z"}
+{"id":164954504,"amt":"10.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:11:00Z"}
+{"id":164954506,"amt":"50.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:11:00Z"}
+{"id":164954503,"amt":"200.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:11:00Z"}
+{"id":163715604,"amt":"250.00","cmt":"UKR ***9297 (250 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T23:10:15Z"}
+{"id":164954507,"amt":"100.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:10:00Z"}
+{"id":164954508,"amt":"100.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:09:00Z"}
+{"id":164954510,"amt":"250.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:09:00Z"}
+{"id":164954509,"amt":"70.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:09:00Z"}
+{"id":164954513,"amt":"50.00","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 119047 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T23:08:00Z"}
+{"id":164954511,"amt":"500.00","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 16071 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T23:08:00Z"}
+{"id":164954521,"amt":"500.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:08:00Z"}
+{"id":164954524,"amt":"3000.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:08:00Z"}
+{"id":164954512,"amt":"1000.00","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 925535 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T23:08:00Z"}
+{"id":164954516,"amt":"150.00","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 285547 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T23:08:00Z"}
+{"id":164954514,"amt":"25.00","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 484154 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T23:08:00Z"}
+{"id":164954517,"amt":"50.00","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 128556 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T23:08:00Z"}
+{"id":164954515,"amt":"3000.00","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 789047 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T23:08:00Z"}
+{"id":164954518,"amt":"500.00","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 939096 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T23:08:00Z"}
+{"id":164954523,"amt":"1.28","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:08:00Z"}
+{"id":164954519,"amt":"50.00","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 830428 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T23:08:00Z"}
+{"id":164954520,"amt":"100.00","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 495732 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T23:08:00Z"}
+{"id":164954522,"amt":"5.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:08:00Z"}
+{"id":163712193,"amt":"200.00","cmt":"UKR ***6752 (200 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T23:07:37Z"}
+{"id":164954536,"amt":"100.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:07:00Z"}
+{"id":164954527,"amt":"374.53","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 567207 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T23:07:00Z"}
+{"id":164954526,"amt":"1000.00","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 300877 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T23:07:00Z"}
+{"id":164954530,"amt":"200.00","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 129670 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T23:07:00Z"}
+{"id":164954537,"amt":"100.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T23:07:00Z"}
+{"id":164954529,"amt":"100.00","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 881059 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T23:07:00Z"}
+{"id":164954533,"amt":"1000.00","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 652569 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T23:07:00Z"}
+{"id":164954535,"amt":"2000.00","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 262295 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T23:07:00Z"}
+{"id":164954528,"amt":"100.00","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 374351 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T23:07:00Z"}
+{"id":164954525,"amt":"200.00","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 366403 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T23:07:00Z"}
+{"id":164954531,"amt":"500.00","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 764533 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T23:07:00Z"}
+{"id":164954532,"amt":"5000.00","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 784134 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T23:07:00Z"}
+{"id":164954534,"amt":"150.00","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 52750 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T23:07:00Z"}
+{"id":163708959,"amt":"500.00","cmt":"UKR ***5749 (500 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T23:06:17Z"}
+{"id":163701887,"amt":"10000.00","cmt":"UKR ***8958 (10000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T23:01:05Z"}
+{"id":163699968,"amt":"734.56","cmt":"USA ***6149 (20 USD)","cur":"USD","src":"Solidgate Card","dt":"2023-01-31T22:59:50Z"}
+{"id":163699869,"amt":"20000.00","cmt":"UKR ***5404 (20000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:59:38Z"}
+{"id":356223835,"amt":"193065.66","cmt":"Кред.заб. за прийн.плат. 4256914 Повернись живим, БФ 39696398 (Монобанк) -- Приняті платежі згідно реєстру \u2116__povernuczhivum_v1.csv","cur":"UAH","src":"Universal","dt":"2023-01-31T22:59:00Z"}
+{"id":163697854,"amt":"300.00","cmt":"UKR ***5201 (300 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:58:22Z"}
+{"id":163697830,"amt":"250.00","cmt":"UKR ***5858 (250 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:58:19Z"}
+{"id":163695809,"amt":"100.00","cmt":"UKR ***0324 (100 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:56:56Z"}
+{"id":163695567,"amt":"1000.00","cmt":"UKR ***2921 (1000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:55:29Z"}
+{"id":163693707,"amt":"200.00","cmt":"UKR ***0324 (200 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:55:10Z"}
+{"id":163693651,"amt":"1000.00","cmt":"UKR ***1574 (1000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:54:57Z"}
+{"id":163692059,"amt":"101.00","cmt":"UKR ***0259 (101 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:54:20Z"}
+{"id":163691946,"amt":"1000.00","cmt":"UKR ***9097 (1000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:53:52Z"}
+{"id":163690267,"amt":"5000.00","cmt":"UKR ***9689 (5000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:52:35Z"}
+{"id":163688507,"amt":"20.00","cmt":"UKR ***8726 (20 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:51:43Z"}
+{"id":163686704,"amt":"30.00","cmt":"UKR ***1441 (30 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:49:38Z"}
+{"id":163679600,"amt":"7345.51","cmt":"null *** (200 USD)","cur":"USD","src":"Solidgate Card","dt":"2023-01-31T22:44:50Z"}
+{"id":163679241,"amt":"50.00","cmt":"POL ***1468 (50 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:44:10Z"}
+{"id":163677169,"amt":"50.00","cmt":"POL ***1468 (50 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:42:54Z"}
+{"id":163675393,"amt":"734.56","cmt":"USA ***2814 (20 USD)","cur":"USD","src":"Solidgate Card","dt":"2023-01-31T22:42:41Z"}
+{"id":163675139,"amt":"500.00","cmt":"UKR ***2858 (500 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:42:00Z"}
+{"id":163675175,"amt":"50.00","cmt":"POL ***1468 (50 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:41:40Z"}
+{"id":163673214,"amt":"50.00","cmt":"POL ***1468 (50 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:40:15Z"}
+{"id":163671516,"amt":"300.00","cmt":"UKR ***8819 (300 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:39:34Z"}
+{"id":163671545,"amt":"10000.00","cmt":"UKR ***7543 (10000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:39:28Z"}
+{"id":163671449,"amt":"500.00","cmt":"UKR ***0181 (500 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:38:46Z"}
+{"id":163669831,"amt":"50.00","cmt":"POL ***1468 (50 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:38:34Z"}
+{"id":163668062,"amt":"200.00","cmt":"UKR ***0777 (200 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:37:14Z"}
+{"id":163664256,"amt":"1000.00","cmt":"UKR ***0071 (1000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:34:01Z"}
+{"id":163660787,"amt":"720.00","cmt":"UKR ***9231 (720 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:32:23Z"}
+{"id":163662408,"amt":"500.00","cmt":"USA ***3167 (500 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:32:09Z"}
+{"id":163660774,"amt":"1000.00","cmt":"UKR ***1418 (1000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:31:22Z"}
+{"id":163658873,"amt":"797.02","cmt":"LTU ***7081 (20 EUR)","cur":"EUR","src":"Solidgate Card","dt":"2023-01-31T22:30:48Z"}
+{"id":163658772,"amt":"50.00","cmt":"ISR ***3640 (50 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:30:31Z"}
+{"id":163652099,"amt":"200.00","cmt":"UKR ***5703 (200 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:26:41Z"}
+{"id":163652221,"amt":"200.00","cmt":"UKR ***1330 (200 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:26:30Z"}
+{"id":163652150,"amt":"300.00","cmt":"UKR ***7291 (300 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:26:27Z"}
+{"id":163652136,"amt":"123.00","cmt":"UKR ***4868 (123 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:26:24Z"}
+{"id":163651884,"amt":"500.00","cmt":"UKR ***7797 (500 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:26:19Z"}
+{"id":163650169,"amt":"734.56","cmt":"TJK ***7172 (20 USD)","cur":"USD","src":"Solidgate Card","dt":"2023-01-31T22:25:27Z"}
+{"id":163649860,"amt":"100.00","cmt":"UKR ***5703 (100 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:25:22Z"}
+{"id":163649818,"amt":"8.00","cmt":"UKR ***8458 (8 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:25:18Z"}
+{"id":163649960,"amt":"500.00","cmt":"UKR ***2300 (500 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:25:16Z"}
+{"id":163647460,"amt":"900.00","cmt":"UKR ***5052 (900 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:23:43Z"}
+{"id":163647713,"amt":"1000.00","cmt":"UKR ***1683 (1000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:23:41Z"}
+{"id":163647448,"amt":"2000.00","cmt":"UKR ***7300 (2000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:23:36Z"}
+{"id":163647437,"amt":"100.00","cmt":"UKR ***6095 (100 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:23:15Z"}
+{"id":163645762,"amt":"100.00","cmt":"UKR ***2315 (100 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:22:59Z"}
+{"id":163643091,"amt":"1000.00","cmt":"UKR ***3633 (1000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:21:06Z"}
+{"id":163643356,"amt":"1000.00","cmt":"UKR ***1889 (1000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:21:05Z"}
+{"id":163641414,"amt":"500.00","cmt":"UKR ***6095 (500 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:20:12Z"}
+{"id":163641215,"amt":"300.00","cmt":"POL ***5585 (300 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:19:50Z"}
+{"id":163639410,"amt":"1000.00","cmt":"UKR ***7424 (1000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:19:24Z"}
+{"id":163640962,"amt":"50.00","cmt":"UKR ***5896 (50 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:19:12Z"}
+{"id":163639220,"amt":"100.00","cmt":"UKR ***2037 (100 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:19:07Z"}
+{"id":163638918,"amt":"2000.00","cmt":"UKR ***0557 (2000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:18:23Z"}
+{"id":163637347,"amt":"797.02","cmt":"HUN ***3002 (20 EUR)","cur":"EUR","src":"Solidgate Card","dt":"2023-01-31T22:18:12Z"}
+{"id":163637354,"amt":"500.00","cmt":"UKR ***6934 (500 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:17:42Z"}
+{"id":163637186,"amt":"100.00","cmt":"UKR ***8008 (100 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:17:18Z"}
+{"id":163635217,"amt":"1836.38","cmt":"GBR ***6984 (50 USD)","cur":"USD","src":"Solidgate Card","dt":"2023-01-31T22:16:24Z"}
+{"id":163633250,"amt":"1000.00","cmt":"UKR ***8445 (1000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:14:54Z"}
+{"id":163633029,"amt":"666.00","cmt":"UKR ***9292 (666 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:14:36Z"}
+{"id":163631461,"amt":"1000.00","cmt":"UKR ***8445 (1000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:14:07Z"}
+{"id":163631300,"amt":"666.00","cmt":"UKR ***9292 (666 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:13:57Z"}
+{"id":163631040,"amt":"1000.00","cmt":"UKR ***8445 (1000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:12:52Z"}
+{"id":163629309,"amt":"1992.55","cmt":"DEU ***5706 (50 EUR)","cur":"EUR","src":"Solidgate Card","dt":"2023-01-31T22:12:30Z"}
+{"id":163629098,"amt":"2000.00","cmt":"UKR ***3768 (2000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:11:32Z"}
+{"id":163625528,"amt":"1000.00","cmt":"UKR ***3298 (1000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:10:13Z"}
+{"id":163627194,"amt":"40.00","cmt":"UKR ***0385 (40 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:10:09Z"}
+{"id":163625328,"amt":"1000.00","cmt":"UKR ***8445 (1000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:09:17Z"}
+{"id":163625291,"amt":"100.00","cmt":"UKR ***9985 (100 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:08:44Z"}
+{"id":163623345,"amt":"1000.00","cmt":"UKR ***8445 (1000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:07:48Z"}
+{"id":163621593,"amt":"4090.00","cmt":"UKR ***1598 (4090 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:07:30Z"}
+{"id":163621213,"amt":"100.00","cmt":"UKR ***2044 (100 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:06:50Z"}
+{"id":163617322,"amt":"43.00","cmt":"UKR ***4077 (43 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:05:01Z"}
+{"id":163617189,"amt":"100.00","cmt":"UKR ***7009 (100 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:04:48Z"}
+{"id":163617038,"amt":"100.00","cmt":"UKR ***1436 (100 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:04:29Z"}
+{"id":163616875,"amt":"1000.00","cmt":"UKR ***1297 (1000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:03:37Z"}
+{"id":163615142,"amt":"3985.09","cmt":"DEU ***0858 (100 EUR)","cur":"EUR","src":"Solidgate Card","dt":"2023-01-31T22:03:28Z"}
+{"id":163615022,"amt":"400.00","cmt":"UKR ***1476 (400 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:03:08Z"}
+{"id":163613407,"amt":"450.00","cmt":"UKR ***0682 (450 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:02:40Z"}
+{"id":163613413,"amt":"200.00","cmt":"UKR ***7278 (200 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:02:08Z"}
+{"id":163613391,"amt":"3000.00","cmt":"UKR ***0073 (3000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:02:04Z"}
+{"id":163613334,"amt":"100.00","cmt":"UKR ***9875 (100 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:01:59Z"}
+{"id":163613281,"amt":"100.00","cmt":"UKR ***5343 (100 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T22:01:43Z"}
+{"id":163611485,"amt":"3985.09","cmt":"FRA ***5562 (100 EUR)","cur":"EUR","src":"Solidgate Card","dt":"2023-01-31T22:00:31Z"}
+{"id":164948320,"amt":"1400.00","cmt":"Пилипчук Володимир -- Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948306,"amt":"10000.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948326,"amt":"100.00","cmt":"Кучерява Галина -- Благодійна допомога військовослужбовцям.","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948300,"amt":"7.43","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948304,"amt":"8000.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948325,"amt":"300.00","cmt":"Благодійна допомога військовослужбовця., Демченко Світлана","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948321,"amt":"120.00","cmt":"K3_транз.рахунок платежi BP 3853335 -- Благодiйна допомога вiд Криводуб Свiтлана","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948329,"amt":"17.50","cmt":"K3_транз.рахунок платежi BP 3853335 -- Благодiйна допомога вiд Молочко Анна","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948328,"amt":"100.00","cmt":"Лоза Марина -- Благодійна допомога військовослужбовцям.","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948259,"amt":"16.99","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948260,"amt":"10000.00","cmt":"Новоселецький Віталій -- Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948288,"amt":"2500.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948289,"amt":"100.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948268,"amt":"500.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948323,"amt":"100.00","cmt":"Благодійна допомога військовослужбовця., Мовчан Володимир вулиця Шевченка, буд. 10., Новомосковськ","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948303,"amt":"100000.00","cmt":"Кухтин Мар\u0027яна Василівна -- Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948327,"amt":"200.00","cmt":"Платежи Битлз_бездоговорные -- Благодійна допомога українцям від Автамонова Лариса","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948324,"amt":"50.00","cmt":"Благодійна допомога військовослужбовця., Житченко Любов","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948285,"amt":"125450.00","cmt":"Украiнський Свiдок -- Благодiйний внесок згiдно рiшенн., оформленого Протоколом \u21162 вiд 22.12.2022р.","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948267,"amt":"1.00","cmt":"Платежи Битлз_бездоговорные -- Благодійна допомога українцям від ГАВРИЛЮК В\u0027ЯЧЕСЛАВ ПЕТРОВИЧ","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948255,"amt":"1000.00","cmt":"Благодійна допомога військовослужбовця., Марчук Ганна Бар","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948534,"amt":"20000.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948308,"amt":"500.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948636,"amt":"1.47","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948466,"amt":"150.00","cmt":"Пл. Лукомська Софія Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948287,"amt":"200.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948422,"amt":"2000.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948253,"amt":"200.00","cmt":"Панівко Галина -- Благодійна допомога військовослужбовцям.","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948488,"amt":"200.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948256,"amt":"500.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948269,"amt":"4.69","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948270,"amt":"100.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948274,"amt":"200.00","cmt":"Єременко Тетяна -- Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948265,"amt":"5000.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948305,"amt":"123.00","cmt":"Вознюк Мар\u0027яна Ярославівна -- благодійність","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948322,"amt":"100.00","cmt":"Благодійна допомога військовослужбовця., Оніщенко Валентина чернігів","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948317,"amt":"100.00","cmt":"K3_транз.рахунок платежi BP 3853335 -- Благодiйна допомога вiд Ковальова Олександра","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948309,"amt":"500.00","cmt":"Босак Сергій -- Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948278,"amt":"10000.00","cmt":"Благодійна допомога військовим. Повернисьживим Платник: Котляр Роман","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948272,"amt":"200.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948390,"amt":"20.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948271,"amt":"1000.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948389,"amt":"2.25","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948266,"amt":"15.22","cmt":"Хоменко Валентин -- Благодійна допомога військовослужбовцям.","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948386,"amt":"3.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948387,"amt":"1000.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948464,"amt":"58.30","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948302,"amt":"39.40","cmt":"транзитный для платежей (прочие) -- Благодійна допомога військовослужбовця., Костенко Віктор","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948542,"amt":"3.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948541,"amt":"200.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948280,"amt":"10000.00","cmt":"Пітух Андрій -- Благодійна допомога від Пітух Андрій","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948290,"amt":"1000.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948283,"amt":"500.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948281,"amt":"100.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948301,"amt":"20.00","cmt":"Благодійна допомога військовослужбовця., Тарасюк Петро","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948449,"amt":"1.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948254,"amt":"50000.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948333,"amt":"200.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948635,"amt":"100.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948634,"amt":"1000.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948451,"amt":"500.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948296,"amt":"400.00","cmt":"Платежи Битлз_бездоговорные -- Благодійна допомога українцям від Сімперович Ярослава","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948523,"amt":"500.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948442,"amt":"2.25","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948295,"amt":"500.00","cmt":"Пл. Зубченко Владислав Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948279,"amt":"100.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948624,"amt":"120.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948337,"amt":"189.40","cmt":"Благодійна допомога військовослужбовця., Лущишин Валентин","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948524,"amt":"3.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948402,"amt":"300.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948590,"amt":"25.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948273,"amt":"3.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948532,"amt":"50.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948633,"amt":"2000.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948261,"amt":"2000.00","cmt":"ЯКУБА С.В. ФОП -- Благодiйний внесок.","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948282,"amt":"700.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948608,"amt":"3000.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948284,"amt":"2000.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948277,"amt":"20.00","cmt":"Пл. Деміденко Олександра Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948258,"amt":"100.00","cmt":"Платежи Битлз_бездоговорные -- Благодійна допомога українцям від Федосєєва Наталя","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948589,"amt":"34000.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948332,"amt":"10.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948388,"amt":"5.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948765,"amt":"1000.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948292,"amt":"100.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948538,"amt":"500.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948487,"amt":"500.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948314,"amt":"0.18","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948385,"amt":"10.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948438,"amt":"200.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948406,"amt":"200.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948404,"amt":"24.40","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948403,"amt":"5.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948405,"amt":"62.41","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948560,"amt":"3.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948632,"amt":"100.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948275,"amt":"10000.00","cmt":"K3_транз.рахунок платежi BP 3853335 -- Благодiйна допомога вiд Дорош Алла","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948291,"amt":"5.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948540,"amt":"3.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948307,"amt":"9136.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948398,"amt":"500.00","cmt":"K3_транз.рахунок платежi BP 3853335 -- Благодiйна допомога вiд Комарницький Олександр","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948347,"amt":"2000.00","cmt":"Благодійна допомога військовослужбовця., Волошин Аркадій КІЛІЯ","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948429,"amt":"6.29","cmt":"Платник: Роман Якимець, платіж на благодійність (платник: ЯКИМЕЦЬ Р.В.)","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948421,"amt":"627.84","cmt":"ТОВ \u0022Фінансова компанія МБК\u0022 -- 118546 Допомога ЗСУ згідно договору на час військового стану \u2116 ВС-1 від 24.02.2022 на суму 627.84","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948384,"amt":"9500.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948431,"amt":"5.00","cmt":"Платник: Наталія Трухан, платіж на благодійність (платник: ТРУХАН Н.В.)","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948435,"amt":"4.94","cmt":"Платник: Повизша Вікторія, платіж на благодійність (платник: ПОВИЗША В.В.)","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948383,"amt":"2000.00","cmt":"ФОП Ляшук Сергiй Зотович -- Благодiйна допомога вiйськовослужбовцям0","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948418,"amt":"500.00","cmt":"Платежи Битлз_бездоговорные -- Благодійна допомога українцям від Лень Людмила","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948359,"amt":"50000.00","cmt":"ТОВ \u0022Укррос-транс\u0022 -- Благодійна допомога військовослужбовцям.","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948409,"amt":"500.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948407,"amt":"5.00","cmt":"Платежи Битлз_бездоговорные -- Благодійна допомога українцям від Золотарьова Олександра","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948381,"amt":"50.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948401,"amt":"100.00","cmt":"Платежи Битлз_бездоговорные -- Благодійна допомога українцям від Балишин Олександр","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948430,"amt":"12.00","cmt":"Платник: Тараман Владислав, платіж на благодійність (платник: ТАРАМАН В.І.)","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948366,"amt":"100.00","cmt":"Благодійна допомога військовослужбовця., Кулібаба Світлана","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948415,"amt":"500.00","cmt":"Транзит за розрах Digital Platform -- Благодiйний Внесок ДОПОМОГУ ЗСУ, Лялька Олександр","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948399,"amt":"1000.00","cmt":"K3_транз.рахунок платежi BP 3853335 -- Благодiйна допомога вiд Качаленко Геннадiй","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948416,"amt":"100.00","cmt":"Транзит за розрах Digital Platform -- Благодiйний Внесок ДОПОМОГУ ЗСУ, Провоторов Дмитро","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948394,"amt":"50000.00","cmt":"ТРАНС МОНIТОРIНГ УКРАЇНА, ПП -- Благодiйний внесок \u0022Пiдтримай українську армiю\u0022","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948350,"amt":"2000.00","cmt":"Платежи Битлз_бездоговорные -- Благодійна допомога українцям від Митрохін Ярослав","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948352,"amt":"1493.84","cmt":"Козін Валентин -- Благодійна пожертва військовослужбовцям.","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948397,"amt":"15000.00","cmt":"Ковальчук Катерина -- Благодійна пожертва військовослужбовцям.","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948365,"amt":"500.00","cmt":"Благодійна допомога військовослужбовця., літвінов володимир миколайович","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948393,"amt":"50000.00","cmt":"Тм Безпека -- Благодiйний внесок \u0022Пiдтримай українську армiю\u0022","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948400,"amt":"50.00","cmt":"Платежи Битлз_бездоговорные -- Благодійна допомога українцям від Назар Ярослав","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948379,"amt":"60000.00","cmt":"Березіна Мар\u0027яна Святославівна -- Благодійна допомога військовослужбовцям.","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948423,"amt":"2000.00","cmt":"Прийм.пл. ФЮБд (ком.плат ф/о) 310 -- благодійна допомога Алєксєєнко Наталія в т.ч. ПДВ 333,33 грн. від Алєксєєнко Наталія","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948411,"amt":"1000.00","cmt":"Бондаренко Ольга -- Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948370,"amt":"1000.00","cmt":"Платежи Битлз_бездоговорные -- Благодійна допомога українцям від Коряга Ігор","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948625,"amt":"20.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948461,"amt":"5.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948457,"amt":"500.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948440,"amt":"15.84","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948459,"amt":"1000.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948456,"amt":"6.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948439,"amt":"58.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948316,"amt":"30000.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948493,"amt":"10000.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948361,"amt":"1500.00","cmt":"Благодійна пожертва військовослужбовцям Платник: Ходаковський Олександр","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948492,"amt":"250.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948364,"amt":"10.63","cmt":"Благодійна допомога військовослужбовця., Вусик Олександр","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948395,"amt":"200.00","cmt":"Пл. Григоренко Людмила Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948374,"amt":"1000.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948360,"amt":"200.00","cmt":"Транзит за розрах Digital Platform -- Благодiйний Внесок ДОПОМОГУ ЗСУ, Чернєцова Iрина","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948349,"amt":"1000.00","cmt":"Платежи Битлз_бездоговорные -- Благодійна допомога українцям від Бірюков Олександр","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948396,"amt":"10000.00","cmt":"Перекопайко Юрій -- Благодійна допомога військовослужбовцям.","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948382,"amt":"500.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948692,"amt":"182.66","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948292,"amt":"100.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948699,"amt":"500.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948782,"amt":"1000.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948611,"amt":"7.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948720,"amt":"50.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948598,"amt":"100.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948768,"amt":"160.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948722,"amt":"100.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948467,"amt":"1500.00","cmt":"Гричковський Тарас -- Благодійна допомога військовослужбовцям, слава Україні!","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948590,"amt":"25.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948706,"amt":"150.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948723,"amt":"3000.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948276,"amt":"4000.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948487,"amt":"500.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948617,"amt":"100.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948663,"amt":"100.00","cmt":"Платежи Битлз_бездоговорные -- Благодійна допомога українцям від Забой Олексій","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948708,"amt":"200.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948410,"amt":"500.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948586,"amt":"5.83","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948610,"amt":"500.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948697,"amt":"130.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948665,"amt":"4.29","cmt":"Платежи Битлз_бездоговорные -- Благодійна допомога українцям від Боровський Нікіта","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948758,"amt":"500.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948541,"amt":"200.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948319,"amt":"500.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948538,"amt":"500.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948621,"amt":"85.46","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948262,"amt":"300.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948615,"amt":"500.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948796,"amt":"1000.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948614,"amt":"500.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948594,"amt":"150.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948263,"amt":"100.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948355,"amt":"20000.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948311,"amt":"500.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948602,"amt":"200.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948438,"amt":"200.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948719,"amt":"500.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948357,"amt":"1000.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948652,"amt":"500.00","cmt":"Платежи Битлз_бездоговорные -- Благодійна допомога українцям від Пастушенко Олексій","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948318,"amt":"1000.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948593,"amt":"50.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948346,"amt":"500.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948767,"amt":"300.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948725,"amt":"50.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948717,"amt":"5.20","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948715,"amt":"100.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948705,"amt":"34.59","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948703,"amt":"200.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948700,"amt":"1500.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948772,"amt":"13.28","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948612,"amt":"50.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948540,"amt":"3.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948604,"amt":"22.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948344,"amt":"10000.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948800,"amt":"70.00","cmt":"благодійна допомога військовослужбовцям Платник Сироватка Анатолійович","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948674,"amt":"500.00","cmt":"Бригинець Тетяна -- Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948664,"amt":"1000.00","cmt":"Платежи Битлз_бездоговорные -- Благодійна допомога українцям від Ваврик Наталія","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948802,"amt":"250.00","cmt":"Бутузов Віталій -- Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948405,"amt":"62.41","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948601,"amt":"1000.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948721,"amt":"40.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948442,"amt":"2.25","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948534,"amt":"20000.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948793,"amt":"200.00","cmt":"Коваль Ганна -- Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948257,"amt":"1000.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948794,"amt":"3500.00","cmt":"K3_транз.рахунок платежi BP 3853335 -- Благодiйна допомога вiд Субчак Володимир","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948716,"amt":"500.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948710,"amt":"10.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948340,"amt":"150.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948356,"amt":"10000.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948742,"amt":"38.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948667,"amt":"100.00","cmt":"Платежи Битлз_бездоговорные -- Благодійна допомога українцям від Коваленко Ростислав","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948666,"amt":"100.00","cmt":"Платежи Битлз_бездоговорные -- Благодійна допомога українцям від Амшеєв Павло","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948388,"amt":"5.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948386,"amt":"3.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948524,"amt":"3.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948542,"amt":"3.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948297,"amt":"150.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948711,"amt":"50.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948775,"amt":"10.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948631,"amt":"3.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948299,"amt":"1000.00","cmt":"Благодійна допомога військовослужбовця., Зищук Олесандр ЗАВОДСЬКА 9-61 КОВЕЛЬ","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948468,"amt":"300.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948298,"amt":"500.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948470,"amt":"5000.00","cmt":"Болєлий Андрій -- Допомога ЗСУ","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948482,"amt":"40000.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948795,"amt":"200.00","cmt":"K3_транз.рахунок платежi BP 3853335 -- Благодiйна допомога вiд Король Жанна","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948662,"amt":"4000.00","cmt":"Платежи Битлз_бездоговорные -- Благодійна допомога українцям від Гребенюк Олександр","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948609,"amt":"200.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948754,"amt":"500.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948757,"amt":"150.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948799,"amt":"250.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948427,"amt":"666.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948638,"amt":"10000.00","cmt":"Каляєв Максим -- Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948583,"amt":"1000.00","cmt":"Транзит за розрах Digital Platform -- Благодiйний Внесок ДОПОМОГУ ЗСУ, Мохнач Тарас","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948377,"amt":"10000.00","cmt":"Комарницька М. Р. -- Благодійна допомога військовослужбовцям.","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948647,"amt":"50.00","cmt":"Платежи Битлз_бездоговорные -- Благодійна допомога українцям від Лещенко Тетяна","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948477,"amt":"20000.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948392,"amt":"3.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948640,"amt":"1000.00","cmt":"Бондаренко Микола -- Благодійна допомога військовослужбовцям.","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948620,"amt":"500.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948693,"amt":"2.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948579,"amt":"300.00","cmt":"Транзит за розрах Digital Platform -- Благодiйний Внесок ДОПОМОГУ ЗСУ, Уловець Тетяна","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948696,"amt":"5000.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948698,"amt":"50.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948644,"amt":"50.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948643,"amt":"1000.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948803,"amt":"87.71","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948732,"amt":"100.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948376,"amt":"5000.00","cmt":"Копачевський Сергій -- Благодійна допомога військовослужбовцям.","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948654,"amt":"100.00","cmt":"Платежи Битлз_бездоговорные -- Благодійна допомога українцям від Паливода Ольга","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948750,"amt":"200.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948729,"amt":"72.79","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948428,"amt":"200.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948756,"amt":"134.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948511,"amt":"4.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948564,"amt":"5000.00","cmt":"Єрьоменко Владислав -- Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948747,"amt":"100.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948661,"amt":"50.00","cmt":"Платежи Битлз_бездоговорные -- Благодійна допомога українцям від Крамаренко Геннадій","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948701,"amt":"76.74","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948752,"amt":"100.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948741,"amt":"25.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948687,"amt":"300.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948730,"amt":"2.95","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948574,"amt":"2000.00","cmt":"Фесан Володимир -- Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948576,"amt":"500.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948628,"amt":"3.52","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948787,"amt":"500.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948597,"amt":"100.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948545,"amt":"4000.00","cmt":"Синицький Максим -- Благодійна допомога військовослужбовцям зг.Дог.\u2116 від 24.05.2018","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948575,"amt":"1500.00","cmt":"МЕЛЬНИК О. П. -- Переказ на рахунок допомога ЗСУ","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948480,"amt":"500.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948550,"amt":"200.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948744,"amt":"100.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948709,"amt":"100.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948797,"amt":"700.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948568,"amt":"5000.00","cmt":"Остапчук Ольга -- Благодійна пожертва військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948569,"amt":"500.00","cmt":"K3_транз.рахунок платежi BP 3853335 -- Благодiйна допомога вiд Башняк Тарас","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948567,"amt":"563.50","cmt":"ТОВ \u0022СВІФТ ГАРАНТ\u0022 -- Перерахування коштiв за благод. доп. 31.01.2023 зг. дог 22/04-50СГ від 22.04.2022, реєстру \u2116","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948694,"amt":"1000.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948486,"amt":"1000.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948649,"amt":"4.00","cmt":"Платежи Битлз_бездоговорные -- Благодійна допомога українцям від Медицький Руслан","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948641,"amt":"5000.00","cmt":"Смірнов Нікіта -- Благодійна пожертва військовослужбовцям.","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948685,"amt":"10000.00","cmt":"Благодійна допомога військовослужбовця., Липка Іван С НОВОУКРАЇНКА","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948727,"amt":"300.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948755,"amt":"6500.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948655,"amt":"400.00","cmt":"Платежи Битлз_бездоговорные -- Благодійна допомога українцям від Карпенко Ігор","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948734,"amt":"200.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948759,"amt":"204.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948548,"amt":"1000.00","cmt":"Транзит за розрах Digital Platform -- Благодiйний Внесок ДОПОМОГУ ЗСУ, Мельниченко Юлiанна","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948646,"amt":"50.00","cmt":"Платежи Битлз_бездоговорные -- Благодійна допомога українцям від Бурдяк Володимир","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948668,"amt":"0.87","cmt":"Платежи Битлз_бездоговорные -- Благодійна допомога українцям від Поліщук Валерія","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948571,"amt":"10000.00","cmt":"Сологуб Денис -- Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948778,"amt":"100.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948688,"amt":"1000.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948753,"amt":"5.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948559,"amt":"1000.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948639,"amt":"20000.00","cmt":"Карзов Олексій -- Благодійна допомога військовослужбовцям.","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948642,"amt":"100.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948762,"amt":"45.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948562,"amt":"1000.00","cmt":"Шостак А. С. -- Переказ на","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948686,"amt":"200.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948672,"amt":"1000.00","cmt":"Благодійна допомога військовослужбовця., Явин Роман","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948659,"amt":"400.00","cmt":"Платежи Битлз_бездоговорные -- Благодійна допомога українцям від Мирошниченко Ганна","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948554,"amt":"1000.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948627,"amt":"10.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948580,"amt":"500.00","cmt":"Транзит за розрах Digital Platform -- Благодiйний Внесок ДОПОМОГУ ЗСУ, Чумало Володимир","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948629,"amt":"1000.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948784,"amt":"25.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948783,"amt":"250.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948592,"amt":"15.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948689,"amt":"300.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948540,"amt":"3.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948542,"amt":"3.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948660,"amt":"10.00","cmt":"Платежи Битлз_бездоговорные -- Благодійна допомога українцям від Прихненко Віталій","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948280,"amt":"10000.00","cmt":"Пітух Андрій -- Благодійна допомога від Пітух Андрій","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948670,"amt":"50.00","cmt":"Платежи Битлз_бездоговорные -- Благодійна допомога українцям від Скиба Андрій","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948254,"amt":"50000.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948426,"amt":"500.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948466,"amt":"150.00","cmt":"Пл. Лукомська Софія Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948798,"amt":"100.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948675,"amt":"994.00","cmt":"АТ \u0022ТАСКОМБАНК\u0022 -- Merchant Id0776 АТ ТАСКОМБАНК Покриття по операціях з МПК за 31.01.2023 на суму 1000.00 грн., комісія банку 6.00 грн.","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948714,"amt":"1000.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948402,"amt":"300.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948563,"amt":"5000.00","cmt":"Єрьоменко Владислав -- Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948487,"amt":"500.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948560,"amt":"3.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948314,"amt":"0.18","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948712,"amt":"300.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948746,"amt":"105.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948273,"amt":"3.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948549,"amt":"1000.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948406,"amt":"200.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948785,"amt":"100.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948678,"amt":"300.00","cmt":"\u0022Інші готівкові платежі(в т.ч.за посл. -- Благодійна допомога військовослужбовця., Родько Інна","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948271,"amt":"1000.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948523,"amt":"500.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948272,"amt":"200.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948690,"amt":"10.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948677,"amt":"500.00","cmt":"Мостепанюк Людмила -- Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948404,"amt":"24.40","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948650,"amt":"100.00","cmt":"Платежи Битлз_бездоговорные -- Благодійна допомога українцям від Лепетуха Руслан","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948268,"amt":"500.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948403,"amt":"5.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948464,"amt":"58.30","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948279,"amt":"100.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948388,"amt":"5.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948296,"amt":"400.00","cmt":"Платежи Битлз_бездоговорные -- Благодійна допомога українцям від Сімперович Ярослава","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948253,"amt":"200.00","cmt":"Панівко Галина -- Благодійна допомога військовослужбовцям.","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948791,"amt":"300.00","cmt":"Благодійна допомога військовослужбовця., Ісмайлова Айнура кизи БІЛА КРИНИЦЯ","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948681,"amt":"55.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948462,"amt":"1000.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948658,"amt":"2000.00","cmt":"Платежи Битлз_бездоговорные -- Благодійна допомога українцям від Помазан Тетяна","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948605,"amt":"1800.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948680,"amt":"1000.00","cmt":"K3_транз.рахунок платежi BP 3853335 -- Благодiйна допомога вiд Галаган Олена","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948713,"amt":"100.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948337,"amt":"189.40","cmt":"Благодійна допомога військовослужбовця., Лущишин Валентин","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948256,"amt":"500.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948624,"amt":"120.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948541,"amt":"200.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948657,"amt":"1416.90","cmt":"Платежи Битлз_бездоговорные -- Благодійна допомога українцям від Утвенко Андрій","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948790,"amt":"100.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948572,"amt":"15000.00","cmt":"Сіренко Дмитро -- Благодійна пожертва військовослужбовцям.","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948573,"amt":"1000.00","cmt":"Білоус Андрій -- Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948792,"amt":"50.00","cmt":"K3_транз.рахунок платежi BP 3853335 -- Благодiйна допомога вiд Сисоєв Iгор","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948581,"amt":"20.00","cmt":"Транзит за розрах Digital Platform -- Благодiйний Внесок ДОПОМОГУ ЗСУ, Процишин Богдан","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948788,"amt":"150.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948546,"amt":"123.23","cmt":"Платежи Битлз_бездоговорные -- Благодійна допомога українцям від Кірієнко Євген","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948695,"amt":"300.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948301,"amt":"20.00","cmt":"Благодійна допомога військовослужбовця., Тарасюк Петро","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948679,"amt":"100.00","cmt":"\u0022Інші готівкові платежі(в т.ч.за посл. -- Благодійна допомога військовослужбовця., Родько Інна","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948587,"amt":"500.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948390,"amt":"20.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948765,"amt":"1000.00","cmt":"Транзитний рахунок для ком.платОщад 24 -- Благодійна допомога військовослужбовця.,","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948656,"amt":"100.00","cmt":"Платежи Битлз_бездоговорные -- Благодійна допомога українцям від Кавинська Уляна","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948431,"amt":"5.00","cmt":"Платник: Наталія Трухан, платіж на благодійність (платник: ТРУХАН Н.В.)","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948343,"amt":"20000.00","cmt":"K3_транз.рахунок платежi BP 3853335 -- Благодiйна допомога вiд Ключко Євген","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948512,"amt":"5.33","cmt":"Платник: Цимбал Юлія, платіж на благодійність (платник: ЦИМБАЛ Ю.А.)","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948524,"amt":"3.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948395,"amt":"200.00","cmt":"Пл. Григоренко Людмила Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948363,"amt":"100.00","cmt":"Благодійна допомога військовослужбовця., Вакуленко Іван","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948535,"amt":"74.80","cmt":"Павлусенко Владислав -- Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948324,"amt":"50.00","cmt":"Благодійна допомога військовослужбовця., Житченко Любов","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948374,"amt":"1000.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948297,"amt":"150.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948419,"amt":"500.00","cmt":"Платежи Битлз_бездоговорные -- Благодійна допомога українцям від Кручек Сергій","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948409,"amt":"500.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948610,"amt":"500.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948470,"amt":"5000.00","cmt":"Болєлий Андрій -- Допомога ЗСУ","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948347,"amt":"2000.00","cmt":"Благодійна допомога військовослужбовця., Волошин Аркадій КІЛІЯ","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948498,"amt":"12355.84","cmt":"ТОВ \u0022ФК \u0022КОНТРАКТОВИЙ ДІМ\u0022 -- переказ прийнятого платежу для поповнення р/р Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948381,"amt":"50.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948539,"amt":"254.90","cmt":"ПрАТ \u0022ЗАПОРІЖЗВ\u0027ЯЗОКСЕРВІС\u0022 -- Благодiйна допомога вiйськовослужбовцям по дог.1 вiд г.за 31.01.23,;:377/1171","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948408,"amt":"120000.00","cmt":"Мажар Денис -- Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948613,"amt":"100.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948326,"amt":"100.00","cmt":"Кучерява Галина -- Благодійна допомога військовослужбовцям.","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948521,"amt":"23084.81","cmt":"Міжнар благод фонд \u00ABПовернись живим\u00BB -- благодійні внески на користь МБФ \u00ABПовернись живим\u00BB","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948508,"amt":"500.00","cmt":"K3_транз.рахунок платежi BP 3853335 -- Благодiйна допомога вiд Крисько Любов","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948350,"amt":"2000.00","cmt":"Платежи Битлз_бездоговорные -- Благодійна допомога українцям від Митрохін Ярослав","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948394,"amt":"50000.00","cmt":"ТРАНС МОНIТОРIНГ УКРАЇНА, ПП -- Благодiйний внесок \u0022Пiдтримай українську армiю\u0022","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948519,"amt":"300.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948370,"amt":"1000.00","cmt":"Платежи Битлз_бездоговорные -- Благодійна допомога українцям від Коряга Ігор","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948430,"amt":"12.00","cmt":"Платник: Тараман Владислав, платіж на благодійність (платник: ТАРАМАН В.І.)","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948334,"amt":"45.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948288,"amt":"2500.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948503,"amt":"2000.00","cmt":"Некрасова Олена -- Благодійна допомога військовослужбовцям.","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948475,"amt":"1000.00","cmt":"Транзит за розрах Digital Platform -- Благодiйний Внесок ДОПОМОГУ ЗСУ, Дорчак Юлiя","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948348,"amt":"20000.00","cmt":"Яновський Андрій -- Благодійна допомога військовослужбовцям.","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948452,"amt":"3000.00","cmt":"Батюк Павло -- Для армії","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948353,"amt":"40000.00","cmt":"Кучук Олексій -- Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948443,"amt":"1.00","cmt":"Благодійна допомога військовослужбовцям","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948338,"amt":"100.00","cmt":"Благодійна допомога військовослужбовця., Безбабнов Валентин проспект Корабелів, буд. 10/б., Миколаїв","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948325,"amt":"300.00","cmt":"Благодійна допомога військовослужбовця., Демченко Світлана","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164948414,"amt":"50000.00","cmt":"ТОВ \u0022ЛПГ Техно\u0022 -- Благодійна пожертва військовослужбовцям.","cur":"UAH","src":"Oschad","dt":"2023-01-31T22:00:00Z"}
+{"id":164152360,"amt":"100.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:58:00Z"}
+{"id":163607921,"amt":"32.00","cmt":"UKR ***5536 (32 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:57:54Z"}
+{"id":164152361,"amt":"300.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:57:00Z"}
+{"id":163606287,"amt":"150.00","cmt":"UKR ***1686 (150 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:56:50Z"}
+{"id":163606056,"amt":"1000.00","cmt":"UKR ***3543 (1000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:56:20Z"}
+{"id":164152364,"amt":"20.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:56:00Z"}
+{"id":164152363,"amt":"1000.00","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 818486 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T21:56:00Z"}
+{"id":164152362,"amt":"150.00","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 624779 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T21:56:00Z"}
+{"id":163604513,"amt":"10000.00","cmt":"UKR ***6358 (10000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:55:37Z"}
+{"id":164152365,"amt":"100.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:55:00Z"}
+{"id":164152366,"amt":"33.49","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:54:00Z"}
+{"id":164152367,"amt":"800.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:54:00Z"}
+{"id":164152368,"amt":"23.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:54:00Z"}
+{"id":163602248,"amt":"300.00","cmt":"UKR ***6214 (300 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:53:04Z"}
+{"id":164152371,"amt":"25.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:53:00Z"}
+{"id":164152369,"amt":"25.00","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 195641 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T21:53:00Z"}
+{"id":164152370,"amt":"50.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:53:00Z"}
+{"id":163602207,"amt":"300.00","cmt":"null *** (300 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:52:51Z"}
+{"id":163600417,"amt":"1500.00","cmt":"UKR ***0933 (1500 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:52:28Z"}
+{"id":164152373,"amt":"32.17","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:52:00Z"}
+{"id":164152372,"amt":"150.00","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 696672 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T21:52:00Z"}
+{"id":164152374,"amt":"20.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:51:00Z"}
+{"id":163596831,"amt":"6000.00","cmt":"UKR ***9080 (6000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:50:33Z"}
+{"id":163596800,"amt":"1000.00","cmt":"UKR ***5907 (1000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:50:15Z"}
+{"id":163596799,"amt":"100.00","cmt":"UKR ***3109 (100 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:50:05Z"}
+{"id":163598408,"amt":"200.00","cmt":"UKR ***5706 (200 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:49:18Z"}
+{"id":163596566,"amt":"200.00","cmt":"UKR ***3561 (200 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:49:03Z"}
+{"id":164152375,"amt":"1000.00","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 368651 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T21:49:00Z"}
+{"id":163594896,"amt":"500.00","cmt":"UKR ***3908 (500 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:48:41Z"}
+{"id":163593274,"amt":"100.00","cmt":"UKR ***9418 (100 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:48:20Z"}
+{"id":163591407,"amt":"1000.00","cmt":"UKR ***1420 (1000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:47:03Z"}
+{"id":164152376,"amt":"100.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:47:00Z"}
+{"id":164152378,"amt":"100.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:47:00Z"}
+{"id":164152377,"amt":"50.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:47:00Z"}
+{"id":164152380,"amt":"150.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:46:00Z"}
+{"id":164152381,"amt":"150.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:46:00Z"}
+{"id":164152379,"amt":"1000.00","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 140150 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T21:46:00Z"}
+{"id":163589169,"amt":"500.00","cmt":"UKR ***3276 (500 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:45:12Z"}
+{"id":164152382,"amt":"100.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:45:00Z"}
+{"id":164152383,"amt":"10.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:45:00Z"}
+{"id":163587373,"amt":"300.00","cmt":"UKR ***2705 (300 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:44:23Z"}
+{"id":163587208,"amt":"95.00","cmt":"UKR ***4032 (95 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:43:37Z"}
+{"id":163586905,"amt":"100.00","cmt":"UKR ***9618 (100 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:43:14Z"}
+{"id":163587018,"amt":"200.00","cmt":"UKR ***1657 (200 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:43:02Z"}
+{"id":164152384,"amt":"5.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:43:00Z"}
+{"id":163585375,"amt":"1000.00","cmt":"UKR ***0551 (1000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:42:29Z"}
+{"id":163585062,"amt":"600.00","cmt":"UKR ***3767 (600 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:42:02Z"}
+{"id":164152385,"amt":"50.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:42:00Z"}
+{"id":163583471,"amt":"23.00","cmt":"UKR ***7587 (23 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:41:11Z"}
+{"id":163583425,"amt":"200.00","cmt":"UKR ***8166 (200 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:41:07Z"}
+{"id":164152386,"amt":"50.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:41:00Z"}
+{"id":163583069,"amt":"100.00","cmt":"UKR ***7802 (100 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:40:07Z"}
+{"id":164152388,"amt":"50.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:40:00Z"}
+{"id":164152387,"amt":"400.00","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 693128 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T21:40:00Z"}
+{"id":163581227,"amt":"500.00","cmt":"UKR ***1889 (500 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:39:35Z"}
+{"id":163579581,"amt":"500.00","cmt":"UKR ***1889 (500 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:39:03Z"}
+{"id":164152390,"amt":"500.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:39:00Z"}
+{"id":164152389,"amt":"1000.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:39:00Z"}
+{"id":164152393,"amt":"100.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:38:00Z"}
+{"id":164152391,"amt":"100.00","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 209843 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T21:38:00Z"}
+{"id":164152392,"amt":"200.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:38:00Z"}
+{"id":163577333,"amt":"77.00","cmt":"UKR ***9506 (77 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:37:11Z"}
+{"id":164152395,"amt":"200.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:37:00Z"}
+{"id":164152394,"amt":"534.48","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:37:00Z"}
+{"id":163577134,"amt":"1000.00","cmt":"UKR ***9210 (1000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:36:30Z"}
+{"id":164152398,"amt":"50.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:36:00Z"}
+{"id":164152397,"amt":"25.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:36:00Z"}
+{"id":164152396,"amt":"400.00","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 971228 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T21:36:00Z"}
+{"id":163576916,"amt":"1000.00","cmt":"UKR ***6339 (1000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:35:46Z"}
+{"id":163574883,"amt":"2000.00","cmt":"UKR ***0432 (2000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:35:26Z"}
+{"id":163575058,"amt":"1000.00","cmt":"UKR ***0418 (1000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:35:08Z"}
+{"id":163573087,"amt":"200.00","cmt":"UKR ***4267 (200 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:34:39Z"}
+{"id":163573288,"amt":"200.00","cmt":"UKR ***3108 (200 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:33:30Z"}
+{"id":163571255,"amt":"7970.17","cmt":"NLD ***8950 (200 EUR)","cur":"EUR","src":"Solidgate Card","dt":"2023-01-31T21:33:16Z"}
+{"id":164152401,"amt":"10.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:33:00Z"}
+{"id":164152399,"amt":"100.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:33:00Z"}
+{"id":164152400,"amt":"1000.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:33:00Z"}
+{"id":163571245,"amt":"100.00","cmt":"UKR ***3626 (100 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:32:58Z"}
+{"id":163571172,"amt":"100.00","cmt":"CZE ***0893 (100 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:32:51Z"}
+{"id":163569173,"amt":"20.00","cmt":"UKR ***9737 (20 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:32:14Z"}
+{"id":164152404,"amt":"202.09","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:32:00Z"}
+{"id":164152402,"amt":"2000.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:32:00Z"}
+{"id":164152403,"amt":"10.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:32:00Z"}
+{"id":163568784,"amt":"120.00","cmt":"UKR ***2046 (120 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:31:22Z"}
+{"id":163568942,"amt":"1000.00","cmt":"UKR ***3022 (1000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:31:17Z"}
+{"id":163567269,"amt":"20.00","cmt":"UKR ***9737 (20 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:31:13Z"}
+{"id":163566935,"amt":"1000.00","cmt":"UKR ***1610 (1000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:30:29Z"}
+{"id":164152405,"amt":"200.00","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 835493 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T21:30:00Z"}
+{"id":163564990,"amt":"3000.00","cmt":"UKR ***5620 (3000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:29:22Z"}
+{"id":163565048,"amt":"100.00","cmt":"UKR ***7428 (100 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:29:11Z"}
+{"id":164152407,"amt":"3.44","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:29:00Z"}
+{"id":164152406,"amt":"10.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:29:00Z"}
+{"id":163563098,"amt":"734.56","cmt":"null *** (20 USD)","cur":"USD","src":"Solidgate Card","dt":"2023-01-31T21:27:51Z"}
+{"id":163562486,"amt":"5000.00","cmt":"UKR ***5620 (5000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:27:38Z"}
+{"id":163562449,"amt":"5000.00","cmt":"UKR ***8235 (5000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:27:01Z"}
+{"id":164152408,"amt":"100.00","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 905617 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T21:27:00Z"}
+{"id":163560936,"amt":"28.00","cmt":"UKR ***8636 (28 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:26:59Z"}
+{"id":163560491,"amt":"500.00","cmt":"UKR ***3400 (500 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:26:31Z"}
+{"id":163560325,"amt":"500.00","cmt":"UKR ***6083 (500 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:26:10Z"}
+{"id":164152409,"amt":"50.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:26:00Z"}
+{"id":164152410,"amt":"1000.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:26:00Z"}
+{"id":164152411,"amt":"200.00","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 381791 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T21:25:00Z"}
+{"id":163558447,"amt":"1000.00","cmt":"UKR ***7582 (1000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:24:54Z"}
+{"id":163556714,"amt":"25.00","cmt":"UKR ***4783 (25 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:24:43Z"}
+{"id":163556700,"amt":"500.00","cmt":"UKR ***3594 (500 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:24:26Z"}
+{"id":163556458,"amt":"3985.09","cmt":"SWE ***0622 (100 EUR)","cur":"EUR","src":"Solidgate Card","dt":"2023-01-31T21:24:15Z"}
+{"id":163556385,"amt":"212.00","cmt":"UKR ***2824 (212 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:24:07Z"}
+{"id":364272251,"amt":"710.00","cmt":"ФОП Трофименко Олександр Іванович -- Благодійна допомога військовослужбовцям","cur":"UAH","src":"Universal","dt":"2023-01-31T21:24:00Z"}
+{"id":164152412,"amt":"100.00","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 70660 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T21:24:00Z"}
+{"id":163556499,"amt":"25.00","cmt":"UKR ***4036 (25 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:23:59Z"}
+{"id":163556555,"amt":"55.00","cmt":"UKR ***1019 (55 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:23:49Z"}
+{"id":163556208,"amt":"500.00","cmt":"UKR ***3346 (500 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:23:15Z"}
+{"id":164152413,"amt":"72.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:23:00Z"}
+{"id":163554266,"amt":"90.00","cmt":"UKR ***7747 (90 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:22:07Z"}
+{"id":164152414,"amt":"10.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:22:00Z"}
+{"id":163552494,"amt":"67.00","cmt":"UKR ***9912 (67 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:21:05Z"}
+{"id":164152416,"amt":"1000.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:21:00Z"}
+{"id":164152415,"amt":"1000.00","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 191314 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T21:21:00Z"}
+{"id":163550508,"amt":"1992.55","cmt":"ESP ***7088 (50 EUR)","cur":"EUR","src":"Solidgate Card","dt":"2023-01-31T21:20:22Z"}
+{"id":163550408,"amt":"50.00","cmt":"UKR ***1191 (50 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:20:13Z"}
+{"id":163550214,"amt":"15000.00","cmt":"UKR ***0029 (15000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:19:44Z"}
+{"id":163548637,"amt":"60.00","cmt":"UKR ***0785 (60 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:19:24Z"}
+{"id":164152417,"amt":"100.00","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 721726 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T21:19:00Z"}
+{"id":164152418,"amt":"200.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:19:00Z"}
+{"id":163546624,"amt":"100.00","cmt":"UKR ***1281 (100 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:18:03Z"}
+{"id":164152419,"amt":"150.00","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 168231 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T21:18:00Z"}
+{"id":164152420,"amt":"500.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:18:00Z"}
+{"id":163548221,"amt":"125.00","cmt":"UKR ***0938 (125 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:17:25Z"}
+{"id":164152423,"amt":"33.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:17:00Z"}
+{"id":164152421,"amt":"10.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:17:00Z"}
+{"id":164152422,"amt":"10.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:17:00Z"}
+{"id":163546323,"amt":"398.51","cmt":"FRA ***9125 (10 EUR)","cur":"EUR","src":"Solidgate Card","dt":"2023-01-31T21:16:54Z"}
+{"id":163544714,"amt":"125.00","cmt":"UKR ***0938 (125 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:16:27Z"}
+{"id":164152425,"amt":"12.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:16:00Z"}
+{"id":164152424,"amt":"150.00","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 954111 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T21:16:00Z"}
+{"id":163544362,"amt":"100.00","cmt":"UKR ***8021 (100 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:15:35Z"}
+{"id":163542604,"amt":"2630.16","cmt":"DEU ***2503 (66 EUR)","cur":"EUR","src":"Solidgate Card","dt":"2023-01-31T21:15:17Z"}
+{"id":163542595,"amt":"39.86","cmt":"UKR ***1609 (1 EUR)","cur":"EUR","src":"Solidgate Card","dt":"2023-01-31T21:15:16Z"}
+{"id":164152428,"amt":"185.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:15:00Z"}
+{"id":164152426,"amt":"150.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:15:00Z"}
+{"id":164152427,"amt":"400.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:15:00Z"}
+{"id":163542731,"amt":"3000.00","cmt":"UKR ***1283 (3000 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:14:51Z"}
+{"id":163542426,"amt":"398.51","cmt":"FRA ***9125 (10 EUR)","cur":"EUR","src":"Solidgate Card","dt":"2023-01-31T21:14:17Z"}
+{"id":164152429,"amt":"200.00","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 161412 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T21:14:00Z"}
+{"id":164152431,"amt":"100.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:14:00Z"}
+{"id":164152430,"amt":"53.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:14:00Z"}
+{"id":163550419,"amt":"100.00","cmt":"UKR ***7316 (100 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:13:39Z"}
+{"id":164152432,"amt":"100.00","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 584575 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T21:13:00Z"}
+{"id":164152433,"amt":"500.00","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 775286 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T21:13:00Z"}
+{"id":164152434,"amt":"200.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:13:00Z"}
+{"id":164152435,"amt":"20.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:13:00Z"}
+{"id":163540512,"amt":"100.00","cmt":"UKR ***8274 (100 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:12:51Z"}
+{"id":163538836,"amt":"10.00","cmt":"UKR ***5653 (10 UAH)","cur":"UAH","src":"Solidgate Card","dt":"2023-01-31T21:12:35Z"}
+{"id":164152436,"amt":"111.00","cmt":"Плат.iнтер-еквайринг через LiqPay -- LIQPAY ID SOID 856841 PBK i DATE 2023-01-31 TYPE acquiring","cur":"UAH","src":"Privat","dt":"2023-01-31T21:12:00Z"}
+{"id":164152438,"amt":"150.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:12:00Z"}
+{"id":164152437,"amt":"500.00","cmt":"UAH Тр.рахунок по ACCORD -- Екiпiрування для льотчикiв вiд Повернись живим","cur":"UAH","src":"Privat","dt":"2023-01-31T21:12:00Z"}
+
+
+// 787 is expected
