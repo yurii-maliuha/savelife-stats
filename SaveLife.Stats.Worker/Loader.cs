@@ -6,6 +6,8 @@ using SaveLife.Stats.Worker.Providers;
 
 namespace SaveLife.Stats.Worker
 {
+    // use this url https://savelife.in.ua/wp-json/savelife/reporting/income?date_from=2023-01-01T00:00:00&date_to=2023-11-07T23:59:59&timeoffset=3600&page=1&per_page=100
+    // and just iterate page
     public class Loader : BackgroundService
     {
         private readonly ILogger<Loader> _logger;
