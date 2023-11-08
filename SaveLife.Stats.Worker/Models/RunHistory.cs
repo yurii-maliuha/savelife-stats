@@ -2,11 +2,13 @@
 {
     public class RunHistory
     {
-        public long LastTransactionId { get; set; }
+        public long? LastTransactionId { get; set; }
 
-        public DateTime LastTransactionDate { get; set; }
+        public DateTime DateFrom { get; set; }
 
-        public int RequestPage { get; set; }
+        public DateTime DateTo { get; set; }
+
+        public int Page { get; set; }
 
     }
 }

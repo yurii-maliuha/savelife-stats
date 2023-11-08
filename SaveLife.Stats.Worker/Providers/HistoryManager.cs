@@ -9,6 +9,7 @@ namespace SaveLife.Stats.Worker.Providers
     {
         private readonly LoaderConfig _loaderConfig;
         private IPathResolver _pathResolver;
+        private RunHistory _history;
 
         public HistoryManager(
             IOptions<LoaderConfig> loaderConfigOptions,
@@ -16,42 +17,46 @@ namespace SaveLife.Stats.Worker.Providers
         {
             _loaderConfig = loaderConfigOptions.Value;
             _pathResolver = pathResolver;
+            _history = LoadRunHistory();
         }
 
-        public void SaveRunHistory(IList<RunHistory> nextHistory)
+        public async Task SaveRunHistory(long lastTransactionId)
         {
-            var nextHistoryStr = nextHistory.Select(x => x.Serialize());
+            _history.LastTransactionId = lastTransactionId;
 
             var filePath = Path.Combine(_pathResolver.ResolveHistoryPath(), "history.json");
-            File.WriteAllLinesAsync(filePath, nextHistoryStr);
+            await File.WriteAllTextAsync(filePath, _history.Serialize());
         }
 
-        public IList<RunHistory>? LoadRunHistory()
+        public SLOriginDataRequest BuildDataRequest()
+        {
+            var initialIteration = _history.LastTransactionId == null;
+            _history.Page = initialIteration ? 1 : _history.Page + 1;
+            return new SLOriginDataRequest()
+            {
+                DateFrom = _history.DateFrom,
+                DateTo = _history.DateTo,
+                Page = _history.Page
+            };
+
+        }
+
+        private RunHistory LoadRunHistory()
         {
             var filePath = Path.Combine(_pathResolver.ResolveHistoryPath(), "history.json");
             if (!File.Exists(filePath))
             {
-                return null;
+                return new RunHistory()
+                {
+                    DateFrom = _loaderConfig.LoadFromDate,
+                    DateTo = _loaderConfig.LoadToDate,
+                    Page = 1,
+                    LastTransactionId = null
+                };
             }
 
-            var historyContents = File.ReadAllLines(filePath);
-            return historyContents.Select(line => line.Deserialize<RunHistory>()).ToList();
-        }
-
-        public SLOriginDataRequest BuildDataRequest(IList<RunHistory>? history)
-        {
-            var dateTo = history?.Last().LastTransactionDate;
-            dateTo ??= _loaderConfig.LoadToDate;
-            int page = history?.Count == 2 && history[0].LastTransactionDate == history[1].LastTransactionDate
-                ? history[1].RequestPage + 1 : 1;
-
-            return new SLOriginDataRequest()
-            {
-                DateFrom = _loaderConfig.LoadFromDate,
-                DateTo = dateTo.Value,
-                Page = page
-            };
-
+            var historyContent = File.ReadAllText(filePath);
+            return historyContent.Deserialize<RunHistory>();
         }
     }
 }

@@ -24,7 +24,7 @@ namespace SaveLife.Stats.Worker.Providers
 
         public List<long> LoadTransactionsId(DateTime dateFrom)
         {
-            string filePath = Path.Combine(_pathResolver.ResolveTransactionsPath(), $"v3_transactions_{dateFrom.Month}-{dateFrom.Year}.json");
+            string filePath = Path.Combine(_pathResolver.ResolveTransactionsPath(), $"transactions_{dateFrom.Month}-{dateFrom.Year}.json");
             if (!File.Exists(filePath))
             {
                 return new List<long>();
@@ -40,7 +40,7 @@ namespace SaveLife.Stats.Worker.Providers
             var transactionsStr = transactions.Select(transaction => transaction.Serialize());
 
             var lastItemDate = originTransactions.Last().Date;
-            string filePath = Path.Combine(_pathResolver.ResolveTransactionsPath(), $"v3_transactions_{lastItemDate.Month}-{lastItemDate.Year}.json");
+            string filePath = Path.Combine(_pathResolver.ResolveTransactionsPath(), $"transactions_{lastItemDate.Month}-{lastItemDate.Year}.json");
             await File.AppendAllLinesAsync(filePath, transactionsStr);
         }
     }

@@ -52,7 +52,7 @@ namespace SaveLife.Stats.Worker.Tests
         public async Task Loader_Should_Load_WithPaging_Transactions_With_Tiny_TimeStep()
         {
             var transactionsCount = 1000;
-            var storedTransactionsCount = 11;
+            var storedTransactionsCount = 20;
             var configuration = new Dictionary<string, string>()
             {
                 { "DataSource:BatchSize", "5" },
@@ -78,7 +78,7 @@ namespace SaveLife.Stats.Worker.Tests
         public async Task Loader_Should_Load_WithPaging_Transactions_With_Identical_Date()
         {
             var transactionsCount = 40;
-            var storedTransactionsCount = 30;
+            var storedTransactionsCount = 35;
             var configuration = new Dictionary<string, string>()
             {
                 { "DataSource:BatchSize", "5" },

@@ -47,9 +47,8 @@ namespace SaveLife.Stats.Worker
                 _logger.LogInformation($"{Environment.NewLine}[{DateTime.Now}]: Itteration {iterattion}");
 
                 edgeTransactionIds ??= _fileManager.LoadTransactionsId(_loaderConfig.LoadFromDate);
-                var history = _historyManager.LoadRunHistory();
 
-                var dataRequest = _historyManager.BuildDataRequest(history);
+                var dataRequest = _historyManager.BuildDataRequest();
                 var response = await _saveLifeDataProvider.LoadDataAsync(dataRequest, stoppingToken);
                 var uniqueueTransactions = response.Transactions.Where(x => !edgeTransactionIds.Contains(x.Id)).ToList();
                 if (!uniqueueTransactions.Any())
@@ -61,16 +60,7 @@ namespace SaveLife.Stats.Worker
                 await _fileManager.SaveTransactions(uniqueueTransactions);
 
                 var lastItem = response.Transactions.Last();
-                history ??= new List<RunHistory>();
-                history.Add(new RunHistory()
-                {
-                    LastTransactionDate = lastItem.Date,
-                    LastTransactionId = lastItem.Id,
-                    RequestPage = dataRequest.Page
-                });
-
-                history = history.Count > 2 ? history.Skip(1).ToList() : history;
-                _historyManager.SaveRunHistory(history);
+                await _historyManager.SaveRunHistory(lastItem.Id);
 
                 edgeTransactionIds = response.Transactions.Where(x => x.Date == lastItem.Date).Select(x => x.Id).ToList();
 
