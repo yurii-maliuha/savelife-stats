@@ -6,8 +6,6 @@ using SaveLife.Stats.Worker.Providers;
 
 namespace SaveLife.Stats.Worker
 {
-    // use this url https://savelife.in.ua/wp-json/savelife/reporting/income?date_from=2023-01-01T00:00:00&date_to=2023-11-07T23:59:59&timeoffset=3600&page=1&per_page=100
-    // and just iterate page
     public class Loader : BackgroundService
     {
         private readonly ILogger<Loader> _logger;
@@ -40,17 +38,15 @@ namespace SaveLife.Stats.Worker
         {
             _logger.LogInformation($"Started loading at {DateTime.Now}");
             int iterattion = 1;
-            List<long> edgeTransactionIds = null;
+            List<EdgeTransaction> edgeTransactions = new List<EdgeTransaction>();
 
             do
             {
                 _logger.LogInformation($"{Environment.NewLine}[{DateTime.Now}]: Itteration {iterattion}");
 
-                edgeTransactionIds ??= _fileManager.LoadTransactionsId(_loaderConfig.LoadFromDate);
-
                 var dataRequest = _historyManager.BuildDataRequest();
                 var response = await _saveLifeDataProvider.LoadDataAsync(dataRequest, stoppingToken);
-                var uniqueueTransactions = response.Transactions.Where(x => !edgeTransactionIds.Contains(x.Id)).ToList();
+                var uniqueueTransactions = response.Transactions.Where(x => !edgeTransactions.Select(x => x.Id).Contains(x.Id)).ToList();
                 if (!uniqueueTransactions.Any())
                 {
                     _logger.LogWarning($"[{DateTime.Now}]: Empty trnsaction list was returned. Stopping execution.");
@@ -62,7 +58,13 @@ namespace SaveLife.Stats.Worker
                 var lastItem = response.Transactions.Last();
                 await _historyManager.SaveRunHistory(lastItem.Id);
 
-                edgeTransactionIds = response.Transactions.Where(x => x.Date == lastItem.Date).Select(x => x.Id).ToList();
+                edgeTransactions = edgeTransactions
+                    .Where(x => x.Date == lastItem.Date)
+                    .Concat(
+                        response.Transactions
+                        .Where(x => x.Date == lastItem.Date)
+                        .Select(x => new EdgeTransaction() { Id = x.Id, Date = x.Date }))
+                   .ToList();
 
                 ++iterattion;
                 _logger.LogInformation($"[{DateTime.Now}]: Response total count: {response.TotalCount}");

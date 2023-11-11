@@ -8,14 +8,17 @@ namespace SaveLife.Stats.Worker.Providers
     public class HistoryManager
     {
         private readonly LoaderConfig _loaderConfig;
+        private readonly DataSourceConfig _dataSourceConfig;
         private IPathResolver _pathResolver;
         private RunHistory _history;
 
         public HistoryManager(
             IOptions<LoaderConfig> loaderConfigOptions,
+            IOptions<DataSourceConfig> dataSourceOptions,
             IPathResolver pathResolver)
         {
             _loaderConfig = loaderConfigOptions.Value;
+            _dataSourceConfig = dataSourceOptions.Value;
             _pathResolver = pathResolver;
             _history = LoadRunHistory();
         }
@@ -51,12 +54,19 @@ namespace SaveLife.Stats.Worker.Providers
                     DateFrom = _loaderConfig.LoadFromDate,
                     DateTo = _loaderConfig.LoadToDate,
                     Page = 1,
+                    PerPage = _dataSourceConfig.BatchSize,
                     LastTransactionId = null
                 };
             }
 
             var historyContent = File.ReadAllText(filePath);
-            return historyContent.Deserialize<RunHistory>();
+            var history = historyContent.Deserialize<RunHistory>();
+            if (history.PerPage != _dataSourceConfig.BatchSize)
+            {
+                throw new ArgumentException("History per page differes from current batch size");
+            }
+
+            return history;
         }
     }
 }
