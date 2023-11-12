@@ -1,10 +1,10 @@
 ﻿using AutoFixture;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
-using SaveLife.Stats.Worker.Models;
-using SaveLife.Stats.Worker.Providers;
+using SaveLife.Stats.Downloader.Models;
+using SaveLife.Stats.Downloader.Providers;
 
-namespace SaveLife.Stats.Worker.Tests.Stubs
+namespace SaveLife.Stats.Downloader.Tests.Stubs
 {
     public class SaveLifeDataWithIdenticalDatesProviderStub : ISaveLifeDataProvider
     {

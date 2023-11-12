@@ -19,11 +19,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\SaveLife.Stats.Worker\SaveLife.Stats.Worker.csproj" />
+    <Folder Include="Data\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Data\" />
+    <ProjectReference Include="..\..\SaveLife.Stats.Downloader\SaveLife.Stats.Downloader.csproj" />
   </ItemGroup>
 
 </Project>

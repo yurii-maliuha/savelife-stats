@@ -1,4 +1,4 @@
-﻿namespace SaveLife.Stats.Worker.Models
+﻿namespace SaveLife.Stats.Downloader.Models
 {
     public class DataSourceConfig
     {

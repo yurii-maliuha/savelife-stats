@@ -1,9 +1,9 @@
 ﻿using Microsoft.Extensions.Options;
 using SaveLife.Stats.Domain.Extensions;
-using SaveLife.Stats.Worker.Models;
+using SaveLife.Stats.Downloader.Models;
 using System.Text.Json;
 
-namespace SaveLife.Stats.Worker.Providers
+namespace SaveLife.Stats.Downloader.Providers
 {
     public class HistoryManager
     {

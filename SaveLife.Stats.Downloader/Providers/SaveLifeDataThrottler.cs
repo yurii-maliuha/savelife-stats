@@ -1,11 +1,11 @@
 ﻿using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Polly;
-using SaveLife.Stats.Worker.Exceptions;
-using SaveLife.Stats.Worker.Models;
+using SaveLife.Stats.Downloader.Exceptions;
+using SaveLife.Stats.Downloader.Models;
 using System.Diagnostics;
 
-namespace SaveLife.Stats.Worker.Providers
+namespace SaveLife.Stats.Downloader.Providers
 {
     public class SaveLifeDataThrottler
     {

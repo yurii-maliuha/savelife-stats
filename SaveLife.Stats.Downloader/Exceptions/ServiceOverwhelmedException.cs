@@ -1,4 +1,4 @@
-﻿namespace SaveLife.Stats.Worker.Exceptions
+﻿namespace SaveLife.Stats.Downloader.Exceptions
 {
     internal class ServiceOverwhelmedException : Exception
     {

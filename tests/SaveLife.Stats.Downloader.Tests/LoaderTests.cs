@@ -1,8 +1,8 @@
 ﻿using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using SaveLife.Stats.Worker.Tests.Stubs;
+using SaveLife.Stats.Downloader.Tests.Stubs;
 
-namespace SaveLife.Stats.Worker.Tests
+namespace SaveLife.Stats.Downloader.Tests
 {
     [TestClass]
     public class LoaderTests

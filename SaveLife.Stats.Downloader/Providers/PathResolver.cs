@@ -1,4 +1,4 @@
-﻿namespace SaveLife.Stats.Worker.Providers
+﻿namespace SaveLife.Stats.Downloader.Providers
 {
     public class PathResolver : IPathResolver
     {

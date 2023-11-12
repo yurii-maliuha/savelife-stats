@@ -1,6 +1,6 @@
-﻿using SaveLife.Stats.Worker.Models;
+﻿using SaveLife.Stats.Downloader.Models;
 
-namespace SaveLife.Stats.Worker.Providers
+namespace SaveLife.Stats.Downloader.Providers
 {
     public interface ISaveLifeDataProvider
     {

@@ -1,6 +1,6 @@
-﻿using SaveLife.Stats.Worker.Providers;
+﻿using SaveLife.Stats.Downloader.Providers;
 
-namespace SaveLife.Stats.Worker.Tests.Stubs
+namespace SaveLife.Stats.Downloader.Tests.Stubs
 {
     public class PathResolverStub : IPathResolver
     {

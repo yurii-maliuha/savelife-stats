@@ -1,10 +1,10 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using SaveLife.Stats.Worker;
-using SaveLife.Stats.Worker.Mappers;
-using SaveLife.Stats.Worker.Models;
-using SaveLife.Stats.Worker.Providers;
+using SaveLife.Stats.Downloader;
+using SaveLife.Stats.Downloader.Mappers;
+using SaveLife.Stats.Downloader.Models;
+using SaveLife.Stats.Downloader.Providers;
 using Serilog;
 using System.Reflection;
 

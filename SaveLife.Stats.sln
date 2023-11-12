@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SaveLife.Stats.Worker", "SaveLife.Stats.Worker\SaveLife.Stats.Worker.csproj", "{F3D4B3BC-3988-45A2-96C7-B58A3DAA5521}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SaveLife.Stats.Downloader", "SaveLife.Stats.Downloader\SaveLife.Stats.Downloader.csproj", "{F3D4B3BC-3988-45A2-96C7-B58A3DAA5521}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SaveLife.Stats.Data", "SaveLife.Stats.Data\SaveLife.Stats.Data.csproj", "{5A007C37-31A2-411D-BBB9-348B30F7355D}"
 EndProject
@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SaveLife.Stats.Domain", "Sa
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{6298CCAF-CF63-40AB-B3A2-1763289D1F0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaveLife.Stats.Worker.Tests", "tests\SaveLife.Stats.Worker.Tests\SaveLife.Stats.Worker.Tests.csproj", "{AF3E735C-62AD-4E2C-8342-831D3D8BEB20}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SaveLife.Stats.Downloader.Tests", "tests\SaveLife.Stats.Downloader.Tests\SaveLife.Stats.Downloader.Tests.csproj", "{AF3E735C-62AD-4E2C-8342-831D3D8BEB20}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

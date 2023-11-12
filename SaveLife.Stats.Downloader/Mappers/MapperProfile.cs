@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
 using SaveLife.Stats.Domain.Models;
-using SaveLife.Stats.Worker.Models;
+using SaveLife.Stats.Downloader.Models;
 
-namespace SaveLife.Stats.Worker.Mappers
+namespace SaveLife.Stats.Downloader.Mappers
 {
     public class MapperProfile : Profile
     {

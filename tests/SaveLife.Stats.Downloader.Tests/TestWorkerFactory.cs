@@ -1,10 +1,10 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using SaveLife.Stats.Worker.Providers;
-using SaveLife.Stats.Worker.Tests.Stubs;
+using SaveLife.Stats.Downloader.Providers;
+using SaveLife.Stats.Downloader.Tests.Stubs;
 
-namespace SaveLife.Stats.Worker.Tests
+namespace SaveLife.Stats.Downloader.Tests
 {
     public static class TestWorkerFactory
     {
