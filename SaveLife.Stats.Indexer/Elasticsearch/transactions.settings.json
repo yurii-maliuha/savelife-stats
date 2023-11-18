@@ -1,0 +1,33 @@
+{
+  "settings": {
+    "index": {
+      "number_of_shards": "1",
+      "number_of_replicas": "0",
+      "max_shingle_diff": "4",
+      "max_terms_count": "1000000"
+    }
+  },
+  "mappings": {
+    "properties": {
+      "id": {
+        "type": "long"
+      },
+      "ammount": {
+        "type": "float"
+      },
+      "comment": {
+        "type": "text",
+        "index": false
+      },
+      "currency": {
+        "type": "keyword"
+      },
+      "source": {
+        "type": "keyword"
+      },
+      "date": {
+        "type": "date"
+      }
+    }
+  }
+}

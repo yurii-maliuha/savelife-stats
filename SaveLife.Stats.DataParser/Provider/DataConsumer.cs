@@ -49,7 +49,7 @@ namespace SaveLife.Stats.DataParser.Provider
                     {
                         CardNumber = cardNumber,
                         FullName = fullName,
-                        Transaction = new Transaction()
+                        Transaction = new TransactionRecord()
                         {
                             Id = slTransaction.Id,
                             Ammount = slTransaction.Amount,

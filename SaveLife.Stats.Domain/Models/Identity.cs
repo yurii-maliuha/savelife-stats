@@ -5,10 +5,10 @@
         public string? FullName { get; set; }
         public string? CardNumber { get; set; }
 
-        public Transaction Transaction { get; set; }
+        public TransactionRecord Transaction { get; set; }
     }
 
-    public class Transaction
+    public class TransactionRecord
     {
         public int Id { get; set; }
         public string Ammount { get; set; }

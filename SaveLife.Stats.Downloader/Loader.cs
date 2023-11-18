@@ -10,7 +10,7 @@ namespace SaveLife.Stats.Downloader
     {
         private readonly ILogger<Loader> _logger;
         private readonly SaveLifeDataThrottler _saveLifeDataProvider;
-        private readonly FileManager _fileManager;
+        private readonly TransactionManager _fileManager;
         private readonly HistoryManager _historyManager;
         private readonly LoaderConfig _loaderConfig;
         private readonly DataSourceConfig _dataSourceConfig;
@@ -20,7 +20,7 @@ namespace SaveLife.Stats.Downloader
             SaveLifeDataThrottler saveLifeDataProvider,
             IOptions<LoaderConfig> loaderConfigOptions,
             IOptions<DataSourceConfig> dataSourceConfigOptions,
-            FileManager fileManager,
+            TransactionManager fileManager,
             HistoryManager historyManager,
             IHostApplicationLifetime applicationLifetime,
             ILogger<Loader> loader)

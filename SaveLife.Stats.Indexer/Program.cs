@@ -1,10 +1,9 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using SaveLife.Stats.Downloader;
-using SaveLife.Stats.Downloader.Mappers;
-using SaveLife.Stats.Downloader.Models;
-using SaveLife.Stats.Downloader.Providers;
+using SaveLife.Stats.Indexer;
+using SaveLife.Stats.Indexer.Extensions;
+using SaveLife.Stats.Indexer.Providers;
 using Serilog;
 using System.Reflection;
 
@@ -22,11 +21,11 @@ public static class Program
         }
         catch (Exception ex)
         {
-            Log.Error(ex, "Unhandled exception in SaveLife.Stats.Downloader");
+            Log.Error(ex, "Unhandled exception in SaveLife.Stats.Indexer");
         }
         finally
         {
-            Log.Information("Stopping SaveLife.Stats.Downloader");
+            Log.Information("Stopping SaveLife.Stats.Indexer");
             Log.CloseAndFlush();
             cancellationTokenSource.Cancel();
         }
@@ -43,18 +42,11 @@ public static class Program
 
     public static void ConfigureWorkerServices(HostBuilderContext hostContext, IServiceCollection services)
     {
-        services.Configure<DataSourceConfig>(hostContext.Configuration.GetSection(DataSourceConfig.DisplayName));
-        services.Configure<LoaderConfig>(hostContext.Configuration.GetSection(LoaderConfig.DisplayName));
+        services.AddElasticSearchProviders(hostContext.Configuration);
 
-        services.AddSingleton<IPathResolver, PathResolver>();
-        services.AddSingleton<TransactionManager>();
-        services.AddSingleton<HistoryManager>();
+        services.AddSingleton<ElasticsearchScaffolder>();
+        services.AddSingleton<TransactionReader>();
 
-        services.AddAutoMapper(typeof(MapperProfile));
-
-        services.AddHttpClient<ISaveLifeDataProvider, SaveLifeDataProvider>();
-        services.AddSingleton<SaveLifeDataThrottler>();
-
-        services.AddHostedService<Loader>();
+        services.AddHostedService<Indexer>();
     }
 }

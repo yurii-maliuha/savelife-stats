@@ -6,12 +6,12 @@ using SaveLife.Stats.Downloader.Models;
 
 namespace SaveLife.Stats.Downloader.Providers
 {
-    public class FileManager
+    public class TransactionManager
     {
         private readonly IMapper _mapper;
         private IPathResolver _pathResolver;
         private readonly DataSourceConfig _dataSourceConfig;
-        public FileManager(
+        public TransactionManager(
             IMapper mapper,
             IPathResolver pathResolver,
             IOptions<DataSourceConfig> options)
