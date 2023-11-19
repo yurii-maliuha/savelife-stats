@@ -1,10 +1,15 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using SaveLife.Stats.Domain.Mappers;
+using SaveLife.Stats.Domain.Models;
 using SaveLife.Stats.Indexer;
+using SaveLife.Stats.Indexer.Constants;
 using SaveLife.Stats.Indexer.Extensions;
+using SaveLife.Stats.Indexer.Provider;
 using SaveLife.Stats.Indexer.Providers;
 using Serilog;
+using System.Collections.Concurrent;
 using System.Reflection;
 
 public static class Program
@@ -43,9 +48,14 @@ public static class Program
     public static void ConfigureWorkerServices(HostBuilderContext hostContext, IServiceCollection services)
     {
         services.AddElasticSearchProviders(hostContext.Configuration);
+        services.AddSingleton(_ => new BlockingCollection<SLTransaction>(IndexingSettings.PublisherCollectionCapacity));
 
         services.AddSingleton<ElasticsearchScaffolder>();
-        services.AddSingleton<TransactionReader>();
+        services.AddSingleton<ElasticsearchProvider>();
+        services.AddSingleton<TransactionsHandler>();
+        services.AddSingleton<TransactionsPublisher>();
+
+        services.AddAutoMapper(typeof(MapperProfile));
 
         services.AddHostedService<Indexer>();
     }

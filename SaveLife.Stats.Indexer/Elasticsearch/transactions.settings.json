@@ -27,6 +27,12 @@
       },
       "date": {
         "type": "date"
+      },
+      "cardNumber": {
+        "type": "keyword"
+      },
+      "fullName": {
+        "type": "keyword"
       }
     }
   }
