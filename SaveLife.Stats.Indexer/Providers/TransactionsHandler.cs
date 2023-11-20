@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
 using Microsoft.Extensions.Logging;
+using SaveLife.Stats.Domain.Domains;
 using SaveLife.Stats.Domain.Models;
 using SaveLife.Stats.Indexer.Constants;
 using SaveLife.Stats.Indexer.Providers;
 using System.Collections.Concurrent;
-using System.Text.RegularExpressions;
 
 namespace SaveLife.Stats.Indexer.Provider
 {
@@ -13,17 +13,20 @@ namespace SaveLife.Stats.Indexer.Provider
         private readonly BlockingCollection<SLTransaction> _sLTransactions;
         private readonly IList<Transaction> _transactions;
         private readonly ElasticsearchProvider _elasticsearchProvider;
+        private readonly DataParsingDomain _dataParsingDomain;
         private readonly IMapper _mapper;
         private readonly ILogger<TransactionsHandler> _logger;
 
         public TransactionsHandler(
             BlockingCollection<SLTransaction> sLTransactions,
             ElasticsearchProvider elasticsearchProvider,
+            DataParsingDomain dataParsingDomain,
             IMapper mapper,
             ILogger<TransactionsHandler> logger)
         {
             _sLTransactions = sLTransactions;
             _elasticsearchProvider = elasticsearchProvider;
+            _dataParsingDomain = dataParsingDomain;
             _logger = logger;
             _transactions = new List<Transaction>();
             _mapper = mapper;
@@ -41,12 +44,15 @@ namespace SaveLife.Stats.Indexer.Provider
                         continue;
                     }
 
-                    var cardNumber = TryParseCardNumber(slTransaction);
-                    var fullName = cardNumber == null ? TryParseFullName(slTransaction) : null;
+                    var cardNumber = _dataParsingDomain.TryParseCardNumber(slTransaction);
+                    var fullName = cardNumber == null ? _dataParsingDomain.TryParseFullName(slTransaction) : null;
+                    var legalName = cardNumber == null && fullName == null ? _dataParsingDomain.TryParseLegalName(slTransaction) : null;
 
                     var transaction = _mapper.Map<Transaction>(slTransaction);
                     transaction.CardNumber = cardNumber;
                     transaction.FullName = fullName;
+                    transaction.LegalName = legalName;
+
                     _transactions.Add(transaction);
 
                     if (_transactions.Count >= IndexingSettings.PublisherBatchSize)
@@ -61,31 +67,6 @@ namespace SaveLife.Stats.Indexer.Provider
 
                 _logger.LogInformation($"[{DateTime.Now}]: Completed consuming. Collection size {_sLTransactions.Count}");
             });
-        }
-
-        // use TryParseCardNumber & TryParseFullName from DataParser
-
-        public string? TryParseCardNumber(SLTransaction slTransaction)
-        {
-            Regex rx = new Regex(@"\*\*\*\d{4}");
-            MatchCollection matches = rx.Matches(slTransaction.Comment);
-            return matches.FirstOrDefault()?.Value;
-        }
-
-        public string? TryParseFullName(SLTransaction slTransaction)
-        {
-            Regex fullNamePattern = new Regex("([IІЖЄЇА-Я]['iіжєїa-я]+ [IІЖЄЇА-Я]['iіжєїa-я]+)|" +
-                @"([IІЖЄЇА-Я]['iіжєїa-я]+ [IІЖЄЇА-Я]\.\s*[IІЖЄЇА-Я]\.)|" +
-                "([A-Z]\\w{2,} [A-Z]\\w{2,})");
-            MatchCollection matches = fullNamePattern.Matches(slTransaction.Comment);
-            var fullName = matches.FirstOrDefault()?.Value;
-
-            if (fullName == null || fullName.ToLower() == "повернись живим")
-            {
-                return null;
-            }
-
-            return fullName;
         }
     }
 }

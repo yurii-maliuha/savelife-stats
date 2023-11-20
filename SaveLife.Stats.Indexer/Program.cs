@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using SaveLife.Stats.Domain.Extensions;
 using SaveLife.Stats.Domain.Mappers;
 using SaveLife.Stats.Domain.Models;
 using SaveLife.Stats.Indexer;
@@ -54,6 +55,8 @@ public static class Program
         services.AddSingleton<ElasticsearchProvider>();
         services.AddSingleton<TransactionsHandler>();
         services.AddSingleton<TransactionsPublisher>();
+
+        services.AddSLDomainServices();
 
         services.AddAutoMapper(typeof(MapperProfile));
 

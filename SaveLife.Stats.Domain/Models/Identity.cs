@@ -4,6 +4,7 @@
     {
         public string? FullName { get; set; }
         public string? CardNumber { get; set; }
+        public string? LegalName { get; set; }
 
         public TransactionRecord Transaction { get; set; }
     }
