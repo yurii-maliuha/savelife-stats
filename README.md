@@ -19,6 +19,8 @@
 	- ~~index first chunk of data~~
 	- update ES entity to contains identity and cardholder properties
 	- update docker compose to preserve index data in volume (if it's possible?)
+		- [17/3/24]: Partialy done. The data is stored as internal docker volume. It would be nice to store volume data in git
+	- [17/3/24] update Indexed to load data with date > the nearest date among already indexed items
 
  - ES Queries
 	- identify the number of unuque donaters
