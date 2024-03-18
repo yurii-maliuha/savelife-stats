@@ -1,52 +1,36 @@
-﻿using Nest;
+﻿using Microsoft.Extensions.Logging;
+using Nest;
 using SaveLife.Stats.Domain.Models;
 using SaveLife.Stats.Indexer.Constants;
-using System.Runtime.ExceptionServices;
 
 namespace SaveLife.Stats.Indexer.Providers
 {
     public class ElasticsearchProvider
     {
         private readonly IElasticClient _client;
+        private readonly ILogger<ElasticsearchProvider> _logger;
 
         public ElasticsearchProvider(
-            IElasticClient client)
+            IElasticClient client,
+            ILogger<ElasticsearchProvider> logger)
         {
             _client = client;
+            _logger = logger;
         }
 
-        public void IndexInParrarel(IEnumerable<Transaction> transactions)
+        public async Task BulkUpsertAsync(IEnumerable<Transaction> transactions)
         {
-            var handle = new ManualResetEvent(false);
-            var seenPages = 0;
-            var observableBulk = _client.BulkAll(transactions, f => f
-                .MaxDegreeOfParallelism(IndexingSettings.IndexerParallelismDegree)
-                .BackOffTime(TimeSpan.FromSeconds(10))
-                .BackOffRetries(2)
-                .Size(IndexingSettings.IndexerBatchSizue)
-                .RefreshOnCompleted()
-            );
+            var cc = transactions.DistinctBy(x => x.Id).Count();
 
-            ExceptionDispatchInfo exception = null;
-            var bulkObserver = new BulkAllObserver(
-                onError: e =>
-                {
-                    exception = ExceptionDispatchInfo.Capture(e);
-                    handle.Set();
-                },
-                onCompleted: () => handle.Set(),
-                onNext: b =>
-                {
-                    Interlocked.Increment(ref seenPages);
-                    Console.WriteLine($"[{DateTime.Now}]: Indexed {seenPages} pages");
-                }
-            );
+            var bulkResponse = await _client.BulkAsync(b => b
+                .Index(ElasticsearchIndexes.TransactionsIndexAliasName)
+                .UpdateMany(transactions, (bu, d) => bu.Doc(d).DocAsUpsert(true)));
 
-            observableBulk.Subscribe(bulkObserver);
-            handle.WaitOne();
-
-            if (exception != null)
-                exception.Throw();
+            if(bulkResponse.Errors)
+            {
+                var failedItemsIds = bulkResponse.ItemsWithErrors.Select(x => x.Id);
+                _logger.LogError($"Bulk operation completed with errors {bulkResponse.ServerError}. Failed items ids: [{string.Join(',', failedItemsIds)}]");
+            }
         }
     }
 }

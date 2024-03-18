@@ -12,6 +12,11 @@ namespace SaveLife.Stats.Domain.Domains
             _knownNames = LoadKnownNames();
         }
 
+        public (string?, string?, string?) TryParseIdentity(SLTransaction slTransaction)
+        {
+            return (TryParseCardNumber(slTransaction), TryParseFullName(slTransaction), TryParseLegalName(slTransaction));
+        }
+
         public string? TryParseCardNumber(SLTransaction slTransaction)
         {
             Regex rx = new Regex(@"\*\*\*\d{4}");
