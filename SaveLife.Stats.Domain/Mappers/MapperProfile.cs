@@ -7,7 +7,9 @@ namespace SaveLife.Stats.Domain.Mappers
     {
         public MapperProfile()
         {
-            CreateMap<SLTransaction, Transaction>();
+            CreateMap<SLTransaction, Transaction>()
+                .ForMember(x => x.Amount, opt => opt.MapFrom(src => double.Parse(src.Amount)))
+                .ForMember(x => x.Identity, opt => opt.Ignore());
 
         }
 

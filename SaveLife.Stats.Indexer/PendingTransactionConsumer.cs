@@ -39,39 +39,43 @@ namespace SaveLife.Stats.Indexer
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
             _logger.LogWarning($"Starting {nameof(PendingTransactionConsumer)}");
+            int batch = 1;
 
             while (!stoppingToken.IsCancellationRequested)
             {
                 await foreach (var slTransaction in _transactionsQueue.Reader.ReadAllAsync())
                 {
-                    var (cardNumber, fullName, legalName) = _dataParsingDomain.TryParseIdentity(slTransaction);
+                    var identity = _dataParsingDomain.TryParseIdentity(slTransaction);
 
                     var transaction = _mapper.Map<Transaction>(slTransaction);
-                    transaction.CardNumber = cardNumber;
-                    transaction.FullName = fullName;
-                    transaction.LegalName = legalName;
+                    transaction.Identity = identity.Id;
+                    transaction.CardNumber = identity.CardNumber;
+                    transaction.FullName = identity.FullName;
+                    transaction.LegalName = identity.LegalName;
 
                     _transactions.Add(transaction);
 
                     if (_transactions.Count >= _sourceConfig.BatchSize)
                     {
-                        await UpsertTransactionsBatchAsync();
+                        batch += 1;
+                        await UpsertTransactionsBatchAsync(batch);
                     }
+
                 }
 
                 if(_transactions.Count > 0)
                 {
-                    await UpsertTransactionsBatchAsync();
+                    await UpsertTransactionsBatchAsync(batch);
                 }
             }
         }
 
-        private async Task UpsertTransactionsBatchAsync()
+        private async Task UpsertTransactionsBatchAsync(int batch)
         {
             _logger.LogInformation($"[{DateTime.Now}]: Transactions with {_transactions.Count} items reached indexing threshold. Indexing...");
             await _elasticsearchProvider.BulkUpsertAsync(_transactions);
             _transactions.Clear();
-            _logger.LogInformation($"[{DateTime.Now}]: Indexing completed");
+            _logger.LogInformation($"[{DateTime.Now}]: Indexing completed ({batch}/{_sourceConfig.PublisherMaxInterations})");
         }
     }
     

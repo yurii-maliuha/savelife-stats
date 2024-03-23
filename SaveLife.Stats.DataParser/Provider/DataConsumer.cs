@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using SaveLife.Stats.DataParser.Models;
 using SaveLife.Stats.Domain.Domains;
 using SaveLife.Stats.Domain.Extensions;
 using SaveLife.Stats.Domain.Models;
@@ -9,7 +10,7 @@ namespace SaveLife.Stats.DataParser.Provider
     public class DataConsumer
     {
         private readonly BlockingCollection<SLTransaction> _sLTransactions;
-        private readonly IList<Identity> _identities;
+        private readonly IList<Models.Identity> _identities;
         private readonly HashSet<string> _othersTransactions;
         private readonly ILogger _logger;
         private long _othersTransactionsCount;
@@ -22,7 +23,7 @@ namespace SaveLife.Stats.DataParser.Provider
         {
             _sLTransactions = sLTransactions;
             _logger = logger;
-            _identities = new List<Identity>();
+            _identities = new List<Models.Identity>();
             _othersTransactions = new HashSet<string>();
             _dataParsingDomain = dataParsingDomain;
         }
@@ -39,21 +40,19 @@ namespace SaveLife.Stats.DataParser.Provider
                         continue;
                     }
 
-                    var cardNumber = _dataParsingDomain.TryParseCardNumber(slTransaction);
-                    var fullName = cardNumber == null ? _dataParsingDomain.TryParseFullName(slTransaction) : null;
-                    var legalName = cardNumber == null && fullName == null ? _dataParsingDomain.TryParseLegalName(slTransaction) : null;
+                    var identity = _dataParsingDomain.TryParseIdentity(slTransaction);
 
-                    if (cardNumber == null && fullName == null && legalName == null)
+                    if (identity.CardNumber == null && identity.FullName == null && identity.LegalName == null)
                     {
                         _othersTransactionsCount++;
                         _othersTransactions.Add(slTransaction.Comment);
                     }
 
-                    _identities.Add(new Identity()
+                    _identities.Add(new Models.Identity()
                     {
-                        CardNumber = cardNumber,
-                        FullName = fullName,
-                        LegalName = legalName,
+                        CardNumber = identity.CardNumber,
+                        FullName = identity.FullName,
+                        LegalName = identity.LegalName,
                         Transaction = new TransactionRecord()
                         {
                             Id = slTransaction.Id,

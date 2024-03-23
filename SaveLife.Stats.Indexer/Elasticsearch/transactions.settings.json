@@ -13,7 +13,7 @@
         "type": "long"
       },
       "ammount": {
-        "type": "float"
+        "type": "double"
       },
       "comment": {
         "type": "text",
@@ -28,10 +28,16 @@
       "date": {
         "type": "date"
       },
+      "identity": {
+        "type": "keyword"
+      },
       "cardNumber": {
         "type": "keyword"
       },
       "fullName": {
+        "type": "keyword"
+      },
+      "legalName": {
         "type": "keyword"
       }
     }

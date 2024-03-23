@@ -1,0 +1,55 @@
+[
+  // Group items per identity
+  {
+    "aggs": {
+      "cardNumberIdentity": {
+        "filter": {
+          "script": {
+            "script": "return doc['cardNumber.keyword'].size() > 0"
+          }
+        }
+      },
+      "fullNameIdentity": {
+        "filter": {
+          "script": {
+            "script": "return doc['fullName.keyword'].size() > 0"
+          }
+        }
+      },
+      "legalNameIdentity": {
+        "filter": {
+          "script": {
+            "script": "return doc['legalName.keyword'].size() > 0"
+          }
+        }
+      },
+      "UnidentifiedIdentity": {
+        "filter": {
+          "script": {
+            "script": "return doc['identity.keyword'].value == 'Unidentified'"
+          }
+        }
+      }
+    },
+    "size": 0
+  }
+  ,// { "aggs": { "cardNumberIdentity": { "filter": { "script": { "script": "return doc['cardNumber.keyword'].size() > 0" } } }, "fullNameIdentity": { "filter": { "script": { "script": "return doc['fullName.keyword'].size() > 0" } } }, "legalNameIdentity": { "filter": { "script": { "script": "return doc['legalName.keyword'].size() > 0" } } }, "UnidentifiedIdentity": { "filter": { "script": { "script": "return doc['identity.keyword'].value == 'Unidentified'" } } } }, "size": 0 }
+
+  // Group per identity adn calculate total amount
+  {
+    "aggs": {
+      "identities": {
+        "terms": {
+          "field": "identity.keyword",
+          "size": 20
+        },
+        "aggs": {
+          "total_amount": { "sum": { "field": "amount" } }
+        }
+      }
+    },
+    "size": 0
+  }
+
+
+]
