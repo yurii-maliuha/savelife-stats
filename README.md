@@ -11,14 +11,22 @@
  - Data Validator
 	 - filter out duplicates
 	 - identify possibly missed data by finding the transactions IDs gaps (f.e. ...163690267, 163690269, ... -> 163690268 is missed)
+		
+- Data Parser
+	- [23/3/24]: Right now any english words are defined as fullName (check test TryParseIdentity_ReturnsUnidentified). For each match term make a call to one of dictionary and ignore ones that have definition
+		         We can use this endpoint: GET https://www.merriam-webster.com/lapi/v1/mwol-search/autocomplete?r=collegiate-thesaurus&search={word}
+	- [23/3/24]: During fullName calculation change string strict comparison to string similarity and allow some % of mistakes (5-7%).
+				 Exmaple: transaction 164948299, Зищук Олесандр -> Зищук ОлеКсандр
 
 
  - ElasticSearch Indexer
 	- ~~add Scaffolfer which creates index~~
 	- ~~define mapping for entity~~
 	- ~~index first chunk of data~~
-	- update ES entity to contains identity and cardholder properties
+	- ~~update ES entity to contains identity and cardholder properties~~
 	- update docker compose to preserve index data in volume (if it's possible?)
+		- [17/3/24]: Partialy done. The data is stored as internal docker volume. It would be nice to store volume data in git
+	- ~~[17/3/24] update Indexed to load data with date > the nearest date among already indexed items~~
 
  - ES Queries
 	- identify the number of unuque donaters

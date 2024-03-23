@@ -3,14 +3,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using SaveLife.Stats.Domain.Extensions;
 using SaveLife.Stats.Domain.Mappers;
-using SaveLife.Stats.Domain.Models;
 using SaveLife.Stats.Indexer;
-using SaveLife.Stats.Indexer.Constants;
 using SaveLife.Stats.Indexer.Extensions;
-using SaveLife.Stats.Indexer.Provider;
+using SaveLife.Stats.Indexer.Models;
 using SaveLife.Stats.Indexer.Providers;
 using Serilog;
-using System.Collections.Concurrent;
 using System.Reflection;
 
 public static class Program
@@ -48,18 +45,19 @@ public static class Program
 
     public static void ConfigureWorkerServices(HostBuilderContext hostContext, IServiceCollection services)
     {
+        services.Configure<DataSourceConfig>(hostContext.Configuration.GetSection(DataSourceConfig.DisplayName));
         services.AddElasticSearchProviders(hostContext.Configuration);
-        services.AddSingleton(_ => new BlockingCollection<SLTransaction>(IndexingSettings.PublisherCollectionCapacity));
+       
 
         services.AddSingleton<ElasticsearchScaffolder>();
-        services.AddSingleton<ElasticsearchProvider>();
-        services.AddSingleton<TransactionsHandler>();
-        services.AddSingleton<TransactionsPublisher>();
+        services.AddSingleton<ElasticsearchProvider>();;
+        services.AddSingleton<TransactionsQueueProvider>();
 
         services.AddSLDomainServices();
 
         services.AddAutoMapper(typeof(MapperProfile));
 
-        services.AddHostedService<Indexer>();
+        services.AddHostedService<PendingTransactionsPublisher>();
+        services.AddHostedService<PendingTransactionConsumer>();
     }
 }

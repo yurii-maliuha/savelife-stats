@@ -7,52 +7,68 @@ namespace SaveLife.Stats.Domain.Domains
     public class DataParsingDomain
     {
         private readonly HashSet<string> _knownNames;
-        public DataParsingDomain()
+        public DataParsingDomain()  
         {
             _knownNames = LoadKnownNames();
         }
 
-        public string? TryParseCardNumber(SLTransaction slTransaction)
+        public Identity TryParseIdentity(SLTransaction slTransaction)
+        {
+            var(cardNumber, fullName, legalName) = (TryParseCardNumber(slTransaction), TryParseFullName(slTransaction), TryParseLegalName(slTransaction));
+            return new Identity()
+            {
+                Id = cardNumber ?? legalName ?? fullName ?? "Unidentified",
+                CardNumber = cardNumber,
+                FullName = legalName == null ? fullName : null,
+                LegalName = legalName
+            };
+        }
+
+        private string? TryParseCardNumber(SLTransaction slTransaction)
         {
             Regex rx = new Regex(@"\*\*\*\d{4}");
             MatchCollection matches = rx.Matches(slTransaction.Comment);
             return matches.FirstOrDefault()?.Value;
         }
 
-        public string? TryParseFullName(SLTransaction slTransaction)
+        private string? TryParseFullName(SLTransaction slTransaction)
         {
             string? fullName = null;
             // Прізвище Ім'я
-            Regex generalFullNamePattern = new Regex(@"([IІЖЄЇА-Я][\-'iіжєїa-я]+ [IІЖЄЇА-Я]['iіжєїa-я]+)");
+            // web format: ([IІ\x{0400}-\x{042F}][\-IiІі'\x{0400}-\x{04FF}]+\s[IІ\x{0400}-\x{042F}][\-IiІі'\x{0400}-\x{04FF}]+)
+            Regex generalFullNamePattern = new Regex(@"([IІ\u0400-\u042F][\-IiІі'\u0400-\u04FF]+\s[IІ\u0400-\u042F][\-IiІі'\u0400-\u04FF]+)");
             var fullNameMatches = generalFullNamePattern.Matches(slTransaction.Comment).Select(x => x.Groups[0].Value);
             foreach (var possiblyFullName in fullNameMatches)
             {
-                fullName ??= possiblyFullName.Split(' ').Any(x => _knownNames.Contains(x.ToLowerInvariant())) == true ? possiblyFullName : null;
+                fullName ??= possiblyFullName.Split(' ').Any(x => _knownNames.Contains(x.ToLowerInvariant())) == true ? possiblyFullName.ToLowerInvariant() : null;
             }
 
-            // there is higher possibility that full name is defined in ukrainian 
-            fullName ??= fullNameMatches.LastOrDefault();
+            // від Ім'я Прізвище || Платник Ім'я Прізвище
+            Regex fromFullNamePattern = new Regex(@"((?<=(від|вiд|Платник)\s)([IІ\u0400-\u042F][\-IiІі'\u0400-\u04FF]+\s[IІ\u0400-\u042F][\-IiІі'\u0400-\u04FF]+))");
+            var fromFullNameMatches = fromFullNamePattern.Matches(slTransaction.Comment).Select(x => x.Groups[0].Value);
+            fullName ??= fromFullNameMatches.Where(x => x.ToLowerInvariant() != "повернись живим").FirstOrDefault()?.ToLowerInvariant();
 
             // Прізвище І. C. || Mr Lastname || FirstName LastName
-            Regex initialsOrForeignNames = new Regex(@"([IІЖЄЇА-Я][\-'iіжєїa-я]+\s+[IІЖЄЇА-Я]\.\s*[IІЖЄЇА-Я]\.)|([mrsMRS]{2}\s+[A-Z]\w{2,})|([A-Z]\w{2,}\s+[A-Z]\w{2,})");
+            // web format: ([IІ\x{0400}-\x{042F}][\-IiІі'\x{0400}-\x{04FF}]+\s+[IІ\x{0400}-\x{042F}]{1}\.\s*([IІ\x{0400}-\x{042F}]{1}(\.*)){0,1})
+            Regex initialsOrForeignNames = new Regex(@"([IІ\u0400-\u042F][\-IiІі'\u0400-\u04FF]+\s+[IІ\u0400-\u042F]\.\s*([IІ\u0400-\u042F]\.{0,1}){0,1})|([mrsMRS]{2}\s+[A-Z]\w{2,})|([A-Z]\w{2,}\s+[A-Z]\w{2,})");
             var initialsOrForeignName = initialsOrForeignNames.Match(slTransaction.Comment).Value;
             if (!string.IsNullOrEmpty(initialsOrForeignName))
             {
-                fullName ??= initialsOrForeignName;
+                fullName ??= initialsOrForeignName.ToLowerInvariant();
             }
 
 
             return fullName;
         }
 
-        public string? TryParseLegalName(SLTransaction slTransaction)
+        private string? TryParseLegalName(SLTransaction slTransaction)
         {
             if (slTransaction.Comment.StartsWith("ТзОВ"))
             {
                 var sd = 12;
             }
             Regex legalEntityPatern = new Regex(@"(ПрАТ|ТОВ|ОСББ|ТзОВ|ФГ|ПП)\s+""\s*[IІЖЄЇА-Я\-'iіжєїa-я0-9 ]+\s*""");
-            var legalName = legalEntityPatern.Matches(slTransaction.Comment).LastOrDefault()?.Value.Replace(@"""", "'");
+            var legalName = legalEntityPatern.Matches(slTransaction.Comment).LastOrDefault()?.Value.Replace(@"""", "'")?.ToLowerInvariant();
             return legalName;
         }
 

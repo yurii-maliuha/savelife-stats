@@ -2,12 +2,14 @@ version: "3.8"
 
 services:
   elasticsearch:
-    image: docker.elastic.co/elasticsearch/elasticsearch:7.10.0
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.10.1
     container_name: Elasticsearch
     ports:
-      - 9200:9200
+      - 9222:9200
     environment:
       - discovery.type=single-node
+    volumes:
+      - esdatavol:/usr/share/elasticsearch/data
     healthcheck:
       test: curl -s http://localhost:9200 >/dev/null || exit 1
       interval: 1s
@@ -15,12 +17,17 @@ services:
       retries: 100
       start_period: 3s
 
-  kibana:
-      depends_on:
-          - elasticsearch
-      image: docker.elastic.co/kibana/kibana:7.10.0
-      ports:
-          - 5601:5601
-      environment:
-          - SERVERNAME=kibana
-          - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+  #kibana:
+  #    depends_on:
+  #        - elasticsearch
+  #    image: docker.elastic.co/kibana/kibana:7.10.1
+  #    ports:
+  #        - 5601:5601
+  #    environment:
+  #        - SERVERNAME=kibana
+  #        - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+
+# this volume is stored at \\wsl.localhost\rancher-desktop-data\var\lib\docker\volumes\savelife-stats_esdatavol
+volumes:
+  esdatavol:
+    external: false
