@@ -1,11 +1,11 @@
 version: "3.8"
 
 services:
-  elasticsearch:
+  elasticsearch_slstats:
     image: docker.elastic.co/elasticsearch/elasticsearch:7.10.1
-    container_name: Elasticsearch
+    container_name: ElasticsearchSLStats
     ports:
-      - 9222:9200
+      - 9622:9200
     environment:
       - discovery.type=single-node
     volumes:
@@ -16,6 +16,8 @@ services:
       timeout: 10s
       retries: 100
       start_period: 3s
+    networks:
+      - elasticsearch-net
 
   #kibana:
   #    depends_on:
@@ -31,3 +33,6 @@ services:
 volumes:
   esdatavol:
     external: false
+
+networks:
+  elasticsearch-net:

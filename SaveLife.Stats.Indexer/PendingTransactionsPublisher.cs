@@ -29,7 +29,12 @@ namespace SaveLife.Stats.Indexer
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
             var iteration = 1;
-            var readItemsCount = 0;
+            var readItemsCount = _sourceConfig.StartFileLine;
+            if(readItemsCount != 0)
+            {
+                _logger.LogInformation($"Strating indexing from line: {readItemsCount}");
+            }
+
             var readingCompleted = false;
             do
             {

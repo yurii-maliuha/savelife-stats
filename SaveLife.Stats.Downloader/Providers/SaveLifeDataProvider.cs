@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using SaveLife.Stats.Domain.Extensions;
+using SaveLife.Stats.Downloader.Exceptions;
 using SaveLife.Stats.Downloader.Models;
 using System.Text.Json;
 
@@ -24,23 +25,30 @@ namespace SaveLife.Stats.Downloader.Providers
 
         public async Task<SLOriginResponse> LoadDataAsync(SLOriginDataRequest request, CancellationToken cancellationToken)
         {
-            var requestUrl = $"{_dataSourceConfig.BaseUrl}/{_dataSourceConfig.EndpointTemplate}"
-                .Replace("{DATE_FROM}", request.DateFromString)
-                .Replace("{DATE_TO}", request.DateToString)
-                .Replace("{PAGE}", request.Page.ToString())
-                .Replace("{PER_PAGE}", _dataSourceConfig.BatchSize.ToString());
-
-
-            var httpResponse = await _httpClient.GetAsync(requestUrl, cancellationToken);
-            if (!httpResponse.IsSuccessStatusCode)
+            try
             {
-                throw new ArgumentException($"Loading failed. Status code {httpResponse.StatusCode}. Content: {await httpResponse.Content.ReadAsStringAsync()}");
+                var requestUrl = $"{_dataSourceConfig.BaseUrl}/{_dataSourceConfig.EndpointTemplate}"
+                    .Replace("{DATE_FROM}", request.DateFromString)
+                    .Replace("{DATE_TO}", request.DateToString)
+                    .Replace("{PAGE}", request.Page.ToString())
+                    .Replace("{PER_PAGE}", _dataSourceConfig.BatchSize.ToString());
+
+
+                var httpResponse = await _httpClient.GetAsync(requestUrl, cancellationToken);
+                if (!httpResponse.IsSuccessStatusCode)
+                {
+                    throw new ArgumentException($"Loading failed. Status code {httpResponse.StatusCode}. Content: {await httpResponse.Content.ReadAsStringAsync()}");
+                }
+
+                var content = await httpResponse.Content.ReadAsStringAsync();
+                var response = content.Deserialize<SLOriginResponse>();
+
+                return response!;
             }
-
-            var content = await httpResponse.Content.ReadAsStringAsync();
-            var response = content.Deserialize<SLOriginResponse>();
-
-            return response!;
+            catch (Exception ex)
+            {
+                throw new ServiceOverwhelmedException(ex.Message);
+            }
         }
     }
 }

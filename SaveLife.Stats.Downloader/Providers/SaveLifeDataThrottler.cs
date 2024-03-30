@@ -34,7 +34,7 @@ namespace SaveLife.Stats.Downloader.Providers
                     TimeSpan.FromSeconds(_loaderConfig.ThrottleSeconds * 3)
                 }, (exception, timeSpan, context) =>
                 {
-                    _logger.LogWarning($"[{DateTime.Now}]:{nameof(LoadDataAsync)} has failed with ServiceOverwhelmedException. Retrying.");
+                    _logger.LogWarning($"[{DateTime.Now}]:{nameof(LoadDataAsync)} has failed with ServiceOverwhelmedException {exception.Message}. Retrying.");
                 });
 
             var result = await serviceOverwhelmedPolicy.ExecuteAsync(() => RetrieveDataAsync(request, cancellationToken));
@@ -46,8 +46,9 @@ namespace SaveLife.Stats.Downloader.Providers
         {
             if (_previousOperationTime > _loaderConfig.MaxSeccondsPerOperation)
             {
+                var operationTime = _previousOperationTime;
                 _previousOperationTime = 0;
-                throw new ServiceOverwhelmedException($"Previous operation execution tool {_previousOperationTime} whereas {_loaderConfig.MaxSeccondsPerOperation} was expected");
+                throw new ServiceOverwhelmedException($"Previous operation execution tool {operationTime} whereas {_loaderConfig.MaxSeccondsPerOperation} was expected");
             }
 
             var timer = new Stopwatch();

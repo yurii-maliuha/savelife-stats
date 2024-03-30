@@ -6,5 +6,6 @@
         public string Path { get; set; }
         public int BatchSize { get; set; }
         public int PublisherMaxInterations { get; set; }
+        public int StartFileLine { get; set; }
     }
 }
