@@ -34,11 +34,11 @@ namespace SaveLife.Stats.Indexer.Providers
 
             var postfix = DateTime.Now.ToString("yyyyMMdd");
 
-            if (!indices.Contains(ElasticsearchIndexes.TransactionsIndexAliasName))
+            if (!indices.Contains(ESConstants.TransactionsIndexAliasName))
             {
-                var transactionIndexName = $"{ElasticsearchIndexes.TransactionsIndexAliasName.Replace('-', '_')}_{postfix}";
-                await CreateIndexAsync(_client, transactionIndexName, $"{ElasticsearchIndexes.TransactionsIndexAliasName}.settings.json");
-                await UpdateAliasAsync(_client, transactionIndexName, ElasticsearchIndexes.TransactionsIndexAliasName);
+                var transactionIndexName = $"{ESConstants.TransactionsIndexAliasName.Replace('-', '_')}_{postfix}";
+                await CreateIndexAsync(_client, transactionIndexName, $"{ESConstants.TransactionsIndexAliasName}.settings.json");
+                await UpdateAliasAsync(_client, transactionIndexName, ESConstants.TransactionsIndexAliasName);
             }
         }
 
@@ -123,7 +123,7 @@ namespace SaveLife.Stats.Indexer.Providers
 
             var allowedAliases = new string[]
             {
-                ElasticsearchIndexes.TransactionsIndexAliasName
+                ESConstants.TransactionsIndexAliasName
             };
 
             return indices.Records

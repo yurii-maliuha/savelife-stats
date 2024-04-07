@@ -1,12 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using SaveLife.Stats.Domain.Extensions;
-using SaveLife.Stats.Domain.Mappers;
-using SaveLife.Stats.Indexer;
-using SaveLife.Stats.Indexer.Extensions;
-using SaveLife.Stats.Indexer.Models;
-using SaveLife.Stats.Indexer.Providers;
 using Serilog;
 using System.Reflection;
 
@@ -45,26 +39,7 @@ public static class Program
 
     public static void ConfigureWorkerServices(HostBuilderContext hostContext, IServiceCollection services)
     {
-        var indexerSection = hostContext.Configuration.GetSection(IndexerConfig.DisplayName);
-        var indexerConfig = indexerSection.Get<IndexerConfig>();
-        services.Configure<IndexerConfig>(indexerSection);
-        services.AddElasticSearchProviders(hostContext.Configuration);
-       
 
-        services.AddSingleton<ElasticsearchScaffolder>();
-        services.AddSingleton<ElasticsearchProvider>();;
-        services.AddSingleton<TransactionsQueueProvider>();
-
-        services.AddSLDomainServices();
-
-        services.AddAutoMapper(typeof(MapperProfile));
-
-        if(indexerConfig.Enable)
-        {
-            services.AddHostedService<PendingTransactionsPublisher>();
-            services.AddHostedService<PendingTransactionConsumer>();
-        }
-
-        services.AddHostedService<TransactionsDataAggregator>();
+        services.AddHostedService<PendingTransactionConsumer>();
     }
 }

@@ -12,24 +12,24 @@ namespace SaveLife.Stats.Indexer
 {
     public class PendingTransactionsPublisher : BackgroundService
     {
-        private readonly DataSourceConfig _sourceConfig;
+        private readonly IndexerConfig _indexerConfig;
         private readonly TransactionsQueueProvider _transactionsQueue;
         private readonly ILogger<PendingTransactionsPublisher> _logger;
 
         public PendingTransactionsPublisher(
             TransactionsQueueProvider transactionsQueue,
-            IOptions<DataSourceConfig> sourceConfigOptions,
+            IOptions<IndexerConfig> indexerConfigOptions,
             ILogger<PendingTransactionsPublisher> logger)
         {
             _transactionsQueue = transactionsQueue;
-            _sourceConfig = sourceConfigOptions.Value;
+            _indexerConfig = indexerConfigOptions.Value;
             _logger = logger;
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
             var iteration = 1;
-            var readItemsCount = _sourceConfig.StartFileLine;
+            var readItemsCount = _indexerConfig.StartFileLine;
             if(readItemsCount != 0)
             {
                 _logger.LogInformation($"Strating indexing from line: {readItemsCount}");
@@ -38,8 +38,8 @@ namespace SaveLife.Stats.Indexer
             var readingCompleted = false;
             do
             {
-                string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, _sourceConfig.Path);
-                var lines = File.ReadLines(filePath).Skip(readItemsCount).Take(_sourceConfig.BatchSize);
+                string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, _indexerConfig.SourcePath);
+                var lines = File.ReadLines(filePath).Skip(readItemsCount).Take(_indexerConfig.BatchSize);
                 var transactions = lines.Select(t => JsonSerializer.Deserialize<SLTransaction>(t, new JsonSerializerOptions()
                 {
                     Encoder = JavaScriptEncoder.Create(UnicodeRanges.BasicLatin, UnicodeRanges.Cyrillic),
@@ -54,8 +54,8 @@ namespace SaveLife.Stats.Indexer
 
                 iteration++;
                 readItemsCount += transactions.Count();
-                _logger.LogInformation($"The items was added Total: [{readItemsCount + _sourceConfig.BatchSize}]");
-                readingCompleted = !transactions.Any() || iteration > _sourceConfig.PublisherMaxInterations || stoppingToken.IsCancellationRequested;
+                _logger.LogInformation($"The items was added Total: [{readItemsCount + _indexerConfig.BatchSize}]");
+                readingCompleted = !transactions.Any() || iteration > _indexerConfig.PublisherMaxInterations || stoppingToken.IsCancellationRequested;
 
             } while (!readingCompleted);
 
