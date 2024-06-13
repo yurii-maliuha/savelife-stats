@@ -16,7 +16,7 @@ namespace SaveLife.Stats.Indexer
         private readonly ElasticsearchProvider _elasticsearchProvider;
         private readonly DataParsingDomain _dataParsingDomain;
         private readonly IMapper _mapper;
-        private readonly DataSourceConfig _sourceConfig;
+        private readonly IndexerConfig _sourceConfig;
         private readonly ILogger<PendingTransactionConsumer> _logger;
 
         public PendingTransactionConsumer(
@@ -24,7 +24,7 @@ namespace SaveLife.Stats.Indexer
             ElasticsearchProvider elasticsearchProvider,
             DataParsingDomain dataParsingDomain,
             IMapper mapper,
-            IOptions<DataSourceConfig> sourceConfigOptions,
+            IOptions<IndexerConfig> sourceConfigOptions,
             ILogger<PendingTransactionConsumer> logger)
         {
             _transactionsQueue = transactionsQueue;

@@ -23,7 +23,7 @@ namespace SaveLife.Stats.Indexer.Extensions
 
                 var connectSettings = new ConnectionSettings(
                     new SingleNodeConnectionPool(new Uri(elasticSearchConfig.Uri)))
-                    .DefaultMappingFor<Transaction>(m => m.IndexName(ElasticsearchIndexes.TransactionsIndexAliasName));
+                    .DefaultMappingFor<Transaction>(m => m.IndexName(ESConstants.TransactionsIndexAliasName));
 
                 connectSettings
                         // Turn on debug mode to get the full stack trace on elasticsearch errors

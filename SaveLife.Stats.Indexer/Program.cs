@@ -45,7 +45,9 @@ public static class Program
 
     public static void ConfigureWorkerServices(HostBuilderContext hostContext, IServiceCollection services)
     {
-        services.Configure<DataSourceConfig>(hostContext.Configuration.GetSection(DataSourceConfig.DisplayName));
+        var indexerSection = hostContext.Configuration.GetSection(IndexerConfig.DisplayName);
+        var indexerConfig = indexerSection.Get<IndexerConfig>();
+        services.Configure<IndexerConfig>(indexerSection);
         services.AddElasticSearchProviders(hostContext.Configuration);
        
 
@@ -57,7 +59,12 @@ public static class Program
 
         services.AddAutoMapper(typeof(MapperProfile));
 
-        services.AddHostedService<PendingTransactionsPublisher>();
-        services.AddHostedService<PendingTransactionConsumer>();
+        if(indexerConfig.Enable)
+        {
+            services.AddHostedService<PendingTransactionsPublisher>();
+            services.AddHostedService<PendingTransactionConsumer>();
+        }
+
+        services.AddHostedService<TransactionsDataAggregator>();
     }
 }

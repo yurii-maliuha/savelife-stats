@@ -12,7 +12,7 @@ namespace SaveLife.Stats.Indexer.Providers
         public ChannelWriter<SLTransaction> Writer => _channel.Writer;
 
         public TransactionsQueueProvider(
-            IOptions<DataSourceConfig> sourceConfigOptions)
+            IOptions<IndexerConfig> sourceConfigOptions)
         {
             _channel = Channel.CreateBounded<SLTransaction>(sourceConfigOptions.Value.BatchSize);
         }

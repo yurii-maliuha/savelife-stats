@@ -29,7 +29,8 @@
 	- ~~[17/3/24] update Indexed to load data with date > the nearest date among already indexed items~~
 
  - ES Queries
-	- identify the number of unuque donaters
+	- identify the number of unique donaters
+		- create donaters mongodb collection to store agregation
 
 
 Scripts for loading names from wikipedia
