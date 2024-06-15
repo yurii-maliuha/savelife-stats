@@ -29,6 +29,12 @@ services:
   #        - SERVERNAME=kibana
   #        - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
 
+  mongo_slstats:
+    image: mongo:5
+    container_name: MongoSLStats
+    ports:
+    - 27017:27017
+
 # this volume is stored at \\wsl.localhost\rancher-desktop-data\var\lib\docker\volumes\savelife-stats_esdatavol
 volumes:
   esdatavol:

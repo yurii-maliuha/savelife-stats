@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using MongoDB.Driver;
 using SaveLife.Stats.Domain.Extensions;
 using SaveLife.Stats.Domain.Mappers;
 using SaveLife.Stats.Indexer;
@@ -9,11 +10,13 @@ using SaveLife.Stats.Indexer.Models;
 using SaveLife.Stats.Indexer.Providers;
 using Serilog;
 using System.Reflection;
+using System.Text;
 
 public static class Program
 {
     public static async Task Main(string[] args)
     {
+        Console.OutputEncoding = Encoding.UTF8;
         Log.Logger = new LoggerConfiguration()
             .CreateLogger();
 
@@ -54,17 +57,29 @@ public static class Program
         services.AddSingleton<ElasticsearchScaffolder>();
         services.AddSingleton<ElasticsearchProvider>();;
         services.AddSingleton<TransactionsQueueProvider>();
-
+        services.AddSingleton<MD5HashProvider>();
         services.AddSLDomainServices();
-
         services.AddAutoMapper(typeof(MapperProfile));
 
+        services.AddSingleton<MongoDbProvider>();
+        var mongoDbConfig = hostContext.Configuration.GetSection(nameof(MongoDbConfig)).Get<MongoDbConfig>();
+        var mongoClient = new MongoClient(new MongoClientSettings
+        {
+            RetryWrites = false,
+            ReadPreference = ReadPreference.SecondaryPreferred,
+            UseTls = false,
+            AllowInsecureTls = true,
+            Server = new MongoServerAddress(mongoDbConfig.HostName, mongoDbConfig.Port)
+        });
+
+        services.AddSingleton(mongoClient);
+        services.AddSingleton(mongoClient.GetDatabase(mongoDbConfig.DatabaseName));
+
+        services.AddHostedService<TransactionsDataAggregator>();
         if(indexerConfig.Enable)
         {
             services.AddHostedService<PendingTransactionsPublisher>();
             services.AddHostedService<PendingTransactionConsumer>();
         }
-
-        services.AddHostedService<TransactionsDataAggregator>();
     }
 }
