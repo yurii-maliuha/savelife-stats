@@ -1,4 +1,5 @@
-﻿using MongoDB.Driver;
+﻿using MongoDB.Bson.Serialization;
+using MongoDB.Driver;
 using SaveLife.Stats.Domain.Models;
 
 namespace SaveLife.Stats.Indexer.Providers
@@ -38,6 +39,18 @@ namespace SaveLife.Stats.Indexer.Providers
                 { IsUpsert = true });
 
             await Collection.BulkWriteAsync(requests: requests);
+        }
+
+        public async Task<IEnumerable<DonatorEntity>> GetTopDonaterAsync(int size)
+        {
+            var query = Collection
+                .Find(x => x.Identity != "Unidentified")
+                .SortByDescending(x => x.TotalDonation)
+                .Project(Builders<DonatorEntity>.Projection.Exclude(x => x.Id).Exclude(x => x.LastTransactionStamp))
+                .Limit(size);
+
+            var results = await query.ToListAsync();
+            return results.Select(x => BsonSerializer.Deserialize<DonatorEntity>(x));
         }
     }
 }

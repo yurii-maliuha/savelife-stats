@@ -51,6 +51,7 @@ public static class Program
         var indexerSection = hostContext.Configuration.GetSection(IndexerConfig.DisplayName);
         var indexerConfig = indexerSection.Get<IndexerConfig>();
         services.Configure<IndexerConfig>(indexerSection);
+        services.Configure<AggregatorConfig>(hostContext.Configuration.GetSection(nameof(AggregatorConfig)));
         services.AddElasticSearchProviders(hostContext.Configuration);
        
 
