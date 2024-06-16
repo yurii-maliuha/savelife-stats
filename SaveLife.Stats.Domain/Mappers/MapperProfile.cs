@@ -11,6 +11,9 @@ namespace SaveLife.Stats.Domain.Mappers
                 .ForMember(x => x.Amount, opt => opt.MapFrom(src => double.Parse(src.Amount)))
                 .ForMember(x => x.Identity, opt => opt.Ignore());
 
+            CreateMap<Donator, DonatorEntity>()
+                .ForMember(x => x.Id, opt => opt.Ignore());
+
         }
 
     }

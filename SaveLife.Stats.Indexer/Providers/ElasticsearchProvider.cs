@@ -34,34 +34,37 @@ namespace SaveLife.Stats.Indexer.Providers
             }
         }
 
-        public async Task<(IList<Benefactor>, CompositeKey?)> GetBenefactorsCompositeAggregation(CompositeKey? afterKey)
+        public async Task<(IList<Donator>, CompositeKey?)> AggregateDonators(CompositeKey? afterKey)
         {
-            var benefactors = new List<Benefactor>();
+            var benefactors = new List<Donator>();
             var searchDescriptor = new SearchDescriptor<Transaction>()
                 .Index(ESConstants.TransactionsIndexAliasName)
                 .Size(0).TrackTotalHits(false)
-                .Aggregations(a => a.Composite(BenefactorsAggregation.CompositeName, q => q
+                .Aggregations(a => a.Composite("identities_composite", q => q
                     .Sources(s => s
-                        .Terms(BenefactorsAggregation.CompositeSource, t => t.Field(f => f.Identity.Suffix("keyword"))))
+                        .Terms("identities_composite", t => t.Field(f => f.Identity.Suffix("keyword"))))
                     .After(afterKey)
                     .Size(1000)
-                    .Aggregations(a => a.Sum(BenefactorsAggregation.NestedTotalAmountField, s => s.Field(f => f.Amount)))
+                    .Aggregations(a => a
+                        .Sum("total_amount", s => s.Field(f => f.Amount))
+                        .Max("last_transaction_date", s => s.Field(f => f.Date)))
                 ));
 
             var json = _client.RequestResponseSerializer.SerializeToString(searchDescriptor, SerializationFormatting.Indented);
 
             var response = await _client.SearchAsync<Transaction>(searchDescriptor);
-            var aggregation = response.Aggregations.Composite(BenefactorsAggregation.CompositeName);
+            var aggregation = response.Aggregations.Composite("identities_composite");
             var buckets = aggregation?.Buckets ?? new List<CompositeBucket>();
 
             foreach (var item in buckets)
             {
-                item.Key.TryGetValue(BenefactorsAggregation.CompositeSource, out string key);
-                benefactors.Add(new Benefactor()
+                item.Key.TryGetValue("identities_composite", out string key);
+                benefactors.Add(new Donator()
                 {
                     Identity = key,
-                    DonationCount = item.DocCount ?? -1,
-                    TotalDonation = item.Sum(BenefactorsAggregation.NestedTotalAmountField).Value ?? -1
+                    TransactionsCount = (int)(item.DocCount ?? -1),
+                    TotalDonation = ((ValueAggregate)item["total_amount"]).Value ?? -1,
+                    LastTransactionStamp = ((ValueAggregate)item["last_transaction_date"]).Value ?? -1
                 });
             }
 
@@ -69,7 +72,7 @@ namespace SaveLife.Stats.Indexer.Providers
         }
     }
 
-    public static class BenefactorsAggregation
+    public static class DonatorAggregation
     {
         public static string CompositeName = "identities_composite";
         public static string CompositeSource = "identities_composite";

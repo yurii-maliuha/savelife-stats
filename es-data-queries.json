@@ -1,4 +1,6 @@
 [
+  { "query": { "term": {"identity.keyword": {"value": "***0015"}}}}
+
   // Group items per identity
   {
     "aggs": {
@@ -73,7 +75,8 @@
           }
         },
         "aggregations": {
-            "total_amount": { "sum": { "field": "amount" } }
+            "total_amount": { "sum": { "field": "amount" } },
+            "last_transaction_date": { "max": { "field": "date" } }
         }
       }
     }
