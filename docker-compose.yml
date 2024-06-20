@@ -9,7 +9,7 @@ services:
     environment:
       - discovery.type=single-node
     volumes:
-      - esdatavol:/usr/share/elasticsearch/data
+      - esdatavol_v2:/usr/share/elasticsearch/data
     healthcheck:
       test: curl -s http://localhost:9200 >/dev/null || exit 1
       interval: 1s
@@ -37,7 +37,9 @@ services:
 
 # this volume is stored at \\wsl.localhost\rancher-desktop-data\var\lib\docker\volumes\savelife-stats_esdatavol
 volumes:
-  esdatavol:
+  #esdatavol:
+  #  external: false
+  esdatavol_v2:
     external: false
 
 networks:

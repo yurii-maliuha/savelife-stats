@@ -25,7 +25,10 @@
       "source": {
         "type": "keyword"
       },
-      "date": {
+      "indexingDate": {
+        "type": "date"
+      },
+      "transactionDate": {
         "type": "date"
       },
       "identity": {

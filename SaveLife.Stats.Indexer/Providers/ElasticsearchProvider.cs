@@ -47,7 +47,7 @@ namespace SaveLife.Stats.Indexer.Providers
                     .Size(1000)
                     .Aggregations(a => a
                         .Sum("total_amount", s => s.Field(f => f.Amount))
-                        .Max("last_transaction_date", s => s.Field(f => f.Date)))
+                        .Max("last_transaction_date", s => s.Field(f => f.TransactionDate)))
                 ));
 
             var json = _client.RequestResponseSerializer.SerializeToString(searchDescriptor, SerializationFormatting.Indented);

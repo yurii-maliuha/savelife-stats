@@ -1,15 +1,18 @@
 ﻿using SaveLife.Stats.Domain.Extensions;
 using SaveLife.Stats.Domain.Models;
+using System.Globalization;
 using System.Text.RegularExpressions;
 
 namespace SaveLife.Stats.Domain.Domains
 {
     public class DataParsingDomain
     {
+        private readonly CultureInfo _culture;
         private readonly HashSet<string> _knownNames;
         public DataParsingDomain()  
         {
             _knownNames = LoadKnownNames();
+            _culture = new CultureInfo("uk", false);
         }
 
         public Identity TryParseIdentity(SLTransaction slTransaction)
@@ -40,13 +43,13 @@ namespace SaveLife.Stats.Domain.Domains
             var fullNameMatches = generalFullNamePattern.Matches(slTransaction.Comment).Select(x => x.Groups[0].Value);
             foreach (var possiblyFullName in fullNameMatches)
             {
-                fullName ??= possiblyFullName.Split(' ').Any(x => _knownNames.Contains(x.ToLowerInvariant())) == true ? possiblyFullName.ToLowerInvariant() : null;
+                fullName ??= possiblyFullName.Split(' ').Any(x => _knownNames.Contains(x.ToLower(_culture))) == true ? possiblyFullName.ToLower(_culture) : null;
             }
 
             // від Ім'я Прізвище || Платник Ім'я Прізвище
             Regex fromFullNamePattern = new Regex(@"((?<=(від|вiд|Платник)\s)([IІ\u0400-\u042F][\-IiІі'\u0400-\u04FF]+\s[IІ\u0400-\u042F][\-IiІі'\u0400-\u04FF]+))");
             var fromFullNameMatches = fromFullNamePattern.Matches(slTransaction.Comment).Select(x => x.Groups[0].Value);
-            fullName ??= fromFullNameMatches.Where(x => x.ToLowerInvariant() != "повернись живим").FirstOrDefault()?.ToLowerInvariant();
+            fullName ??= fromFullNameMatches.Where(x => x.ToLower(_culture) != "повернись живим").FirstOrDefault()?.ToLower(_culture);
 
             // Прізвище І. C. || Mr Lastname || FirstName LastName
             // web format: ([IІ\x{0400}-\x{042F}][\-IiІі'\x{0400}-\x{04FF}]+\s+[IІ\x{0400}-\x{042F}]{1}\.\s*([IІ\x{0400}-\x{042F}]{1}(\.*)){0,1})
@@ -54,7 +57,7 @@ namespace SaveLife.Stats.Domain.Domains
             var initialsOrForeignName = initialsOrForeignNames.Match(slTransaction.Comment).Value;
             if (!string.IsNullOrEmpty(initialsOrForeignName))
             {
-                fullName ??= initialsOrForeignName.ToLowerInvariant();
+                fullName ??= initialsOrForeignName.ToLower(_culture);
             }
 
 
@@ -63,12 +66,10 @@ namespace SaveLife.Stats.Domain.Domains
 
         private string? TryParseLegalName(SLTransaction slTransaction)
         {
-            if (slTransaction.Comment.StartsWith("ТзОВ"))
-            {
-                var sd = 12;
-            }
             Regex legalEntityPatern = new Regex(@"(ПрАТ|ТОВ|ОСББ|ТзОВ|ФГ|ПП)\s+""\s*[IІЖЄЇА-Я\-'iіжєїa-я0-9 ]+\s*""");
-            var legalName = legalEntityPatern.Matches(slTransaction.Comment).LastOrDefault()?.Value.Replace(@"""", "'")?.ToLowerInvariant();
+            var legalName = legalEntityPatern.Matches(slTransaction.Comment).LastOrDefault()?.Value.Replace(@"""", "'")?.ToLower(_culture);
+            var notChars = legalName?.Where(x => !char.IsLetter(x));
+
             return legalName;
         }
 

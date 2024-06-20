@@ -48,6 +48,20 @@ namespace SaveLife.Stats.Domain.Tests
         }
 
         [TestMethod]
+        [DataRow("ТОВ \u0022Фінансова компанія МБК\u0022 -- 118105 Допомога ЗСУ згідно договору на час військового стану \u2116 ВС-1 від 24.02.2022 на суму 71750.90", "тов 'фінансова компанія мбк'")]
+        public void TryParseIdentity_ReturnsLegalName(string input, string parsedIdentity)
+        {
+            var parser = new DataParsingDomain();
+
+            var identity = parser.TryParseIdentity(new Models.SLTransaction() { Comment = input });
+
+            identity.CardNumber.Should().BeNull();
+            identity.FullName.Should().BeNull();
+            identity.LegalName.Should().Be(parsedIdentity);
+            identity.LegalName.Should().Be(identity.Id);
+        }
+
+        [TestMethod]
         [Ignore("Should be fixed later")]
         [DataRow("T5 Team -- GIFT OR DONATION CHARITABLE DONATIO N TO UKRAINIAN MILITARY (1000 USD)")]
         public void TryParseIdentity_ReturnsUnidentified(string input)

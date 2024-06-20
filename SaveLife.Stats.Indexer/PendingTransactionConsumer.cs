@@ -52,6 +52,7 @@ namespace SaveLife.Stats.Indexer
                     transaction.CardNumber = identity.CardNumber;
                     transaction.FullName = identity.FullName;
                     transaction.LegalName = identity.LegalName;
+                    transaction.IndexingDate = DateTime.UtcNow;
 
                     _transactions.Add(transaction);
 

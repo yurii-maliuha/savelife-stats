@@ -9,6 +9,7 @@ namespace SaveLife.Stats.Domain.Mappers
         {
             CreateMap<SLTransaction, Transaction>()
                 .ForMember(x => x.Amount, opt => opt.MapFrom(src => double.Parse(src.Amount)))
+                .ForMember(x => x.TransactionDate, opt => opt.MapFrom(src => src.Date))
                 .ForMember(x => x.Identity, opt => opt.Ignore());
 
             CreateMap<Donator, DonatorEntity>()

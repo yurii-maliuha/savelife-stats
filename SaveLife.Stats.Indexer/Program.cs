@@ -76,11 +76,14 @@ public static class Program
         services.AddSingleton(mongoClient);
         services.AddSingleton(mongoClient.GetDatabase(mongoDbConfig.DatabaseName));
 
-        services.AddHostedService<TransactionsDataAggregator>();
         if(indexerConfig.Enable)
         {
             services.AddHostedService<PendingTransactionsPublisher>();
             services.AddHostedService<PendingTransactionConsumer>();
+        }
+        else
+        {
+            services.AddHostedService<TransactionsDataAggregator>();
         }
     }
 }

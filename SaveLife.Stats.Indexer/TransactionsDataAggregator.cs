@@ -7,6 +7,7 @@ using SaveLife.Stats.Domain.Extensions;
 using SaveLife.Stats.Domain.Models;
 using SaveLife.Stats.Indexer.Models;
 using SaveLife.Stats.Indexer.Providers;
+using System.Text;
 
 namespace SaveLife.Stats.Indexer
 {
@@ -49,7 +50,7 @@ namespace SaveLife.Stats.Indexer
                 var topDonators = await _mongoDbProvider.GetTopDonaterAsync(50);
                 var filePathToCardholders = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @$"..\..\..\Data\top-donators.json");
                 var benefactorsStr = topDonators.Select(x => new { x.Identity, x.TotalDonation, x.TransactionsCount }.Serialize());
-                await File.WriteAllLinesAsync(filePathToCardholders, benefactorsStr);
+                await File.WriteAllLinesAsync(filePathToCardholders, benefactorsStr, Encoding.UTF8);
 
                 _logger.LogWarning($"Finishing {nameof(TransactionsDataAggregator)}");
             }
