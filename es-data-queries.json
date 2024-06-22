@@ -1,6 +1,8 @@
 [
   { "query": { "term": {"identity.keyword": {"value": "***0015"}}}}
 
+  { "query": { "match": {"identity": {"query": "мбк"}}}}
+
   // Group items per identity
   {
     "aggs": {

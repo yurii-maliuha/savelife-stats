@@ -2,7 +2,6 @@
 using System.Text.Encodings.Web;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-using System.Text.Unicode;
 
 namespace SaveLife.Stats.Domain.Extensions
 {
@@ -14,7 +13,7 @@ namespace SaveLife.Stats.Domain.Extensions
         {
             var settings = new JsonSerializerOptions()
             {
-                Encoder = JavaScriptEncoder.Create(UnicodeRanges.BasicLatin, UnicodeRanges.Cyrillic),
+                Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping, //JavaScriptEncoder.Create(UnicodeRanges.BasicLatin, UnicodeRanges.Cyrillic),
                 PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
                 WriteIndented = false,
                 Converters = { new JsonConverterDouble() }

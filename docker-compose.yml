@@ -9,7 +9,7 @@ services:
     environment:
       - discovery.type=single-node
     volumes:
-      - esdatavol_v2:/usr/share/elasticsearch/data
+      - esdatavol:/usr/share/elasticsearch/data
     healthcheck:
       test: curl -s http://localhost:9200 >/dev/null || exit 1
       interval: 1s
@@ -33,13 +33,15 @@ services:
     image: mongo:5
     container_name: MongoSLStats
     ports:
-    - 27017:27017
+     - 27017:27017
+    volumes:
+     - mongodatavol:/data/db
 
-# this volume is stored at \\wsl.localhost\rancher-desktop-data\var\lib\docker\volumes\savelife-stats_esdatavol
+# these volumes are stored at \\wsl.localhost\rancher-desktop-data\var\lib\docker\volumes\savelife-stats_{name}
 volumes:
-  #esdatavol:
-  #  external: false
-  esdatavol_v2:
+  esdatavol:
+    external: false
+  mongodatavol:
     external: false
 
 networks:
