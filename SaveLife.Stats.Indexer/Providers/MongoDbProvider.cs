@@ -16,13 +16,13 @@ namespace SaveLife.Stats.Indexer.Providers
             _mongoDatabase = mongoDatabase;
         }
 
-        public async Task UpsertDonatorsAsync(IEnumerable<DonatorEntity> donators)
+        public async Task UpsertDonatorsAsync(IEnumerable<Domain.Models.DonatorEntity> donators)
         {
             var donatorIds = donators.Select(x => x.Id).ToList();
-            var filter = Builders<DonatorEntity>.Filter.Where(x => donatorIds.Contains(x.Id));
+            var filter = Builders<Domain.Models.DonatorEntity>.Filter.Where(x => donatorIds.Contains(x.Id));
             var existingItems = await Collection.Find(filter).ToListAsync();
 
-            existingItems ??= new List<DonatorEntity> ();
+            existingItems ??= new List<Domain.Models.DonatorEntity>();
             foreach (var existingItem in existingItems)
             {
                 var donator = donators.First(x => x.Id == existingItem.Id);
@@ -33,8 +33,8 @@ namespace SaveLife.Stats.Indexer.Providers
                 }
             }
 
-            var requests = donators.Select(replacement => new ReplaceOneModel<DonatorEntity>(
-                filter: new ExpressionFilterDefinition<DonatorEntity>(projection => projection.Id == replacement.Id),
+            var requests = donators.Select(replacement => new ReplaceOneModel<Domain.Models.DonatorEntity>(
+                filter: new ExpressionFilterDefinition<Domain.Models.DonatorEntity>(projection => projection.Id == replacement.Id),
                 replacement: replacement)
                 { IsUpsert = true });
 
@@ -50,7 +50,7 @@ namespace SaveLife.Stats.Indexer.Providers
                 .Limit(size);
 
             var results = await query.ToListAsync();
-            return results.Select(x => BsonSerializer.Deserialize<DonatorEntity>(x));
+            return Enumerable.Select<MongoDB.Bson.BsonDocument, Domain.Models.DonatorEntity>(results, (Func<MongoDB.Bson.BsonDocument, Domain.Models.DonatorEntity>)(x => BsonSerializer.Deserialize<Domain.Models.DonatorEntity>(x)));
         }
     }
 }

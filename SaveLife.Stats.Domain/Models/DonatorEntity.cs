@@ -7,5 +7,6 @@
         public double TotalDonation { get; set; }
         public int TransactionsCount { get; set; }
         public double LastTransactionStamp { get; set; }
+        public IEnumerable<long> TransactionIds { get; set; }
     }
 }

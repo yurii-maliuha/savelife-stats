@@ -47,7 +47,11 @@ namespace SaveLife.Stats.Indexer.Providers
                     .Size(1000)
                     .Aggregations(a => a
                         .Sum("total_amount", s => s.Field(f => f.Amount))
-                        .Max("last_transaction_date", s => s.Field(f => f.TransactionDate)))
+                        .ScriptedMetric("transactions", s => s
+                            .InitScript("state.transactions = []")
+                            .MapScript("state.transactions.add(doc.id)")
+                            .CombineScript("def transactions = []; for (t in state.transactions) { transactions.add(t[0]) } return transactions")
+                            .ReduceScript("return states")))
                 ));
 
             var json = _client.RequestResponseSerializer.SerializeToString(searchDescriptor, SerializationFormatting.Indented);
@@ -62,9 +66,8 @@ namespace SaveLife.Stats.Indexer.Providers
                 benefactors.Add(new Donator()
                 {
                     Identity = key,
-                    TransactionsCount = (int)(item.DocCount ?? -1),
                     TotalDonation = ((ValueAggregate)item["total_amount"]).Value ?? -1,
-                    LastTransactionStamp = ((ValueAggregate)item["last_transaction_date"]).Value ?? -1
+                    TransactionIds = item.ScriptedMetric("transactions").Value<long[][]>()[0]
                 });
             }
 

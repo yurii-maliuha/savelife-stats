@@ -4,7 +4,6 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Nest;
 using SaveLife.Stats.Domain.Extensions;
-using SaveLife.Stats.Domain.Models;
 using SaveLife.Stats.Indexer.Models;
 using SaveLife.Stats.Indexer.Providers;
 using System.Text;
@@ -49,7 +48,7 @@ namespace SaveLife.Stats.Indexer
 
                 var topDonators = await _mongoDbProvider.GetTopDonaterAsync(50);
                 var filePathToCardholders = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @$"..\..\..\Data\top-donators.json");
-                var benefactorsStr = topDonators.Select(x => new { x.Identity, x.TotalDonation, x.TransactionsCount }.Serialize());
+                var benefactorsStr = topDonators.Select(x => new { x.Identity, x.TotalDonation }.Serialize());
                 await File.WriteAllLinesAsync(filePathToCardholders, benefactorsStr, Encoding.UTF8);
 
                 _logger.LogWarning($"Finishing {nameof(TransactionsDataAggregator)}");
@@ -69,7 +68,7 @@ namespace SaveLife.Stats.Indexer
                 var (donators, key) = await _searchProvider.AggregateDonators(afterKey);
                 var donatorEntities = donators.Select(donator =>
                 {
-                    var entity = _mapper.Map<DonatorEntity>(donator);
+                    var entity = _mapper.Map<Domain.Models.DonatorEntity>(donator);
                     entity.Id = _hashProvider.ComputeHash(donator.Identity);
                     return entity;
                 });

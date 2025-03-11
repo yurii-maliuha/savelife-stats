@@ -1,0 +1,7 @@
+{
+  "aggregations": [{
+    "name": "donators",
+    "fromDate": "2023-031T22:59:50Z",
+    "toDate": "2023-020T11:46:00Z"
+  }]
+}

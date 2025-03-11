@@ -55,8 +55,8 @@
     "size": 0
   }
 
-  ,// { "aggs": { "identities": { "terms": { "field": "identity.keyword", "size": 20 }, "aggs": { "total_amount": { "sum": { "field": "amount" } } } } }, "size": 0 }
-
+  , // DonatorAggregationQuery
+  
   {
     "size": 0,
     "track_total_hits": false,
@@ -78,10 +78,22 @@
         },
         "aggregations": {
             "total_amount": { "sum": { "field": "amount" } },
-            "last_transaction_date": { "max": { "field": "date" } }
+            "transactions": { "scripted_metric": {
+                "init_script": "state.transactions = []",
+                "map_script": "state.transactions.add(doc.id)",
+                "combine_script": "def transactions = []; for (t in state.transactions) { transactions.add(t[0]) } return transactions",
+                "reduce_script": "return states"
+            } }
         }
       }
     }
   }
 
+  ,
+  {
+      "aggs" : {
+         "min_date": {"min": {"field": "transactionDate", "format": "yyyy-DDD'T'HH:mm:ssZ"}},
+         "max_date": {"max": {"field": "transactionDate", "format": "yyyy-DDD'T'HH:mm:ssZ"}}
+      }
+  }
 ]

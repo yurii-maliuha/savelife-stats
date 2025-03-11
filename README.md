@@ -13,7 +13,8 @@
 	 - 3. When 1.2 is ready, manually verify the correctness of your calculation by comparing results with SL site
 		
 - 3. Data Parser
-	- 1. [23/3/24]: Right now any english words are defined as fullName (check test TryParseIdentity_ReturnsUnidentified). For each match term make a call to one of dictionary and ignore ones that have definition
+	- 1. [23/3/24]: Right now any english words are defined as fullName (check test TryParseIdentity_ReturnsUnidentified).
+         For each match term make a call to one of dictionary and ignore ones that have definition
 		         We can use this endpoint: GET https://www.merriam-webster.com/lapi/v1/mwol-search/autocomplete?r=collegiate-thesaurus&search={word}
 	- 2. [23/3/24]: During fullName calculation change string strict comparison to string similarity and allow some % of mistakes (5-7%).
 				 Exmaple: transaction 164948299, Зищук Олесандр -> Зищук ОлеКсандр
@@ -27,13 +28,16 @@
 	- 5. update docker compose to preserve index data in volume (if it's possible?)
 			- [17/3/24]: Partialy done. The data is stored as internal docker volume. It would be nice to store volume data in git
 	- 6. ~~[17/3/24] update Indexed to load data with date > the nearest date among already indexed items~~
-	- 7. SaveLife.Stats.Indexer contains both indexing and query processing work. Should we keep this in a single service and implement the pipeline design pattern or move to two separate services so that we can implement
-	   simultaneous indexing and query processing using events?
+	- 7. SaveLife.Stats.Indexer contains both indexing and query processing work. Should we keep this in a single service and implement the pipeline
+         design pattern or move to two separate services so that we can implement
+	     simultaneous indexing and query processing using events?
 
  - 5. Queries
 	- 1. ~~identify the number of unique donaters~~
 			- ~~create donaters mongodb collection to store agregation~~
 	- 2. TransactionsDataAggregator should store the indexDate of the last updated transactions and aggregate just a new records
+			- Use the new version of DonatorAggregationQuery. Donator aggregation should contain transaction id list that can be used to prevent miscalculation (just last transaction date is not enough)
+			- identity for cards should be calculated like card number + currency (example ***0007)
 			- the above should be covered by integration tests
 	- 3. Build a new query to calculate the normal distribution by donate amount. The ES histogram aggregations could be used
 	- 4. Figure ou the correct way to represent the aggregations results. Should we generate a pdf document or a standalone image per aggregation?
