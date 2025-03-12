@@ -21,7 +21,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		docker-compose.yml = docker-compose.yml
 		es-data-queries.json = es-data-queries.json
+		file-stream-demo-distributed.properties = file-stream-demo-distributed.properties
 		README.md = README.md
+		SaveLife.Stats.Data\Raw\transactions_1-2023.json = SaveLife.Stats.Data\Raw\transactions_1-2023.json
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SaveLife.Stats.Domain.Tests", "SaveLife.Stats.Domain.Tests\SaveLife.Stats.Domain.Tests.csproj", "{5C854030-2C5E-4CEB-B6A4-558F47278AAB}"
