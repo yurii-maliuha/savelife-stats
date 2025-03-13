@@ -40,9 +40,11 @@ services:
       - 9092:9092                 # Kafka Broker
     volumes:
       - ./kafka-properties:/properties
+    networks:
+      - my-network
 
 
-  elasticsearch_raw:
+  elasticsearchraw:
     image: docker.elastic.co/elasticsearch/elasticsearch:7.10.1
     container_name: ElasticsearchSLRawStats
     ports:
@@ -56,7 +58,7 @@ services:
       retries: 100
       start_period: 3s
     networks:
-      - elasticsearch-net
+      - my-network
 
 # these volumes are stored at \\wsl.localhost\rancher-desktop-data\var\lib\docker\volumes\savelife-stats_{name}
 volumes:
@@ -66,4 +68,6 @@ volumes:
     external: false
 
 networks:
+  my-network:
+    driver: bridge
   elasticsearch-net:
