@@ -18,6 +18,10 @@
 		         We can use this endpoint: GET https://www.merriam-webster.com/lapi/v1/mwol-search/autocomplete?r=collegiate-thesaurus&search={word}
 	- 2. [23/3/24]: During fullName calculation change string strict comparison to string similarity and allow some % of mistakes (5-7%).
 				 Exmaple: transaction 164948299, Зищук Олесандр -> Зищук ОлеКсандр
+    - 3.1. Using Kafka
+        - 1. Add Kafka Source Connector: File(transactions-2023) to Kafka
+        - 2. Listen raw transactions data, enrich them with valid identity and puclish to a new kafka topic
+        - 3. Add Kafka Sink Connector: Kafka - ElasticSearch
 
 
  - 4. ElasticSearch Indexer

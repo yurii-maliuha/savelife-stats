@@ -21,12 +21,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		docker-compose.yml = docker-compose.yml
 		es-data-queries.json = es-data-queries.json
-		file-stream-demo-distributed.properties = file-stream-demo-distributed.properties
 		README.md = README.md
-		SaveLife.Stats.Data\Raw\transactions_1-2023.json = SaveLife.Stats.Data\Raw\transactions_1-2023.json
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SaveLife.Stats.Domain.Tests", "SaveLife.Stats.Domain.Tests\SaveLife.Stats.Domain.Tests.csproj", "{5C854030-2C5E-4CEB-B6A4-558F47278AAB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "kafka-properties", "kafka-properties", "{1B1FB43F-4A54-4201-9D24-8AD519ECCECA}"
+	ProjectSection(SolutionItems) = preProject
+		kafka-properties\elasticsearch-sink.json = kafka-properties\elasticsearch-sink.json
+		kafka-properties\file-stream-standalone.properties = kafka-properties\file-stream-standalone.properties
+		kafka-properties\init-kafka.sh = kafka-properties\init-kafka.sh
+		kafka-properties\transactions_1-2023.txt = kafka-properties\transactions_1-2023.txt
+		kafka-properties\worker.properties = kafka-properties\worker.properties
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +76,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{AF3E735C-62AD-4E2C-8342-831D3D8BEB20} = {6298CCAF-CF63-40AB-B3A2-1763289D1F0E}
 		{5C854030-2C5E-4CEB-B6A4-558F47278AAB} = {6298CCAF-CF63-40AB-B3A2-1763289D1F0E}
+		{1B1FB43F-4A54-4201-9D24-8AD519ECCECA} = {C62CC682-B0D8-482C-8A39-D52C1E871E1F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CD7C6FF4-4AB0-4A59-A3AE-641806DEC31D}

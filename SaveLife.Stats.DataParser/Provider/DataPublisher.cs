@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using Confluent.Kafka;
+using Microsoft.Extensions.Logging;
 using SaveLife.Stats.Domain.Models;
 using System.Collections.Concurrent;
 using System.Text.Encodings.Web;
@@ -14,6 +15,11 @@ namespace SaveLife.Stats.DataParser.Provider
         private const int BATCH_SIZE = 1000;
         private const int MAX_ITERATIONS_COUNT = 100;
         private readonly ILogger _logger;
+        private readonly JsonSerializerOptions _serializerOptions = new JsonSerializerOptions()
+        {
+            Encoder = JavaScriptEncoder.Create(UnicodeRanges.BasicLatin, UnicodeRanges.Cyrillic),
+            PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+        };
 
 
 
@@ -25,37 +31,55 @@ namespace SaveLife.Stats.DataParser.Provider
             _logger = logger;
         }
 
-        public Task PublishData()
+        public Task PublishData2(CancellationToken cancellationToken)
         {
-            var iteration = 1;
-            var readItemsCount = 0;
             return Task.Run(() =>
             {
-                var readingCompleted = false;
-                do
+                string bootstrapServers = "localhost:9092"; // Replace with your Kafka server
+                string topic = "transactions-raw"; // Replace with your topic name
+                string groupId = "test-group"; // Consumer group ID
+
+                var config = new ConsumerConfig
                 {
-                    string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @$"{PROJECT_BASE_PATH}\..\SaveLife.Stats.Data\Raw\transactions_1-2023.json");
-                    var lines = File.ReadLines(filePath).Skip(readItemsCount).Take(BATCH_SIZE);
-                    var transactions = lines.Select(t => JsonSerializer.Deserialize<SLTransaction>(t, new JsonSerializerOptions()
-                    {
-                        Encoder = JavaScriptEncoder.Create(UnicodeRanges.BasicLatin, UnicodeRanges.Cyrillic),
-                        PropertyNamingPolicy = JsonNamingPolicy.CamelCase
-                    }));
+                    BootstrapServers = bootstrapServers,
+                    GroupId = groupId,
+                    AutoOffsetReset = AutoOffsetReset.Earliest // Reads messages from the beginning if no offset is found
+                };
 
-                    foreach (var transaction in transactions)
+                using (var consumer = new ConsumerBuilder<Ignore, string>(config).Build())
+                {
+                    consumer.Subscribe(topic);
+
+                    try
                     {
-                        _sLTransactions.Add(transaction!);
+                        while (true)
+                        {
+                            try
+                            {
+                                var consumeResult = consumer.Consume(cancellationToken);
+                                if (consumeResult == null)
+                                {
+                                    Console.WriteLine($"Unexpected null message recieved!!!");
+                                    continue;
+                                }
+
+                                // handle double escaped stringify JSON
+                                var transactionStr = JsonSerializer.Deserialize<string>(consumeResult!.Message.Value);
+                                var transaction = JsonSerializer.Deserialize<SLTransaction>(transactionStr!, _serializerOptions);
+                                _sLTransactions.Add(transaction!);
+                            }
+                            catch (ConsumeException e)
+                            {
+                                Console.WriteLine($"Error consuming message: {e.Error.Reason}");
+                            }
+                        }
                     }
-
-                    iteration++;
-                    readItemsCount += transactions.Count();
-                    readingCompleted = !transactions.Any() || iteration >= MAX_ITERATIONS_COUNT;
-                    _logger.LogInformation($"The items was added Total: [{readItemsCount + BATCH_SIZE}]");
-
-                } while (!readingCompleted);
-
-                _logger.LogInformation($"Completed publishing");
-                _sLTransactions.CompleteAdding();
+                    catch (OperationCanceledException)
+                    {
+                        // Ensure the consumer leaves the group cleanly on shutdown
+                        consumer.Close();
+                    }
+                }
             });
         }
     }

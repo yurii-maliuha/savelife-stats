@@ -9,3 +9,7 @@ connect-standalone worker.properties file-stream-standalone.properties
 
 # when connectors are initialized create ES sink
 # curl -X POST http://localhost:8083/connectors -H "Content-Type: application/json" -d @properties/elasticsearch-sink.json
+
+# to test kafka topic
+# kafka-console-consumer --topic transactions-raw --bootstrap-server 127.0.0.1:9092
+# kafka-console-consumer --topic transactions --bootstrap-server 127.0.0.1:9092
