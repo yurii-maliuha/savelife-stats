@@ -19,16 +19,6 @@ services:
     networks:
       - elasticsearch-net
 
-  #kibana:
-  #    depends_on:
-  #        - elasticsearch
-  #    image: docker.elastic.co/kibana/kibana:7.10.1
-  #    ports:
-  #        - 5601:5601
-  #    environment:
-  #        - SERVERNAME=kibana
-  #        - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
-
   mongo_slstats:
     image: mongo:5
     container_name: MongoSLStats
@@ -36,6 +26,39 @@ services:
      - 27017:27017
     volumes:
      - mongodatavol:/data/db
+
+  kafka-cluster:
+    image: landoop/fast-data-dev:cp3.3.0
+    environment:
+      ADV_HOST: 127.0.0.1         # Change to 192.168.99.100 if using Docker Toolbox
+      RUNTESTS: 0                 # Disable Running tests so the cluster starts faster
+    ports:
+      - 2181:2181                 # Zookeeper
+      - 3030:3030                 # Landoop UI
+      - 8081-8083:8081-8083       # REST Proxy, Schema Registry, Kafka Connect ports
+      - 9581-9585:9581-9585       # JMX Ports
+      - 9092:9092                 # Kafka Broker
+    volumes:
+      - ./kafka-properties:/properties
+    networks:
+      - my-network
+
+
+  elasticsearchraw:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.10.1
+    container_name: ElasticsearchSLRawStats
+    ports:
+      - 9722:9200
+    environment:
+      - discovery.type=single-node
+    healthcheck:
+      test: curl -s http://localhost:9200 >/dev/null || exit 1
+      interval: 1s
+      timeout: 10s
+      retries: 100
+      start_period: 3s
+    networks:
+      - my-network
 
 # these volumes are stored at \\wsl.localhost\rancher-desktop-data\var\lib\docker\volumes\savelife-stats_{name}
 volumes:
@@ -45,4 +68,6 @@ volumes:
     external: false
 
 networks:
+  my-network:
+    driver: bridge
   elasticsearch-net:

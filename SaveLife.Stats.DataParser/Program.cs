@@ -3,6 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using SaveLife.Stats.DataParser;
+using SaveLife.Stats.DataParser.Provider;
 using SaveLife.Stats.Domain.Extensions;
 using Serilog;
 using System.Reflection;
@@ -41,6 +42,8 @@ public static class Program
            .ConfigureServices((hostContext, services) =>
            {
                services.AddSLDomainServices();
-               services.AddHostedService<Worker>();
+               services.AddSingleton<TransactionsQueueProvider>();
+               services.AddHostedService<RawTransactionsConsumer>();
+               services.AddHostedService<TransactionsPublisher>();
            });
 }

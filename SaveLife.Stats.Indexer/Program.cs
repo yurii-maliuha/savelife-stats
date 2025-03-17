@@ -3,7 +3,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MongoDB.Driver;
 using SaveLife.Stats.Domain.Extensions;
-using SaveLife.Stats.Domain.Mappers;
 using SaveLife.Stats.Indexer;
 using SaveLife.Stats.Indexer.Extensions;
 using SaveLife.Stats.Indexer.Models;
@@ -53,14 +52,14 @@ public static class Program
         services.Configure<IndexerConfig>(indexerSection);
         services.Configure<AggregatorConfig>(hostContext.Configuration.GetSection(nameof(AggregatorConfig)));
         services.AddElasticSearchProviders(hostContext.Configuration);
-       
+
 
         services.AddSingleton<ElasticsearchScaffolder>();
-        services.AddSingleton<ElasticsearchProvider>();;
+        services.AddSingleton<ElasticsearchProvider>(); ;
         services.AddSingleton<TransactionsQueueProvider>();
         services.AddSingleton<MD5HashProvider>();
         services.AddSLDomainServices();
-        services.AddAutoMapper(typeof(MapperProfile));
+
 
         services.AddSingleton<MongoDbProvider>();
         var mongoDbConfig = hostContext.Configuration.GetSection(nameof(MongoDbConfig)).Get<MongoDbConfig>();
@@ -76,7 +75,7 @@ public static class Program
         services.AddSingleton(mongoClient);
         services.AddSingleton(mongoClient.GetDatabase(mongoDbConfig.DatabaseName));
 
-        if(indexerConfig.Enable)
+        if (indexerConfig.Enable)
         {
             services.AddHostedService<PendingTransactionsPublisher>();
             services.AddHostedService<PendingTransactionConsumer>();
