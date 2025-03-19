@@ -28,7 +28,7 @@ namespace SaveLife.Stats.DataParser
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
-            logger.LogWarning($"Starting {nameof(TransactionsPublisher)}");
+            logger.LogInformation($"Starting {nameof(TransactionsPublisher)}");
             var transactions = new List<Transaction>();
 
             while (!stoppingToken.IsCancellationRequested)
@@ -80,12 +80,14 @@ namespace SaveLife.Stats.DataParser
                     var transactionJson = JsonSerializer.Serialize(transaction, _serializerOptions);
                     var message = new Message<Null, string> { Value = transactionJson };
                     await producer.ProduceAsync(topic, message, stoppingToken);
-                    logger.LogWarning("Transaction processed: {ID}", transaction.Id);
+                    logger.LogInformation("Transaction processed: {ID}", transaction.Id);
                 }
+
+                transactions.Clear();
             }
             catch (ProduceException<Null, Transaction> e)
             {
-                Console.WriteLine($"Error producing message: {e.Error.Reason}");
+                logger.LogError($"Error producing message: {e.Error.Reason}");
             }
         }
     }

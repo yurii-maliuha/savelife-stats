@@ -1,19 +1,25 @@
 ﻿
 # Save Life Stats
 
+## App Diagram
+![app diagram](/app-diagram.drawio.svg)
+
 ## Set-up
 1. Start required service
 ```docker compose up kafka-cluster elasticsearchraw```
-2. Create kafka topic `transactions-raw` and create a worker to read data from `transactions_1-2023.txt` to the created topic
-```docker exec -it $(docker ps -qf "name=kafka-cluster") bash -c "./properties/init-kafka.sh"```
+2. Create kafka topic `transactions-raw` and create a worker to read data from `transactions.json` to the created topic
+```docker exec -it $(docker ps -qf "name=kafka-cluster") bash -c "./props/init-kafka.sh"```
 3. Start data parser worker to consume raw transactions, enrich them with parsed identity and publish the result to `transactions` topic
 ```dotnet run --project SaveLife.Stats.DataParser/SaveLife.Stats.DataParser.csproj```
 4. Create an elastic search sink connector to migrate data from `transactions` topic to the elastic search cluster
 ```docker exec -it $(docker ps -qf "name=kafka-cluster") bash``
-```curl -X POST http://localhost:8083/connectors -H "Content-Type: application/json" -d @properties/elasticsearch-sink.json```
+```curl -X POST http://localhost:8083/connectors -H "Content-Type: application/json" -d @props/elasticsearch-sink.json```
+5. Verify `docs.count` at the elastic search culter
+```GET http://localhost:9722/_cat/indices?v```
 
-To debug data at Kafka topic, use the below command:
-```kafka-console-consumer --topic {topic-name} --bootstrap-server 127.0.0.1:9092```
+To debug data at the Kafka topics, use the below commands:
+```kafka-console-consumer --topic transactions-raw --bootstrap-server 127.0.0.1:9092 --from-beginning```
+```kafka-console-consumer --topic transactions --bootstrap-server 127.0.0.1:9092 --from-beginning```
 
 ## ToDo list:
  1. Data Downloader 
@@ -36,7 +42,6 @@ To debug data at Kafka topic, use the below command:
         -  ~~Add Kafka Source Connector: File(transactions-2023) to Kafka~~
         -  ~~Listen raw transactions data, enrich them with valid identity and puclish to a new kafka topic~~
         -  ~~Add Kafka Sink Connector: Kafka - ElasticSearch~~
-        -  Make sure data is consumed real time after adding to the text file 
 
 
  4. ElasticSearch Indexer
@@ -60,13 +65,6 @@ To debug data at Kafka topic, use the below command:
 			- the above should be covered by integration tests
 	3. Build a new query to calculate the normal distribution by donate amount. The ES histogram aggregations could be used
 	4. Figure ou the correct way to represent the aggregations results. Should we generate a pdf document or a standalone image per aggregation?
-
-### Priority
-- 5.2 fix TransactionsDataAggregator
-- 5.3 normal distribution query
-- 1.2 load data for Jan 2023 (~40K transactions to download)
-- 2.3 manual data verification
-- 5.4 UI representation for first two queries
 
 ## Scripts for loading names from wikipedia
 

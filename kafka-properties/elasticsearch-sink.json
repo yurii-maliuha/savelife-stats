@@ -10,6 +10,8 @@
     "schema.ignore": "true",
     "value.converter": "org.apache.kafka.connect.json.JsonConverter",
     "value.converter.schemas.enable": "false",
-    "key.converter": "org.apache.kafka.connect.storage.StringConverter"
+    "key.converter": "org.apache.kafka.connect.storage.StringConverter",
+    "flush.size": "1",
+    "batch.size": "1"
   }
 }

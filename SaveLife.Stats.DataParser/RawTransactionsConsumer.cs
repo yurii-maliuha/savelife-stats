@@ -42,23 +42,28 @@ namespace SaveLife.Stats.DataParser
             {
                 while (true)
                 {
+                    var consumeResult = consumer.Consume(stoppingToken);
+                    if (consumeResult == null)
+                    {
+                        logger.LogWarning($"Unexpected null message recieved!!!");
+                        continue;
+                    }
+
                     try
                     {
-                        var consumeResult = consumer.Consume(stoppingToken);
-                        if (consumeResult == null)
-                        {
-                            logger.LogWarning($"Unexpected null message recieved!!!");
-                            continue;
-                        }
-
                         // handle double escaped stringify JSON
                         var transactionStr = JsonSerializer.Deserialize<string>(consumeResult!.Message.Value);
+                        if (string.IsNullOrEmpty(transactionStr))
+                        {
+                            logger.LogWarning($"Skipping empty message");
+                            continue;
+                        }
                         var transaction = JsonSerializer.Deserialize<SLTransaction>(transactionStr!, _serializerOptions);
                         await transactionsQueue.Writer.WriteAsync(transaction!, stoppingToken);
                     }
-                    catch (ConsumeException ex)
+                    catch (Exception ex)
                     {
-                        logger.LogError(ex, "Error consuming message: {ErrorReason}", ex.Error.Reason);
+                        logger.LogError(ex, "Error consuming message: {Message}, {Error}", consumeResult!.Message.Value, ex.Message);
                     }
                 }
             }
