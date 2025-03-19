@@ -1,6 +1,9 @@
 ﻿
 # Save Life Stats
 
+## App Diagram
+![app diagram](/app-diagram.drawio.svg)
+
 ## Set-up
 1. Start required service
 ```docker compose up kafka-cluster elasticsearchraw```
@@ -62,13 +65,6 @@ To debug data at the Kafka topics, use the below commands:
 			- the above should be covered by integration tests
 	3. Build a new query to calculate the normal distribution by donate amount. The ES histogram aggregations could be used
 	4. Figure ou the correct way to represent the aggregations results. Should we generate a pdf document or a standalone image per aggregation?
-
-### Priority
-- 5.2 fix TransactionsDataAggregator
-- 5.3 normal distribution query
-- 1.2 load data for Jan 2023 (~40K transactions to download)
-- 2.3 manual data verification
-- 5.4 UI representation for first two queries
 
 ## Scripts for loading names from wikipedia
 
